@@ -10,6 +10,8 @@ var express = require('express')
 var app = require('express')()
   , server = require('http').createServer(app);
 
+var csv = require('ya-csv');
+
 var HOST = "localhost";
 var PORT = 8080;
 
@@ -70,8 +72,8 @@ passport.deserializeUser(function(obj, done) {
 //   credentials (in this case, an OpenID identifier and profile), and invoke a
 //   callback with a user object.
 passport.use(new GoogleStrategy({
-    returnURL: 'http://'+HOST+'/auth/google/return',
-    realm: 'http://'+HOST+'/'
+    returnURL: 'http://'+HOST+':'+PORT+'/auth/google/return',
+    realm: 'http://'+HOST+':'+PORT+'/'
   },
   function(identifier, profile, done) {
     // asynchronous verification, for effect...
@@ -149,26 +151,90 @@ db.open(function(err, db) {
     }
 });
 
-app.get('/dashboard', ensureAuthenticated, function(req, res) {
-	var id = beautify_name(req.user.emails[0].value);
-	db.collection("accounts", function(err, coll) {
-		coll.findOne({'id':id}, function(err, account) {
-			if (!account) {
-				console.log("Creating new account for " + id);
-				var statistics = {last12month:[], last30days:[], last24hours:[]};				
-				
-				coll.insert({'id': id, user: req.user, adminkey:guid(),clientkey:guid()}, {safe:true}, function(err, a) {
-					res.render('dashboard', { 'account': a[0] });
-					console.log("Client key is " + a.clientkey);
-					coll.ensureIndex({id:1, adminkey:1, clientkey:1}, function(err,ind){});
-				});
-				db.createCollection("stats_"+id+"_year", {capped:true, size:100000, max:12}, function(e,c){});
-				db.createCollection("stats_"+id+"_month", {capped:true, size:100000, max:30}, function(e,c){});
-				db.createCollection("stats_"+id+"_day", {capped:true, size:100000, max:24}, function(e,c){});
-			} else {
-				res.render('dashboard', { 'account': account });
-			}
-		});
-    });	
+app.get('/home', ensureAuthenticated, function(req, res) {
+	res.render('home');
 });
 
+function beautify_name(name) {
+	return name.replace(/\W/g, '_');
+}
+
+function checkUser(req) {
+	if (req.user && req.user.emails[0] && req.user.emails[0].value) {
+		return beautify_name(req.user.emails[0].value);
+	}
+	res.redirect('/home');
+}
+
+app.get('/splittext', function(req, res) {
+	var collectionName = checkUser(req);
+	var text = req.query.text;
+	text = text.replace("\n", " ");
+
+	var words = text.split(" ");
+	var unknownWordsArr = [];
+	var unknownWordsDict = {};
+
+	console.log("Number of words after split " + words.length)
+	
+	for (i in words) {
+		var word = words[i];
+		if (dict[word]) {
+			unknownWordsArr.push(word);
+			unknownWordsDict[word] = dict[word];
+		}
+	}
+
+	console.log("Number of words after 'full dict' filter " + unknownWordsArr.length)
+	
+	db.collection(collectionName, function(err, coll) {
+		coll.ensureIndex( { "front": 1 } )
+		coll.find({ front: { $in: unknownWordsArr }}, {front:true}).toArray(function(err, knownWords) {
+			for (i in knownWords) {
+				delete unknownWordsDict[knownWords[i].front];
+			}
+			res.send(unknownWordsDict);
+		})
+	})
+});
+
+
+app.post('/addword', function(req, res) {
+	var collectionName = checkUser(req);
+	var word = req.body.card;
+	var type = req.body.to;
+	
+	if (!req.body.card.front || req.body.card.front.length==0) {
+		return false;
+	}
+	
+	db.collection(collectionName, function(err, coll) {
+		var front = req.body.card.front;
+		var key = {'front':front}
+		var data = {'front':front, 'card':req.body.card, 'type':type};
+		coll.update(key, data, {upsert:true});
+	})
+});
+
+// loading the dictionary
+var dict = {};
+
+var reader = csv.createCsvFileReader('Lexique380.txt', {
+//var reader = csv.createCsvFileReader('Lexique380-utf8-small.txt', {
+    'separator': '\t',
+    'quote': '"',
+    'escape': '"',       
+    'comment': '',
+});
+
+var t1 = new Date().getTime() / 1000;
+
+var writer = new csv.CsvWriter(process.stdout);
+reader.addListener('data', function(data) {
+    dict[data[0]] = data;
+});
+
+reader.addListener('end', function() {
+	var t2 = new Date().getTime() / 1000;
+    console.log('Loaded in ' + (t2-t1) + " secs");
+});
