@@ -2,15 +2,13 @@ var express = require('express')
   , util = require('util')
   , http = require('http')
   , passport = require('passport')
-  , util = require('util')
+  , url = require('url')
   , GoogleStrategy = require('passport-google').Strategy 
   , path = require('path')
   , crypto = require('crypto');
 
 var app = require('express')()
   , server = require('http').createServer(app);
-
-var csv = require('ya-csv');
 
 var HOST = "localhost";
 var PORT = 8080;
@@ -155,6 +153,24 @@ app.get('/home', ensureAuthenticated, function(req, res) {
 	res.render('home');
 });
 
+app.get('/study', ensureAuthenticated, function(req, res) {
+	var collectionName = checkUser(req);
+	db.collection(collectionName, function(err, coll) {
+		coll.find({cardtype: "learning"}).toArray(function(err, cards) {
+			res.render('study', {'cards':cards});
+		})
+	})	
+});
+
+app.get('/mydict', ensureAuthenticated, function(req, res) {
+	var collectionName = checkUser(req);
+	db.collection(collectionName, function(err, coll) {
+		coll.find({cardtype: "known"}).toArray(function(err, cards) {
+			res.render('mydict', {'cards':cards});
+		})
+	})	
+});
+
 function beautify_name(name) {
 	return name.replace(/\W/g, '_');
 }
@@ -166,75 +182,77 @@ function checkUser(req) {
 	res.redirect('/home');
 }
 
-app.get('/splittext', function(req, res) {
+function splittext(text, req, res) {
 	var collectionName = checkUser(req);
-	var text = req.query.text;
 	text = text.replace("\n", " ");
-
+	text = text.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, " ");
+	
 	var words = text.split(" ");
-	var unknownWordsArr = [];
-	var unknownWordsDict = {};
-
 	console.log("Number of words after split " + words.length)
 	
-	for (i in words) {
-		var word = words[i];
-		if (dict[word]) {
-			unknownWordsArr.push(word);
-			unknownWordsDict[word] = dict[word];
-		}
-	}
-
-	console.log("Number of words after 'full dict' filter " + unknownWordsArr.length)
-	
-	db.collection(collectionName, function(err, coll) {
-		coll.ensureIndex( { "front": 1 } )
-		coll.find({ front: { $in: unknownWordsArr }}, {front:true}).toArray(function(err, knownWords) {
-			for (i in knownWords) {
-				delete unknownWordsDict[knownWords[i].front];
+	db.collection("lexique380", function(err, lexique) {
+		lexique.find({ word: { $in: words }}).toArray(function(err, validWords) {
+			var validWordsMap = {};
+			var validWordsArr = [];
+			for (i in validWords) {
+				validWordsMap[validWords[i].word] = validWords[i];
+				validWordsArr.push(validWords[i].word);
 			}
-			res.send(unknownWordsDict);
+		
+			console.log("Number of valid words " + validWords.length);
+	
+			db.collection(collectionName, function(err, coll) {
+				coll.ensureIndex( { "word": 1 } )
+				coll.find({ word: { $in: validWordsArr }}, {word:true, cardtype:true}).toArray(function(err, knownWords) {
+					for (i in knownWords) {
+						validWordsMap[knownWords[i].word]["cardtype"]=knownWords[i].cardtype;
+					}
+					res.send(validWordsMap);
+				})
+			})
 		})
 	})
+}
+
+app.get('/splittext', function(req, res) {
+	var text = req.query.text;
+	if (text.indexOf("http")==0) {
+		var link = url.parse(text);
+		var options = {host: link.host, port: link.port, path: link.path}
+		console.log(options);
+		
+		http.get(options, function (http_res) {
+		    var data = "";
+		    http_res.on("data", function (chunk) {
+		        data += chunk;
+		    });
+		    http_res.on("end", function () {
+				splittext(data, req, res);
+		        console.log(data);
+		    });
+		});
+	} else {
+		splittext(text, req, res);
+	}
 });
 
 
 app.post('/addword', function(req, res) {
 	var collectionName = checkUser(req);
-	var word = req.body.card;
-	var type = req.body.to;
+	var word = req.body.word;
+	var card = req.body.card;
+	var type = req.body.cardtype;
 	
-	if (!req.body.card.front || req.body.card.front.length==0) {
+	if (!req.body.word || req.body.word.length==0) {
 		return false;
 	}
 	
 	db.collection(collectionName, function(err, coll) {
-		var front = req.body.card.front;
-		var key = {'front':front}
-		var data = {'front':front, 'card':req.body.card, 'type':type};
-		coll.update(key, data, {upsert:true});
+		var key = {'word':word}
+		var data = {'word':word, 'card':card, 'cardtype':type, date:new Date().getTime()};
+		coll.update(key, data, {upsert:true, safe:true}, function(err, result) {
+			console.log("Successfully added " + word)
+			res.send("Successfully added " + word);
+		});
 	})
-});
-
-// loading the dictionary
-var dict = {};
-
-var reader = csv.createCsvFileReader('Lexique380.txt', {
-//var reader = csv.createCsvFileReader('Lexique380-utf8-small.txt', {
-    'separator': '\t',
-    'quote': '"',
-    'escape': '"',       
-    'comment': '',
-});
-
-var t1 = new Date().getTime() / 1000;
-
-var writer = new csv.CsvWriter(process.stdout);
-reader.addListener('data', function(data) {
-    dict[data[0]] = data;
-});
-
-reader.addListener('end', function() {
-	var t2 = new Date().getTime() / 1000;
-    console.log('Loaded in ' + (t2-t1) + " secs");
 });

@@ -7,42 +7,48 @@ function splitText() {
 	}).done(function( data ) {
 		console.log(data)
 	
-		var wordsCount = Object.keys(data).length;
-	
-		$("#new-words").empty();
-		
-		if (wordsCount==0) {
-			$("#new-words").append("<h4>No New Words</h4>");
-			return false;
-		}
-		
-		$("#new-words").append("<h4>New Words ("+wordsCount+")</h4>");
+		$("#words").empty();
+		$("#words").append("<h4>Words</h4>");
 		
 		var table = $("<table></table>");
-		$("#new-words").append(table);
+		$("#words").append(table);
+		
+		var total=0,known=0,learning=0,unknown=0;
+		
 		$.each(data, function(word, dictEntry) {
-			var word = "<td><span class='front'>"+word+"</span></td>";
-			var dict = "<td><button type='button' class='btn btn-info' onclick='return addWord(this, \"card\")'>Create Card</button></td>";
-			var card = "<td><button type='button' class='btn btn-success' onclick='return addWord(this, \"dict\")'>Known</button></td>";
-			table.append("<tr>"+word+card+dict+"</tr>");
+			total++;
+			if (!dictEntry.cardtype) {
+				var word = "<td><span class='front'>"+word+"</span></td>";
+				var dict = "<td><button type='button' class='btn btn-info' onclick='return addWord(this, \"learning\")'>Create Card</button></td>";
+				var card = "<td><button type='button' class='btn btn-success' onclick='return addWord(this, \"known\")'>Known</button></td>";
+				table.append("<tr>"+word+card+dict+"</tr>");
+				unknown++;
+			} else if (dictEntry.cardtype=="known") {
+				known++;
+			} else {
+				learning++;
+			}
 		})
+
+		var percentage = total==0?"":" ("+Math.round(100*unknown/total)+"%)";
+		$("#words").children().first().after("<p>Total "+total+", unknown "+unknown+percentage+", known "+known+", learning "+learning+"</p>");
 	});
 	
 	return false;
 }
 
 
-function addWord(btn, to) {
+function addWord(btn, cardType) {
 	var par = $(btn).parents("tr");
 	var text = par.find(".front").text();
 	console.log("Adding " + text);
 
 	$.ajax({
 	  url: "/addword",
-	  data: { card: {front:text, back:"", hint:""}, 'to' : to },
+	  data: { word: text, card: {front:text, back:"", hint:""}, 'cardtype' : cardType },
 	  type: "POST",
 	}).done(function( data ) {
-		console.log("Added " + text);
+		console.log(data);
 	});
 	par.remove();
 	

@@ -67,8 +67,8 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Create</a></li>
-          <li><a href="/study">Study</a></li>
+          <li><a href="/home">Create</a></li>
+          <li class="active"><a href="/study">Study</a></li>
           <li><a href="/mydict">MyDict</a></li>
         </ul>
         <h3 class="muted">My Dictionary</h3>
@@ -76,19 +76,23 @@
 
       <hr>
 
-      <div class="row-fluid">
-      	<div class="span12">
-      		<textarea id="input-text" style="width:100%" rows="10"></textarea>
-      	</div>
-		<button type="button" class="btn btn-primary" onclick="return splitText()">Translate</button>
-      </div>
-
-      <hr>
-
       <div class="row-fluid marketing">
-        <div id="words" class="span6">
-        </div>
-        <div id="translation" class="span6">
+        <div id="cards" class="span12">
+			<table class="table">
+			  <thead>
+			    <tr>
+			      <th>#</th>
+			      <th>Front</th>
+			      <th>Back</th>
+			      <th>Hint</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			<% for(var i=0; i<cards.length; i++) {%>
+			   <tr><td><%= i+1 %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td></tr>
+			<% } %>
+			</tbody>
+			</table>        
         </div>
       </div>
 
