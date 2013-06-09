@@ -1,0 +1,1016 @@
+{ "_id" : { "$oid" : "51b43d27b79937e50dfff141" }, "word" : "la", "card" : { "front" : "la", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b441e5b79937e50dfff142" }, "word" : "aller", "card" : { "front" : "aller", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b441e6b79937e50dfff143" }, "word" : "va", "card" : { "front" : "va", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44200b79937e50dfff144" }, "word" : "a", "card" : { "front" : "a", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44202b79937e50dfff145" }, "word" : "alors", "card" : { "front" : "alors", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44205b79937e50dfff146" }, "word" : "au", "card" : { "front" : "au", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44207b79937e50dfff147" }, "word" : "arroser", "card" : { "front" : "arroser", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4425db79937e50dfff148" }, "word" : "arguments", "card" : { "front" : "arguments", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4425eb79937e50dfff149" }, "word" : "arguer", "card" : { "front" : "arguer", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44278b79937e50dfff14a" }, "word" : "aussi", "card" : { "front" : "aussi", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4427ab79937e50dfff14b" }, "word" : "avec", "card" : { "front" : "avec", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4427db79937e50dfff14c" }, "word" : "autre", "card" : { "front" : "autre", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4427fb79937e50dfff14d" }, "word" : "avoir", "card" : { "front" : "avoir", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b442d5b79937e50dfff14e" }, "word" : "avril", "card" : { "front" : "avril", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b442d6b79937e50dfff14f" }, "word" : "baisse", "card" : { "front" : "baisse", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b442f0b79937e50dfff150" }, "word" : "car", "card" : { "front" : "car", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b442f2b79937e50dfff151" }, "word" : "carte", "card" : { "front" : "carte", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b442f5b79937e50dfff152" }, "word" : "ce", "card" : { "front" : "ce", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b442f7b79937e50dfff153" }, "word" : "ces", "card" : { "front" : "ces", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4434db79937e50dfff154" }, "word" : "cette", "card" : { "front" : "cette", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4434eb79937e50dfff155" }, "word" : "chacun", "card" : { "front" : "chacun", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44368b79937e50dfff156" }, "word" : "changer", "card" : { "front" : "changer", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4436ab79937e50dfff157" }, "word" : "clients", "card" : { "front" : "clients", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4436db79937e50dfff158" }, "word" : "compenser", "card" : { "front" : "compenser", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4436fb79937e50dfff159" }, "word" : "concurrents", "card" : { "front" : "concurrents", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b443c5b79937e50dfff15a" }, "word" : "construit", "card" : { "front" : "construit", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b443c6b79937e50dfff15b" }, "word" : "conteste", "card" : { "front" : "conteste", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44416b79937e50dfff15c" }, "word" : "assortie", "card" : { "front" : "assortie", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4444fb79937e50dfff15d" }, "word" : "basculerait", "card" : { "front" : "basculerait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4445cb79937e50dfff15e" }, "word" : "coup", "card" : { "front" : "coup", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44464b79937e50dfff15f" }, "word" : "dans", "card" : { "front" : "dans", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44465b79937e50dfff160" }, "word" : "de", "card" : { "front" : "de", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44465b79937e50dfff161" }, "word" : "des", "card" : { "front" : "des", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44466b79937e50dfff162" }, "word" : "deux", "card" : { "front" : "deux", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44466b79937e50dfff163" }, "word" : "devant", "card" : { "front" : "devant", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44468b79937e50dfff164" }, "word" : "donne", "card" : { "front" : "donne", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44468b79937e50dfff165" }, "word" : "du", "card" : { "front" : "du", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4446ab79937e50dfff166" }, "word" : "dès", "card" : { "front" : "dès", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b4447fb79937e50dfff167" }, "word" : "coût", "card" : { "front" : "coût", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44480b79937e50dfff168" }, "word" : "début", "card" : { "front" : "début", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44481b79937e50dfff169" }, "word" : "décision", "card" : { "front" : "décision", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44483b79937e50dfff16a" }, "word" : "défendent", "card" : { "front" : "défendent", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44485b79937e50dfff16b" }, "word" : "dénonce", "card" : { "front" : "dénonce", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44486b79937e50dfff16c" }, "word" : "dépensé", "card" : { "front" : "dépensé", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44488b79937e50dfff16d" }, "word" : "déployer", "card" : { "front" : "déployer", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4448bb79937e50dfff16e" }, "word" : "déposer", "card" : { "front" : "déposer", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4448bb79937e50dfff16f" }, "word" : "déposé", "card" : { "front" : "déposé", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4448db79937e50dfff170" }, "word" : "en", "card" : { "front" : "en", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44490b79937e50dfff171" }, "word" : "entre", "card" : { "front" : "entre", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44491b79937e50dfff172" }, "word" : "espèrent", "card" : { "front" : "espèrent", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44494b79937e50dfff173" }, "word" : "est", "card" : { "front" : "est", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44495b79937e50dfff174" }, "word" : "et", "card" : { "front" : "et", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4449fb79937e50dfff175" }, "word" : "accordée", "card" : { "front" : "accordée", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444a4b79937e50dfff176" }, "word" : "acquérir", "card" : { "front" : "acquérir", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444a5b79937e50dfff177" }, "word" : "antennes", "card" : { "front" : "antennes", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444a5b79937e50dfff178" }, "word" : "autorisation", "card" : { "front" : "autorisation", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444a9b79937e50dfff179" }, "word" : "autoriserait", "card" : { "front" : "autoriserait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444abb79937e50dfff17a" }, "word" : "bande", "card" : { "front" : "bande", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b444adb79937e50dfff17b" }, "word" : "c'est-à-dire", "card" : { "front" : "c'est-à-dire", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444adb79937e50dfff17c" }, "word" : "carré", "card" : { "front" : "carré", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444aeb79937e50dfff17d" }, "word" : "contexte", "card" : { "front" : "contexte", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444b2b79937e50dfff17e" }, "word" : "contrepartie", "card" : { "front" : "contrepartie", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b444b2b79937e50dfff17f" }, "word" : "couverture", "card" : { "front" : "couverture", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444b3b79937e50dfff180" }, "word" : "couvrir", "card" : { "front" : "couvrir", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444b4b79937e50dfff181" }, "word" : "couvrira", "card" : { "front" : "couvrira", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444b7b79937e50dfff182" }, "word" : "dévolues", "card" : { "front" : "dévolues", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b444b8b79937e50dfff183" }, "word" : "estime", "card" : { "front" : "estime", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444bab79937e50dfff184" }, "word" : "expert", "card" : { "front" : "expert", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444bbb79937e50dfff185" }, "word" : "explique", "card" : { "front" : "explique", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444bbb79937e50dfff186" }, "word" : "facilement", "card" : { "front" : "facilement", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444bcb79937e50dfff187" }, "word" : "faire", "card" : { "front" : "faire", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444bfb79937e50dfff188" }, "word" : "fin", "card" : { "front" : "fin", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444bfb79937e50dfff189" }, "word" : "fois", "card" : { "front" : "fois", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444c1b79937e50dfff18a" }, "word" : "fond", "card" : { "front" : "fond", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444c1b79937e50dfff18b" }, "word" : "front", "card" : { "front" : "front", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444c2b79937e50dfff18c" }, "word" : "fréquences", "card" : { "front" : "fréquences", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444c3b79937e50dfff18d" }, "word" : "grand", "card" : { "front" : "grand", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444c3b79937e50dfff18e" }, "word" : "grande", "card" : { "front" : "grande", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444c5b79937e50dfff18f" }, "word" : "grâce", "card" : { "front" : "grâce", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444c6b79937e50dfff190" }, "word" : "guerre", "card" : { "front" : "guerre", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444c7b79937e50dfff191" }, "word" : "génération", "card" : { "front" : "génération", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444c7b79937e50dfff192" }, "word" : "il", "card" : { "front" : "il", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444cdb79937e50dfff193" }, "word" : "intervenu", "card" : { "front" : "intervenu", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444cdb79937e50dfff194" }, "word" : "juge", "card" : { "front" : "juge", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444ceb79937e50dfff195" }, "word" : "jugée", "card" : { "front" : "jugée", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444ceb79937e50dfff196" }, "word" : "jusqu'au", "card" : { "front" : "jusqu'au", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444cfb79937e50dfff197" }, "word" : "jusqu'à", "card" : { "front" : "jusqu'à", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444d0b79937e50dfff198" }, "word" : "laquelle", "card" : { "front" : "laquelle", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444d1b79937e50dfff199" }, "word" : "le", "card" : { "front" : "le", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444d1b79937e50dfff19a" }, "word" : "les", "card" : { "front" : "les", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444d1b79937e50dfff19b" }, "word" : "leur", "card" : { "front" : "leur", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444d9b79937e50dfff19c" }, "word" : "licences", "card" : { "front" : "licences", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444dbb79937e50dfff19d" }, "word" : "longue", "card" : { "front" : "longue", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b444dfb79937e50dfff19e" }, "word" : "lors", "card" : { "front" : "lors", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444dfb79937e50dfff19f" }, "word" : "lui", "card" : { "front" : "lui", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444e0b79937e50dfff1a0" }, "word" : "là", "card" : { "front" : "là", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444e1b79937e50dfff1a1" }, "word" : "lésé", "card" : { "front" : "lésé", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b444e2b79937e50dfff1a2" }, "word" : "manque", "card" : { "front" : "manque", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444e3b79937e50dfff1a3" }, "word" : "mardi", "card" : { "front" : "mardi", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444e3b79937e50dfff1a4" }, "word" : "milliard", "card" : { "front" : "milliard", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444e4b79937e50dfff1a5" }, "word" : "milliards", "card" : { "front" : "milliards", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444e4b79937e50dfff1a6" }, "word" : "millions", "card" : { "front" : "millions", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444e7b79937e50dfff1a7" }, "word" : "mobile", "card" : { "front" : "mobile", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444e7b79937e50dfff1a8" }, "word" : "mobiles", "card" : { "front" : "mobiles", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444ebb79937e50dfff1a9" }, "word" : "moment", "card" : { "front" : "moment", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444ecb79937e50dfff1aa" }, "word" : "monde", "card" : { "front" : "monde", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444f2b79937e50dfff1ab" }, "word" : "nationale", "card" : { "front" : "nationale", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444f4b79937e50dfff1ac" }, "word" : "ne", "card" : { "front" : "ne", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444f5b79937e50dfff1ad" }, "word" : "nerf", "card" : { "front" : "nerf", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b444f7b79937e50dfff1ae" }, "word" : "nos", "card" : { "front" : "nos", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44504b79937e50dfff1af" }, "word" : "ont", "card" : { "front" : "ont", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44505b79937e50dfff1b0" }, "word" : "opérateurs", "card" : { "front" : "opérateurs", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44506b79937e50dfff1b1" }, "word" : "opération", "card" : { "front" : "opération", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44508b79937e50dfff1b2" }, "word" : "ouvert", "card" : { "front" : "ouvert", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44509b79937e50dfff1b3" }, "word" : "où", "card" : { "front" : "où", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44509b79937e50dfff1b4" }, "word" : "par", "card" : { "front" : "par", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4450ab79937e50dfff1b5" }, "word" : "partie", "card" : { "front" : "partie", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4450ab79937e50dfff1b6" }, "word" : "pas", "card" : { "front" : "pas", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4450bb79937e50dfff1b7" }, "word" : "passer", "card" : { "front" : "passer", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4450cb79937e50dfff1b8" }, "word" : "payé", "card" : { "front" : "payé", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4450cb79937e50dfff1b9" }, "word" : "permet", "card" : { "front" : "permet", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4450eb79937e50dfff1ba" }, "word" : "peu", "card" : { "front" : "peu", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4450eb79937e50dfff1bb" }, "word" : "plus", "card" : { "front" : "plus", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4450fb79937e50dfff1bc" }, "word" : "population", "card" : { "front" : "population", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4450fb79937e50dfff1bd" }, "word" : "pour", "card" : { "front" : "pour", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44510b79937e50dfff1be" }, "word" : "pourrait", "card" : { "front" : "pourrait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44511b79937e50dfff1bf" }, "word" : "pouvoir", "card" : { "front" : "pouvoir", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44512b79937e50dfff1c0" }, "word" : "prendre", "card" : { "front" : "prendre", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44513b79937e50dfff1c1" }, "word" : "pris", "card" : { "front" : "pris", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44515b79937e50dfff1c2" }, "word" : "pré", "card" : { "front" : "pré", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44519b79937e50dfff1c3" }, "word" : "précautions", "card" : { "front" : "précautions", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4451eb79937e50dfff1c4" }, "word" : "précieux", "card" : { "front" : "précieux", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b4451fb79937e50dfff1c5" }, "word" : "présent", "card" : { "front" : "présent", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44521b79937e50dfff1c6" }, "word" : "prévoit", "card" : { "front" : "prévoit", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44522b79937e50dfff1c7" }, "word" : "prêt", "card" : { "front" : "prêt", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44524b79937e50dfff1c8" }, "word" : "public", "card" : { "front" : "public", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44525b79937e50dfff1c9" }, "word" : "quatre", "card" : { "front" : "quatre", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44525b79937e50dfff1ca" }, "word" : "que", "card" : { "front" : "que", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44526b79937e50dfff1cb" }, "word" : "quelques", "card" : { "front" : "quelques", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44526b79937e50dfff1cc" }, "word" : "qui", "card" : { "front" : "qui", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44527b79937e50dfff1cd" }, "word" : "recours", "card" : { "front" : "recours", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b4452db79937e50dfff1ce" }, "word" : "refusés", "card" : { "front" : "refusés", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4452fb79937e50dfff1cf" }, "word" : "rendues", "card" : { "front" : "rendues", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44531b79937e50dfff1d0" }, "word" : "reprend", "card" : { "front" : "reprend", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44532b79937e50dfff1d1" }, "word" : "risque", "card" : { "front" : "risque", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44535b79937e50dfff1d2" }, "word" : "nouvelles", "card" : { "front" : "nouvelles", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44536b79937e50dfff1d3" }, "word" : "nouvelle", "card" : { "front" : "nouvelle", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44537b79937e50dfff1d4" }, "word" : "nouveaux", "card" : { "front" : "nouveaux", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44539b79937e50dfff1d5" }, "word" : "sa", "card" : { "front" : "sa", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44539b79937e50dfff1d6" }, "word" : "saison", "card" : { "front" : "saison", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4453bb79937e50dfff1d7" }, "word" : "se", "card" : { "front" : "se", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4453cb79937e50dfff1d8" }, "word" : "selon", "card" : { "front" : "selon", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4453eb79937e50dfff1d9" }, "word" : "semaines", "card" : { "front" : "semaines", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4453eb79937e50dfff1da" }, "word" : "sera", "card" : { "front" : "sera", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4453fb79937e50dfff1db" }, "word" : "serait", "card" : { "front" : "serait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44540b79937e50dfff1dc" }, "word" : "ses", "card" : { "front" : "ses", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44540b79937e50dfff1dd" }, "word" : "soit", "card" : { "front" : "soit", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44541b79937e50dfff1de" }, "word" : "solide", "card" : { "front" : "solide", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44542b79937e50dfff1df" }, "word" : "son", "card" : { "front" : "son", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44543b79937e50dfff1e0" }, "word" : "sont", "card" : { "front" : "sont", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44543b79937e50dfff1e1" }, "word" : "sur", "card" : { "front" : "sur", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44545b79937e50dfff1e2" }, "word" : "suspendre", "card" : { "front" : "suspendre", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44546b79937e50dfff1e3" }, "word" : "tard", "card" : { "front" : "tard", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44547b79937e50dfff1e4" }, "word" : "tous", "card" : { "front" : "tous", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44547b79937e50dfff1e5" }, "word" : "tout", "card" : { "front" : "tout", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44548b79937e50dfff1e6" }, "word" : "toutes", "card" : { "front" : "toutes", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4454cb79937e50dfff1e7" }, "word" : "transparence", "card" : { "front" : "transparence", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4454eb79937e50dfff1e8" }, "word" : "trop", "card" : { "front" : "trop", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44550b79937e50dfff1e9" }, "word" : "télécoms", "card" : { "front" : "télécoms", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44551b79937e50dfff1ea" }, "word" : "ultrarapide", "card" : { "front" : "ultrarapide", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44552b79937e50dfff1eb" }, "word" : "un", "card" : { "front" : "un", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44552b79937e50dfff1ec" }, "word" : "une", "card" : { "front" : "une", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44554b79937e50dfff1ed" }, "word" : "vitesse", "card" : { "front" : "vitesse", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44557b79937e50dfff1ee" }, "word" : "véritable", "card" : { "front" : "véritable", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44558b79937e50dfff1ef" }, "word" : "y", "card" : { "front" : "y", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44559b79937e50dfff1f0" }, "word" : "à", "card" : { "front" : "à", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4455ab79937e50dfff1f1" }, "word" : "été", "card" : { "front" : "été", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4455bb79937e50dfff1f2" }, "word" : "réseau", "card" : { "front" : "réseau", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b4455cb79937e50dfff1f3" }, "word" : "régulateur", "card" : { "front" : "régulateur", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44563b79937e50dfff1f4" }, "word" : "référés", "card" : { "front" : "référés", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44564b79937e50dfff1f5" }, "word" : "référé", "card" : { "front" : "référé", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44568b79937e50dfff1f6" }, "word" : "moindre", "card" : { "front" : "moindre", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44a84b79937e50dfff1f7" }, "word" : "avaient", "card" : { "front" : "avaient", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44a84b79937e50dfff1f8" }, "word" : "avait", "card" : { "front" : "avait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44a87b79937e50dfff1f9" }, "word" : "ayant", "card" : { "front" : "ayant", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44a8db79937e50dfff1fa" }, "word" : "cet", "card" : { "front" : "cet", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44a8fb79937e50dfff1fb" }, "word" : "choix", "card" : { "front" : "choix", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44a91b79937e50dfff1fc" }, "word" : "chute", "card" : { "front" : "chute", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44a92b79937e50dfff1fd" }, "word" : "comme", "card" : { "front" : "comme", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44a97b79937e50dfff1fe" }, "word" : "donner", "card" : { "front" : "donner", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44a98b79937e50dfff1ff" }, "word" : "droite", "card" : { "front" : "droite", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44a99b79937e50dfff200" }, "word" : "déclaré", "card" : { "front" : "déclaré", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44a9eb79937e50dfff201" }, "word" : "décès", "card" : { "front" : "décès", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44a9fb79937e50dfff202" }, "word" : "différence", "card" : { "front" : "différence", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aa1b79937e50dfff203" }, "word" : "examen", "card" : { "front" : "examen", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aa2b79937e50dfff204" }, "word" : "entraîné", "card" : { "front" : "entraîné", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aa7b79937e50dfff205" }, "word" : "information", "card" : { "front" : "information", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aa8b79937e50dfff206" }, "word" : "connu", "card" : { "front" : "connu", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aaab79937e50dfff207" }, "word" : "aux", "card" : { "front" : "aux", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aadb79937e50dfff208" }, "word" : "aurait", "card" : { "front" : "aurait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aadb79937e50dfff209" }, "word" : "attestée", "card" : { "front" : "attestée", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aafb79937e50dfff20a" }, "word" : "après", "card" : { "front" : "après", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44ab4b79937e50dfff20b" }, "word" : "antifasciste", "card" : { "front" : "antifasciste", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ab5b79937e50dfff20c" }, "word" : "ans", "card" : { "front" : "ans", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ab6b79937e50dfff20d" }, "word" : "américain", "card" : { "front" : "américain", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ab8b79937e50dfff20e" }, "word" : "appris", "card" : { "front" : "appris", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44abcb79937e50dfff20f" }, "word" : "causé", "card" : { "front" : "causé", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ac3b79937e50dfff210" }, "word" : "circonstance", "card" : { "front" : "circonstance", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ac4b79937e50dfff211" }, "word" : "conclusions", "card" : { "front" : "conclusions", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ac7b79937e50dfff212" }, "word" : "cours", "card" : { "front" : "cours", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ac9b79937e50dfff213" }, "word" : "finalement", "card" : { "front" : "finalement", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44acfb79937e50dfff214" }, "word" : "hématome", "card" : { "front" : "hématome", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ad0b79937e50dfff215" }, "word" : "intention", "card" : { "front" : "intention", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ad0b79937e50dfff216" }, "word" : "journée", "card" : { "front" : "journée", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ad3b79937e50dfff217" }, "word" : "judiciaire", "card" : { "front" : "judiciaire", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ad6b79937e50dfff218" }, "word" : "juges", "card" : { "front" : "juges", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ad7b79937e50dfff219" }, "word" : "mais", "card" : { "front" : "mais", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44adab79937e50dfff21a" }, "word" : "mené", "card" : { "front" : "mené", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44adcb79937e50dfff21b" }, "word" : "mesurait", "card" : { "front" : "mesurait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44adeb79937e50dfff21c" }, "word" : "mis", "card" : { "front" : "mis", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44adfb79937e50dfff21d" }, "word" : "mort", "card" : { "front" : "mort", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44adfb79937e50dfff21e" }, "word" : "mouvement", "card" : { "front" : "mouvement", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ae0b79937e50dfff21f" }, "word" : "même", "card" : { "front" : "même", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ae1b79937e50dfff220" }, "word" : "nombre", "card" : { "front" : "nombre", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ae2b79937e50dfff221" }, "word" : "nombreux", "card" : { "front" : "nombreux", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ae2b79937e50dfff222" }, "word" : "nuit", "card" : { "front" : "nuit", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ae3b79937e50dfff223" }, "word" : "occasionnés", "card" : { "front" : "occasionnés", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aeeb79937e50dfff224" }, "word" : "principal", "card" : { "front" : "principal", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44aefb79937e50dfff225" }, "word" : "procureur", "card" : { "front" : "procureur", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44af1b79937e50dfff226" }, "word" : "présenté", "card" : { "front" : "présenté", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44af3b79937e50dfff227" }, "word" : "samedi", "card" : { "front" : "samedi", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44af4b79937e50dfff228" }, "word" : "sans", "card" : { "front" : "sans", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44af5b79937e50dfff229" }, "word" : "scène", "card" : { "front" : "scène", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44af6b79937e50dfff22a" }, "word" : "services", "card" : { "front" : "services", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44af7b79937e50dfff22b" }, "word" : "soir", "card" : { "front" : "soir", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44af8b79937e50dfff22c" }, "word" : "suspect", "card" : { "front" : "suspect", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44afcb79937e50dfff22d" }, "word" : "placé", "card" : { "front" : "placé", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44afcb79937e50dfff22e" }, "word" : "parquet", "card" : { "front" : "parquet", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b00b79937e50dfff22f" }, "word" : "détention", "card" : { "front" : "détention", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44b03b79937e50dfff230" }, "word" : "coups", "card" : { "front" : "coups", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44b06b79937e50dfff231" }, "word" : "source", "card" : { "front" : "source", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b0ab79937e50dfff232" }, "word" : "qualificatif", "card" : { "front" : "qualificatif", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44b0eb79937e50dfff233" }, "word" : "port", "card" : { "front" : "port", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b0fb79937e50dfff234" }, "word" : "police", "card" : { "front" : "police", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b11b79937e50dfff235" }, "word" : "point", "card" : { "front" : "point", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b13b79937e50dfff236" }, "word" : "poing", "card" : { "front" : "poing", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44b17b79937e50dfff237" }, "word" : "violence", "card" : { "front" : "violence", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b18b79937e50dfff238" }, "word" : "violences", "card" : { "front" : "violences", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b1bb79937e50dfff239" }, "word" : "volontaire", "card" : { "front" : "volontaire", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b1cb79937e50dfff23a" }, "word" : "âgé", "card" : { "front" : "âgé", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b1db79937e50dfff23b" }, "word" : "victime", "card" : { "front" : "victime", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b1eb79937e50dfff23c" }, "word" : "vendredi", "card" : { "front" : "vendredi", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b1fb79937e50dfff23d" }, "word" : "tôt", "card" : { "front" : "tôt", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b24b79937e50dfff23e" }, "word" : "traumatismes", "card" : { "front" : "traumatismes", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b29b79937e50dfff23f" }, "word" : "sympathisant", "card" : { "front" : "sympathisant", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b2bb79937e50dfff240" }, "word" : "retenant", "card" : { "front" : "retenant", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44b2db79937e50dfff241" }, "word" : "prénommé", "card" : { "front" : "prénommé", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44b2eb79937e50dfff242" }, "word" : "premières", "card" : { "front" : "premières", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b32b79937e50dfff243" }, "word" : "agent", "card" : { "front" : "agent", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b6eb79937e50dfff244" }, "word" : "déjà", "card" : { "front" : "déjà", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b6fb79937e50dfff245" }, "word" : "défaut", "card" : { "front" : "défaut", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b71b79937e50dfff246" }, "word" : "divorce", "card" : { "front" : "divorce", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b75b79937e50dfff247" }, "word" : "effet", "card" : { "front" : "effet", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b77b79937e50dfff248" }, "word" : "essayait", "card" : { "front" : "essayait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b78b79937e50dfff249" }, "word" : "face", "card" : { "front" : "face", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b78b79937e50dfff24a" }, "word" : "fait", "card" : { "front" : "fait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b79b79937e50dfff24b" }, "word" : "film", "card" : { "front" : "film", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b82b79937e50dfff24c" }, "word" : "habituellement", "card" : { "front" : "habituellement", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44b83b79937e50dfff24d" }, "word" : "fut", "card" : { "front" : "fut", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44b86b79937e50dfff24e" }, "word" : "image", "card" : { "front" : "image", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b88b79937e50dfff24f" }, "word" : "infos", "card" : { "front" : "infos", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b89b79937e50dfff250" }, "word" : "jouer", "card" : { "front" : "jouer", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b8ab79937e50dfff251" }, "word" : "loin", "card" : { "front" : "loin", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b8cb79937e50dfff252" }, "word" : "mai", "card" : { "front" : "mai", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b8fb79937e50dfff253" }, "word" : "menés", "card" : { "front" : "menés", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44b99b79937e50dfff254" }, "word" : "celui", "card" : { "front" : "celui", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b9ab79937e50dfff255" }, "word" : "casting", "card" : { "front" : "casting", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b9bb79937e50dfff256" }, "word" : "bien", "card" : { "front" : "bien", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b9cb79937e50dfff257" }, "word" : "besoin", "card" : { "front" : "besoin", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44b9db79937e50dfff258" }, "word" : "agréable", "card" : { "front" : "agréable", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ba2b79937e50dfff259" }, "word" : "chance", "card" : { "front" : "chance", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ba3b79937e50dfff25a" }, "word" : "compte", "card" : { "front" : "compte", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ba4b79937e50dfff25b" }, "word" : "directement", "card" : { "front" : "directement", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ba4b79937e50dfff25c" }, "word" : "divers", "card" : { "front" : "divers", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ba8b79937e50dfff25d" }, "word" : "indique", "card" : { "front" : "indique", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ba9b79937e50dfff25e" }, "word" : "instabilité", "card" : { "front" : "instabilité", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44badb79937e50dfff25f" }, "word" : "mexicaine", "card" : { "front" : "mexicaine", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bafb79937e50dfff260" }, "word" : "méchant", "card" : { "front" : "méchant", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bb0b79937e50dfff261" }, "word" : "non", "card" : { "front" : "non", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bb2b79937e50dfff262" }, "word" : "négociations", "card" : { "front" : "négociations", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bb5b79937e50dfff263" }, "word" : "octobre", "card" : { "front" : "octobre", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bb6b79937e50dfff264" }, "word" : "on", "card" : { "front" : "on", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bb8b79937e50dfff265" }, "word" : "parfait", "card" : { "front" : "parfait", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bb8b79937e50dfff266" }, "word" : "parler", "card" : { "front" : "parler", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bb9b79937e50dfff267" }, "word" : "people", "card" : { "front" : "people", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bbab79937e50dfff268" }, "word" : "prison", "card" : { "front" : "prison", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bbab79937e50dfff269" }, "word" : "problèmes", "card" : { "front" : "problèmes", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bbbb79937e50dfff26a" }, "word" : "production", "card" : { "front" : "production", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bbfb79937e50dfff26b" }, "word" : "recruter", "card" : { "front" : "recruter", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bc0b79937e50dfff26c" }, "word" : "revenir", "card" : { "front" : "revenir", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44bc3b79937e50dfff26d" }, "word" : "réaliser", "card" : { "front" : "réaliser", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bc4b79937e50dfff26e" }, "word" : "savoir", "card" : { "front" : "savoir", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bc5b79937e50dfff26f" }, "word" : "scénariste", "card" : { "front" : "scénariste", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bc6b79937e50dfff270" }, "word" : "simplement", "card" : { "front" : "simplement", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bcab79937e50dfff271" }, "word" : "site", "card" : { "front" : "site", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bccb79937e50dfff272" }, "word" : "sorti", "card" : { "front" : "sorti", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bcdb79937e50dfff273" }, "word" : "train", "card" : { "front" : "train", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bcdb79937e50dfff274" }, "word" : "trouver", "card" : { "front" : "trouver", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bd1b79937e50dfff275" }, "word" : "vu", "card" : { "front" : "vu", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bd3b79937e50dfff276" }, "word" : "violent", "card" : { "front" : "violent", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bd5b79937e50dfff277" }, "word" : "écrit", "card" : { "front" : "écrit", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bd6b79937e50dfff278" }, "word" : "être", "card" : { "front" : "être", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bd9b79937e50dfff279" }, "word" : "pu", "card" : { "front" : "pu", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bddb79937e50dfff27a" }, "word" : "entendu", "card" : { "front" : "entendu", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44bdeb79937e50dfff27b" }, "word" : "castor", "card" : { "front" : "castor", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44be0b79937e50dfff27c" }, "word" : "accusations", "card" : { "front" : "accusations", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c06b79937e50dfff27d" }, "word" : "acheté", "card" : { "front" : "acheté", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c06b79937e50dfff27e" }, "word" : "actuellement", "card" : { "front" : "actuellement", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c08b79937e50dfff27f" }, "word" : "apparemment", "card" : { "front" : "apparemment", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c0cb79937e50dfff280" }, "word" : "celui-ci", "card" : { "front" : "celui-ci", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c0fb79937e50dfff281" }, "word" : "conseiller", "card" : { "front" : "conseiller", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c11b79937e50dfff282" }, "word" : "devenu", "card" : { "front" : "devenu", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c17b79937e50dfff283" }, "word" : "donc", "card" : { "front" : "donc", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c17b79937e50dfff284" }, "word" : "développé", "card" : { "front" : "développé", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c19b79937e50dfff285" }, "word" : "famille", "card" : { "front" : "famille", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c1bb79937e50dfff286" }, "word" : "maintenant", "card" : { "front" : "maintenant", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c1eb79937e50dfff287" }, "word" : "mythique", "card" : { "front" : "mythique", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c20b79937e50dfff288" }, "word" : "particulièrement", "card" : { "front" : "particulièrement", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c26b79937e50dfff289" }, "word" : "parvenus", "card" : { "front" : "parvenus", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44c27b79937e50dfff28a" }, "word" : "plusieurs", "card" : { "front" : "plusieurs", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c28b79937e50dfff28b" }, "word" : "prochainement", "card" : { "front" : "prochainement", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c29b79937e50dfff28c" }, "word" : "produit", "card" : { "front" : "produit", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c2bb79937e50dfff28d" }, "word" : "rôle", "card" : { "front" : "rôle", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c2cb79937e50dfff28e" }, "word" : "scénario", "card" : { "front" : "scénario", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c2db79937e50dfff28f" }, "word" : "souhaite", "card" : { "front" : "souhaite", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c2eb79937e50dfff290" }, "word" : "studios", "card" : { "front" : "studios", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c31b79937e50dfff291" }, "word" : "tenté", "card" : { "front" : "tenté", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44c32b79937e50dfff292" }, "word" : "toujours", "card" : { "front" : "toujours", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c34b79937e50dfff293" }, "word" : "réponse", "card" : { "front" : "réponse", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c36b79937e50dfff294" }, "word" : "cartonne", "card" : { "front" : "cartonne", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44c7bb79937e50dfff295" }, "word" : "travail", "card" : { "front" : "travail", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c7db79937e50dfff296" }, "word" : "tenir", "card" : { "front" : "tenir", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c7eb79937e50dfff297" }, "word" : "suite", "card" : { "front" : "suite", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c7fb79937e50dfff298" }, "word" : "sous", "card" : { "front" : "sous", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c80b79937e50dfff299" }, "word" : "société", "card" : { "front" : "société", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c82b79937e50dfff29a" }, "word" : "réputation", "card" : { "front" : "réputation", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c86b79937e50dfff29b" }, "word" : "retiré", "card" : { "front" : "retiré", "back" : "", "hint" : "" }, "cardtype" : "learning" }
+{ "_id" : { "$oid" : "51b44c88b79937e50dfff29c" }, "word" : "puis", "card" : { "front" : "puis", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c8bb79937e50dfff29d" }, "word" : "était", "card" : { "front" : "était", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c8cb79937e50dfff29e" }, "word" : "électroniques", "card" : { "front" : "électroniques", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c8eb79937e50dfff29f" }, "word" : "électronique", "card" : { "front" : "électronique", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c8fb79937e50dfff2a0" }, "word" : "également", "card" : { "front" : "également", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c9bb79937e50dfff2a1" }, "word" : "admirée", "card" : { "front" : "admirée", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c9cb79937e50dfff2a2" }, "word" : "américaine", "card" : { "front" : "américaine", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c9db79937e50dfff2a3" }, "word" : "annuel", "card" : { "front" : "annuel", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c9db79937e50dfff2a4" }, "word" : "août", "card" : { "front" : "août", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44c9fb79937e50dfff2a5" }, "word" : "appareils", "card" : { "front" : "appareils", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ca4b79937e50dfff2a6" }, "word" : "approche", "card" : { "front" : "approche", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ca5b79937e50dfff2a7" }, "word" : "appréciée", "card" : { "front" : "appréciée", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ca5b79937e50dfff2a8" }, "word" : "asiatiques", "card" : { "front" : "asiatiques", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cadb79937e50dfff2a9" }, "word" : "boutique", "card" : { "front" : "boutique", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cb0b79937e50dfff2aa" }, "word" : "campagnes", "card" : { "front" : "campagnes", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cb1b79937e50dfff2ab" }, "word" : "capitalisation", "card" : { "front" : "capitalisation", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cb1b79937e50dfff2ac" }, "word" : "chiffre", "card" : { "front" : "chiffre", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cb3b79937e50dfff2ad" }, "word" : "classement", "card" : { "front" : "classement", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cb4b79937e50dfff2ae" }, "word" : "commerciales", "card" : { "front" : "commerciales", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cb5b79937e50dfff2af" }, "word" : "computer", "card" : { "front" : "computer", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cb8b79937e50dfff2b0" }, "word" : "concernant", "card" : { "front" : "concernant", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cb9b79937e50dfff2b1" }, "word" : "conditions", "card" : { "front" : "conditions", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cbdb79937e50dfff2b2" }, "word" : "connus", "card" : { "front" : "connus", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cc1b79937e50dfff2b3" }, "word" : "constituée", "card" : { "front" : "constituée", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cc4b79937e50dfff2b4" }, "word" : "critiques", "card" : { "front" : "critiques", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cc7b79937e50dfff2b5" }, "word" : "destination", "card" : { "front" : "destination", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cc9b79937e50dfff2b6" }, "word" : "devient", "card" : { "front" : "devient", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44ccbb79937e50dfff2b7" }, "word" : "dollars", "card" : { "front" : "dollars", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cd5b79937e50dfff2b8" }, "word" : "emploie", "card" : { "front" : "emploie", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cdab79937e50dfff2b9" }, "word" : "diversification", "card" : { "front" : "diversification", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44cdbb79937e50dfff2ba" }, "word" : "entreprise", "card" : { "front" : "entreprise", "back" : "", "hint" : "" }, "cardtype" : "known" }
+{ "_id" : { "$oid" : "51b44d72b79937e50dfff2bb" }, "word" : "ou", "card" : { "front" : "ou", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770802327 }
+{ "_id" : { "$oid" : "51b44d73b79937e50dfff2bc" }, "word" : "pays", "card" : { "front" : "pays", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770803105 }
+{ "_id" : { "$oid" : "51b44d8fb79937e50dfff2bd" }, "word" : "multimédia", "card" : { "front" : "multimédia", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770831478 }
+{ "_id" : { "$oid" : "51b44d90b79937e50dfff2be" }, "word" : "multinationale", "card" : { "front" : "multinationale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770832655 }
+{ "_id" : { "$oid" : "51b44d91b79937e50dfff2bf" }, "word" : "nom", "card" : { "front" : "nom", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770833393 }
+{ "_id" : { "$oid" : "51b44d91b79937e50dfff2c0" }, "word" : "nombreuses", "card" : { "front" : "nombreuses", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770833997 }
+{ "_id" : { "$oid" : "51b44d92b79937e50dfff2c1" }, "word" : "ordinateurs", "card" : { "front" : "ordinateurs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770834509 }
+{ "_id" : { "$oid" : "51b44d94b79937e50dfff2c2" }, "word" : "originales", "card" : { "front" : "originales", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770836740 }
+{ "_id" : { "$oid" : "51b44d95b79937e50dfff2c3" }, "word" : "personnels", "card" : { "front" : "personnels", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770837160 }
+{ "_id" : { "$oid" : "51b44d96b79937e50dfff2c4" }, "word" : "mot", "card" : { "front" : "mot", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770838183 }
+{ "_id" : { "$oid" : "51b44d98b79937e50dfff2c5" }, "word" : "marketing", "card" : { "front" : "marketing", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770840900 }
+{ "_id" : { "$oid" : "51b44d9cb79937e50dfff2c6" }, "word" : "magazine", "card" : { "front" : "magazine", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370770844215 }
+{ "_id" : { "$oid" : "51b44d9fb79937e50dfff2c7" }, "word" : "lecteur", "card" : { "front" : "lecteur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770847717 }
+{ "_id" : { "$oid" : "51b44da0b79937e50dfff2c8" }, "word" : "ligne", "card" : { "front" : "ligne", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770848269 }
+{ "_id" : { "$oid" : "51b44da1b79937e50dfff2c9" }, "word" : "janvier", "card" : { "front" : "janvier", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770849225 }
+{ "_id" : { "$oid" : "51b44da3b79937e50dfff2ca" }, "word" : "industrielle", "card" : { "front" : "industrielle", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770851151 }
+{ "_id" : { "$oid" : "51b44da4b79937e50dfff2cb" }, "word" : "logiciels", "card" : { "front" : "logiciels", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770852245 }
+{ "_id" : { "$oid" : "51b44da6b79937e50dfff2cc" }, "word" : "montant", "card" : { "front" : "montant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770854043 }
+{ "_id" : { "$oid" : "51b44da8b79937e50dfff2cd" }, "word" : "philosophie", "card" : { "front" : "philosophie", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770856824 }
+{ "_id" : { "$oid" : "51b44dacb79937e50dfff2ce" }, "word" : "raison", "card" : { "front" : "raison", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770860436 }
+{ "_id" : { "$oid" : "51b44daeb79937e50dfff2cf" }, "word" : "publicitaires", "card" : { "front" : "publicitaires", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770862474 }
+{ "_id" : { "$oid" : "51b44dafb79937e50dfff2d0" }, "word" : "professionnels", "card" : { "front" : "professionnels", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770863573 }
+{ "_id" : { "$oid" : "51b44db0b79937e50dfff2d1" }, "word" : "produits", "card" : { "front" : "produits", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770864795 }
+{ "_id" : { "$oid" : "51b44db1b79937e50dfff2d2" }, "word" : "première", "card" : { "front" : "première", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770865700 }
+{ "_id" : { "$oid" : "51b44db5b79937e50dfff2d3" }, "word" : "trouvent", "card" : { "front" : "trouvent", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770869041 }
+{ "_id" : { "$oid" : "51b44dbab79937e50dfff2d4" }, "word" : "vendus", "card" : { "front" : "vendus", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770874721 }
+{ "_id" : { "$oid" : "51b44dbdb79937e50dfff2d5" }, "word" : "valorisé", "card" : { "front" : "valorisé", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370770877085 }
+{ "_id" : { "$oid" : "51b44dc0b79937e50dfff2d6" }, "word" : "singulière", "card" : { "front" : "singulière", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370770880914 }
+{ "_id" : { "$oid" : "51b44dc9b79937e50dfff2d7" }, "word" : "fluctuations", "card" : { "front" : "fluctuations", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770889709 }
+{ "_id" : { "$oid" : "51b44dcab79937e50dfff2d8" }, "word" : "fabriqués", "card" : { "front" : "fabriqués", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770890717 }
+{ "_id" : { "$oid" : "51b44dceb79937e50dfff2d9" }, "word" : "exploite", "card" : { "front" : "exploite", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370770894744 }
+{ "_id" : { "$oid" : "51b44dd0b79937e50dfff2da" }, "word" : "créée", "card" : { "front" : "créée", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370770896217 }
+{ "_id" : { "$oid" : "51b44dd3b79937e50dfff2db" }, "word" : "bureautique", "card" : { "front" : "bureautique", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370770899272 }
+{ "_id" : { "$oid" : "51b44dd6b79937e50dfff2dc" }, "word" : "reçoit", "card" : { "front" : "reçoit", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370770902321 }
+{ "_id" : { "$oid" : "51b44dd9b79937e50dfff2dd" }, "word" : "pratiques", "card" : { "front" : "pratiques", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370770905855 }
+{ "_id" : { "$oid" : "51b44ddbb79937e50dfff2de" }, "word" : "gré", "card" : { "front" : "gré", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370770907316 }
+{ "_id" : { "$oid" : "51b44fc6b79937e50dfff2df" }, "word" : "accusé", "card" : { "front" : "accusé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771398887 }
+{ "_id" : { "$oid" : "51b44fc8b79937e50dfff2e0" }, "word" : "accompagne", "card" : { "front" : "accompagne", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771400251 }
+{ "_id" : { "$oid" : "51b44fcab79937e50dfff2e1" }, "word" : "accessoires", "card" : { "front" : "accessoires", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771402052 }
+{ "_id" : { "$oid" : "51b44fcbb79937e50dfff2e2" }, "word" : "absolument", "card" : { "front" : "absolument", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771403040 }
+{ "_id" : { "$oid" : "51b44fccb79937e50dfff2e3" }, "word" : "accéléré", "card" : { "front" : "accéléré", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771404801 }
+{ "_id" : { "$oid" : "51b44fceb79937e50dfff2e4" }, "word" : "actions", "card" : { "front" : "actions", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771406256 }
+{ "_id" : { "$oid" : "51b44fcfb79937e50dfff2e5" }, "word" : "actuelle", "card" : { "front" : "actuelle", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771407074 }
+{ "_id" : { "$oid" : "51b44fd1b79937e50dfff2e6" }, "word" : "additionne", "card" : { "front" : "additionne", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771409530 }
+{ "_id" : { "$oid" : "51b44fd3b79937e50dfff2e7" }, "word" : "adopter", "card" : { "front" : "adopter", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771411496 }
+{ "_id" : { "$oid" : "51b44fd4b79937e50dfff2e8" }, "word" : "afficher", "card" : { "front" : "afficher", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771412465 }
+{ "_id" : { "$oid" : "51b44fd6b79937e50dfff2e9" }, "word" : "affichés", "card" : { "front" : "affichés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771414927 }
+{ "_id" : { "$oid" : "51b44fdab79937e50dfff2ea" }, "word" : "afin", "card" : { "front" : "afin", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771418756 }
+{ "_id" : { "$oid" : "51b44fddb79937e50dfff2eb" }, "word" : "ainsi", "card" : { "front" : "ainsi", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771421907 }
+{ "_id" : { "$oid" : "51b44fdfb79937e50dfff2ec" }, "word" : "alternative", "card" : { "front" : "alternative", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771423153 }
+{ "_id" : { "$oid" : "51b44fe0b79937e50dfff2ed" }, "word" : "aluminium", "card" : { "front" : "aluminium", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771424272 }
+{ "_id" : { "$oid" : "51b44fe3b79937e50dfff2ee" }, "word" : "amortir", "card" : { "front" : "amortir", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771427968 }
+{ "_id" : { "$oid" : "51b44fe5b79937e50dfff2ef" }, "word" : "améliorations", "card" : { "front" : "améliorations", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771429713 }
+{ "_id" : { "$oid" : "51b44febb79937e50dfff2f0" }, "word" : "annonce", "card" : { "front" : "annonce", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771435185 }
+{ "_id" : { "$oid" : "51b44fedb79937e50dfff2f1" }, "word" : "annoncer", "card" : { "front" : "annoncer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771437768 }
+{ "_id" : { "$oid" : "51b44fefb79937e50dfff2f2" }, "word" : "annoncés", "card" : { "front" : "annoncés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771439795 }
+{ "_id" : { "$oid" : "51b44ff4b79937e50dfff2f3" }, "word" : "appareil", "card" : { "front" : "appareil", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771444307 }
+{ "_id" : { "$oid" : "51b44ff5b79937e50dfff2f4" }, "word" : "applications", "card" : { "front" : "applications", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771445808 }
+{ "_id" : { "$oid" : "51b44ff9b79937e50dfff2f5" }, "word" : "appuyé", "card" : { "front" : "appuyé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771449751 }
+{ "_id" : { "$oid" : "51b45009b79937e50dfff2f6" }, "word" : "arc-en-ciel", "card" : { "front" : "arc-en-ciel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771465159 }
+{ "_id" : { "$oid" : "51b4500ab79937e50dfff2f7" }, "word" : "architecture", "card" : { "front" : "architecture", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771466078 }
+{ "_id" : { "$oid" : "51b4500ab79937e50dfff2f8" }, "word" : "article", "card" : { "front" : "article", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771466787 }
+{ "_id" : { "$oid" : "51b4500eb79937e50dfff2f9" }, "word" : "artistique", "card" : { "front" : "artistique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771470892 }
+{ "_id" : { "$oid" : "51b4500fb79937e50dfff2fa" }, "word" : "assez", "card" : { "front" : "assez", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771471788 }
+{ "_id" : { "$oid" : "51b45011b79937e50dfff2fb" }, "word" : "associé", "card" : { "front" : "associé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771473087 }
+{ "_id" : { "$oid" : "51b45011b79937e50dfff2fc" }, "word" : "associée", "card" : { "front" : "associée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771473844 }
+{ "_id" : { "$oid" : "51b4501ab79937e50dfff2fd" }, "word" : "augmenté", "card" : { "front" : "augmenté", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771482230 }
+{ "_id" : { "$oid" : "51b4501bb79937e50dfff2fe" }, "word" : "aujourd'hui", "card" : { "front" : "aujourd'hui", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771483263 }
+{ "_id" : { "$oid" : "51b4501cb79937e50dfff2ff" }, "word" : "auprès", "card" : { "front" : "auprès", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771484691 }
+{ "_id" : { "$oid" : "51b45020b79937e50dfff300" }, "word" : "auront", "card" : { "front" : "auront", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771488694 }
+{ "_id" : { "$oid" : "51b45025b79937e50dfff301" }, "word" : "autour", "card" : { "front" : "autour", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771493076 }
+{ "_id" : { "$oid" : "51b4502fb79937e50dfff302" }, "word" : "beaucoup", "card" : { "front" : "beaucoup", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771503550 }
+{ "_id" : { "$oid" : "51b45030b79937e50dfff303" }, "word" : "blanc", "card" : { "front" : "blanc", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771504917 }
+{ "_id" : { "$oid" : "51b45032b79937e50dfff304" }, "word" : "bon", "card" : { "front" : "bon", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771506465 }
+{ "_id" : { "$oid" : "51b45033b79937e50dfff305" }, "word" : "bonne", "card" : { "front" : "bonne", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771507079 }
+{ "_id" : { "$oid" : "51b45037b79937e50dfff306" }, "word" : "bordure", "card" : { "front" : "bordure", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771511280 }
+{ "_id" : { "$oid" : "51b45039b79937e50dfff307" }, "word" : "britannique", "card" : { "front" : "britannique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771513959 }
+{ "_id" : { "$oid" : "51b4503bb79937e50dfff308" }, "word" : "brochures", "card" : { "front" : "brochures", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771515852 }
+{ "_id" : { "$oid" : "51b4503eb79937e50dfff309" }, "word" : "budget", "card" : { "front" : "budget", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771518299 }
+{ "_id" : { "$oid" : "51b4503fb79937e50dfff30a" }, "word" : "bureau", "card" : { "front" : "bureau", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771519029 }
+{ "_id" : { "$oid" : "51b45042b79937e50dfff30b" }, "word" : "bâtiments", "card" : { "front" : "bâtiments", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771522021 }
+{ "_id" : { "$oid" : "51b45043b79937e50dfff30c" }, "word" : "bénéfice", "card" : { "front" : "bénéfice", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771523888 }
+{ "_id" : { "$oid" : "51b45045b79937e50dfff30d" }, "word" : "bénéfices", "card" : { "front" : "bénéfices", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771525263 }
+{ "_id" : { "$oid" : "51b45046b79937e50dfff30e" }, "word" : "campus", "card" : { "front" : "campus", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771526471 }
+{ "_id" : { "$oid" : "51b45047b79937e50dfff30f" }, "word" : "caméras", "card" : { "front" : "caméras", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771527919 }
+{ "_id" : { "$oid" : "51b45048b79937e50dfff310" }, "word" : "cancer", "card" : { "front" : "cancer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771528825 }
+{ "_id" : { "$oid" : "51b4504fb79937e50dfff311" }, "word" : "cantonné", "card" : { "front" : "cantonné", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771535461 }
+{ "_id" : { "$oid" : "51b45050b79937e50dfff312" }, "word" : "capacité", "card" : { "front" : "capacité", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771536783 }
+{ "_id" : { "$oid" : "51b45052b79937e50dfff313" }, "word" : "cas", "card" : { "front" : "cas", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771538905 }
+{ "_id" : { "$oid" : "51b45053b79937e50dfff314" }, "word" : "caution", "card" : { "front" : "caution", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771539557 }
+{ "_id" : { "$oid" : "51b45054b79937e50dfff315" }, "word" : "cela", "card" : { "front" : "cela", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771540165 }
+{ "_id" : { "$oid" : "51b45054b79937e50dfff316" }, "word" : "celle", "card" : { "front" : "celle", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771540615 }
+{ "_id" : { "$oid" : "51b45055b79937e50dfff317" }, "word" : "celles", "card" : { "front" : "celles", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771541195 }
+{ "_id" : { "$oid" : "51b45056b79937e50dfff318" }, "word" : "centre", "card" : { "front" : "centre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771542644 }
+{ "_id" : { "$oid" : "51b45058b79937e50dfff319" }, "word" : "cependant", "card" : { "front" : "cependant", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771544471 }
+{ "_id" : { "$oid" : "51b4505db79937e50dfff31a" }, "word" : "cerise", "card" : { "front" : "cerise", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771549590 }
+{ "_id" : { "$oid" : "51b4505fb79937e50dfff31b" }, "word" : "certaines", "card" : { "front" : "certaines", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771551335 }
+{ "_id" : { "$oid" : "51b45061b79937e50dfff31c" }, "word" : "certains", "card" : { "front" : "certains", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771553516 }
+{ "_id" : { "$oid" : "51b45063b79937e50dfff31d" }, "word" : "ceux", "card" : { "front" : "ceux", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771555652 }
+{ "_id" : { "$oid" : "51b45064b79937e50dfff31e" }, "word" : "chacune", "card" : { "front" : "chacune", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771556682 }
+{ "_id" : { "$oid" : "51b45067b79937e50dfff31f" }, "word" : "champ", "card" : { "front" : "champ", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771559112 }
+{ "_id" : { "$oid" : "51b45069b79937e50dfff320" }, "word" : "changement", "card" : { "front" : "changement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771561777 }
+{ "_id" : { "$oid" : "51b4506bb79937e50dfff321" }, "word" : "chanson", "card" : { "front" : "chanson", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771563572 }
+{ "_id" : { "$oid" : "51b4506db79937e50dfff322" }, "word" : "chaque", "card" : { "front" : "chaque", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771565657 }
+{ "_id" : { "$oid" : "51b4506fb79937e50dfff323" }, "word" : "chef", "card" : { "front" : "chef", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771567018 }
+{ "_id" : { "$oid" : "51b45070b79937e50dfff324" }, "word" : "cherche", "card" : { "front" : "cherche", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771568487 }
+{ "_id" : { "$oid" : "51b45071b79937e50dfff325" }, "word" : "chez", "card" : { "front" : "chez", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771569089 }
+{ "_id" : { "$oid" : "51b45071b79937e50dfff326" }, "word" : "chiffres", "card" : { "front" : "chiffres", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771569646 }
+{ "_id" : { "$oid" : "51b45072b79937e50dfff327" }, "word" : "chinois", "card" : { "front" : "chinois", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771570263 }
+{ "_id" : { "$oid" : "51b45077b79937e50dfff328" }, "word" : "chronologie", "card" : { "front" : "chronologie", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771575019 }
+{ "_id" : { "$oid" : "51b45079b79937e50dfff329" }, "word" : "chuté", "card" : { "front" : "chuté", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771577228 }
+{ "_id" : { "$oid" : "51b4507ab79937e50dfff32a" }, "word" : "cinq", "card" : { "front" : "cinq", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771578557 }
+{ "_id" : { "$oid" : "51b4507cb79937e50dfff32b" }, "word" : "citer", "card" : { "front" : "citer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771580596 }
+{ "_id" : { "$oid" : "51b45084b79937e50dfff32c" }, "word" : "clairement", "card" : { "front" : "clairement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771588456 }
+{ "_id" : { "$oid" : "51b45085b79937e50dfff32d" }, "word" : "classée", "card" : { "front" : "classée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771589219 }
+{ "_id" : { "$oid" : "51b45086b79937e50dfff32e" }, "word" : "claviers", "card" : { "front" : "claviers", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771590347 }
+{ "_id" : { "$oid" : "51b45087b79937e50dfff32f" }, "word" : "client", "card" : { "front" : "client", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771591147 }
+{ "_id" : { "$oid" : "51b45087b79937e50dfff330" }, "word" : "code", "card" : { "front" : "code", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771591669 }
+{ "_id" : { "$oid" : "51b45089b79937e50dfff331" }, "word" : "cofondateur", "card" : { "front" : "cofondateur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771593925 }
+{ "_id" : { "$oid" : "51b4508ab79937e50dfff332" }, "word" : "colorée", "card" : { "front" : "colorée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771594839 }
+{ "_id" : { "$oid" : "51b4508fb79937e50dfff333" }, "word" : "commandée", "card" : { "front" : "commandée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771599639 }
+{ "_id" : { "$oid" : "51b45090b79937e50dfff334" }, "word" : "commence", "card" : { "front" : "commence", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771600765 }
+{ "_id" : { "$oid" : "51b45091b79937e50dfff335" }, "word" : "commencé", "card" : { "front" : "commencé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771601333 }
+{ "_id" : { "$oid" : "51b45092b79937e50dfff336" }, "word" : "comment", "card" : { "front" : "comment", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771602960 }
+{ "_id" : { "$oid" : "51b45096b79937e50dfff337" }, "word" : "commentaires", "card" : { "front" : "commentaires", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771606488 }
+{ "_id" : { "$oid" : "51b45098b79937e50dfff338" }, "word" : "commentée", "card" : { "front" : "commentée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771608919 }
+{ "_id" : { "$oid" : "51b45099b79937e50dfff339" }, "word" : "commercial", "card" : { "front" : "commercial", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771609957 }
+{ "_id" : { "$oid" : "51b4509bb79937e50dfff33a" }, "word" : "commerciale", "card" : { "front" : "commerciale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771611836 }
+{ "_id" : { "$oid" : "51b4509eb79937e50dfff33b" }, "word" : "communauté", "card" : { "front" : "communauté", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771614032 }
+{ "_id" : { "$oid" : "51b4509fb79937e50dfff33c" }, "word" : "communication", "card" : { "front" : "communication", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771615476 }
+{ "_id" : { "$oid" : "51b450a2b79937e50dfff33d" }, "word" : "compact", "card" : { "front" : "compact", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771618700 }
+{ "_id" : { "$oid" : "51b450aeb79937e50dfff33e" }, "word" : "compatibilité", "card" : { "front" : "compatibilité", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771630142 }
+{ "_id" : { "$oid" : "51b450b0b79937e50dfff33f" }, "word" : "compatibles", "card" : { "front" : "compatibles", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771632074 }
+{ "_id" : { "$oid" : "51b450b4b79937e50dfff340" }, "word" : "complément", "card" : { "front" : "complément", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771636410 }
+{ "_id" : { "$oid" : "51b450b6b79937e50dfff341" }, "word" : "composants", "card" : { "front" : "composants", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771638145 }
+{ "_id" : { "$oid" : "51b450beb79937e50dfff342" }, "word" : "comprend", "card" : { "front" : "comprend", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771646394 }
+{ "_id" : { "$oid" : "51b450bfb79937e50dfff343" }, "word" : "compris", "card" : { "front" : "compris", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771647725 }
+{ "_id" : { "$oid" : "51b450c3b79937e50dfff344" }, "word" : "comté", "card" : { "front" : "comté", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771651570 }
+{ "_id" : { "$oid" : "51b450c8b79937e50dfff345" }, "word" : "conception", "card" : { "front" : "conception", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771656197 }
+{ "_id" : { "$oid" : "51b450c9b79937e50dfff346" }, "word" : "concerne", "card" : { "front" : "concerne", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771657661 }
+{ "_id" : { "$oid" : "51b450cab79937e50dfff347" }, "word" : "concurrence", "card" : { "front" : "concurrence", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771658464 }
+{ "_id" : { "$oid" : "51b450ccb79937e50dfff348" }, "word" : "conflit", "card" : { "front" : "conflit", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771660477 }
+{ "_id" : { "$oid" : "51b450d2b79937e50dfff349" }, "word" : "conformes", "card" : { "front" : "conformes", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771666424 }
+{ "_id" : { "$oid" : "51b450d5b79937e50dfff34a" }, "word" : "confronté", "card" : { "front" : "confronté", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771669596 }
+{ "_id" : { "$oid" : "51b450d6b79937e50dfff34b" }, "word" : "confrontée", "card" : { "front" : "confrontée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771670420 }
+{ "_id" : { "$oid" : "51b450d7b79937e50dfff34c" }, "word" : "conférences", "card" : { "front" : "conférences", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771671743 }
+{ "_id" : { "$oid" : "51b450d9b79937e50dfff34d" }, "word" : "connaissez", "card" : { "front" : "connaissez", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771673078 }
+{ "_id" : { "$oid" : "51b450e0b79937e50dfff34e" }, "word" : "consacrés", "card" : { "front" : "consacrés", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771680659 }
+{ "_id" : { "$oid" : "51b450e1b79937e50dfff34f" }, "word" : "conseil", "card" : { "front" : "conseil", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771681702 }
+{ "_id" : { "$oid" : "51b450e5b79937e50dfff350" }, "word" : "considèrent", "card" : { "front" : "considèrent", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771685637 }
+{ "_id" : { "$oid" : "51b450e6b79937e50dfff351" }, "word" : "considéré", "card" : { "front" : "considéré", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771686298 }
+{ "_id" : { "$oid" : "51b450e7b79937e50dfff352" }, "word" : "consommateur", "card" : { "front" : "consommateur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771687566 }
+{ "_id" : { "$oid" : "51b450e8b79937e50dfff353" }, "word" : "consommateurs", "card" : { "front" : "consommateurs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771688443 }
+{ "_id" : { "$oid" : "51b450eab79937e50dfff354" }, "word" : "constants", "card" : { "front" : "constants", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771690751 }
+{ "_id" : { "$oid" : "51b450eeb79937e50dfff355" }, "word" : "constitué", "card" : { "front" : "constitué", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771694742 }
+{ "_id" : { "$oid" : "51b450f0b79937e50dfff356" }, "word" : "constitués", "card" : { "front" : "constitués", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771696235 }
+{ "_id" : { "$oid" : "51b450f6b79937e50dfff357" }, "word" : "contenu", "card" : { "front" : "contenu", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771702999 }
+{ "_id" : { "$oid" : "51b450f9b79937e50dfff358" }, "word" : "contient", "card" : { "front" : "contient", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771705307 }
+{ "_id" : { "$oid" : "51b450fdb79937e50dfff359" }, "word" : "contournement", "card" : { "front" : "contournement", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771709635 }
+{ "_id" : { "$oid" : "51b45101b79937e50dfff35a" }, "word" : "contrairement", "card" : { "front" : "contrairement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771713188 }
+{ "_id" : { "$oid" : "51b45107b79937e50dfff35b" }, "word" : "contre", "card" : { "front" : "contre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771719253 }
+{ "_id" : { "$oid" : "51b4510eb79937e50dfff35c" }, "word" : "couleurs", "card" : { "front" : "couleurs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771726328 }
+{ "_id" : { "$oid" : "51b45110b79937e50dfff35d" }, "word" : "couple", "card" : { "front" : "couple", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771728791 }
+{ "_id" : { "$oid" : "51b45119b79937e50dfff35e" }, "word" : "courriers", "card" : { "front" : "courriers", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771737156 }
+{ "_id" : { "$oid" : "51b4511ab79937e50dfff35f" }, "word" : "crise", "card" : { "front" : "crise", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771738893 }
+{ "_id" : { "$oid" : "51b4511fb79937e50dfff360" }, "word" : "critiquable", "card" : { "front" : "critiquable", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771743489 }
+{ "_id" : { "$oid" : "51b45120b79937e50dfff361" }, "word" : "critique", "card" : { "front" : "critique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771744290 }
+{ "_id" : { "$oid" : "51b45122b79937e50dfff362" }, "word" : "critiquent", "card" : { "front" : "critiquent", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771746815 }
+{ "_id" : { "$oid" : "51b45123b79937e50dfff363" }, "word" : "critiquée", "card" : { "front" : "critiquée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771747481 }
+{ "_id" : { "$oid" : "51b45126b79937e50dfff364" }, "word" : "critères", "card" : { "front" : "critères", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771750797 }
+{ "_id" : { "$oid" : "51b45128b79937e50dfff365" }, "word" : "croquant", "card" : { "front" : "croquant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771752962 }
+{ "_id" : { "$oid" : "51b4512bb79937e50dfff366" }, "word" : "croquée", "card" : { "front" : "croquée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771755068 }
+{ "_id" : { "$oid" : "51b4512eb79937e50dfff367" }, "word" : "création", "card" : { "front" : "création", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771758249 }
+{ "_id" : { "$oid" : "51b4512eb79937e50dfff368" }, "word" : "crédits", "card" : { "front" : "crédits", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771758994 }
+{ "_id" : { "$oid" : "51b45132b79937e50dfff369" }, "word" : "culte", "card" : { "front" : "culte", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771762881 }
+{ "_id" : { "$oid" : "51b45133b79937e50dfff36a" }, "word" : "câble", "card" : { "front" : "câble", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771763742 }
+{ "_id" : { "$oid" : "51b45135b79937e50dfff36b" }, "word" : "célèbre", "card" : { "front" : "célèbre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771765781 }
+{ "_id" : { "$oid" : "51b45136b79937e50dfff36c" }, "word" : "célèbres", "card" : { "front" : "célèbres", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771766400 }
+{ "_id" : { "$oid" : "51b4513cb79937e50dfff36d" }, "word" : "côté", "card" : { "front" : "côté", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771772112 }
+{ "_id" : { "$oid" : "51b4513db79937e50dfff36e" }, "word" : "côtés", "card" : { "front" : "côtés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771773167 }
+{ "_id" : { "$oid" : "51b45141b79937e50dfff36f" }, "word" : "d", "card" : { "front" : "d", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771777209 }
+{ "_id" : { "$oid" : "51b45142b79937e50dfff370" }, "word" : "d'autres", "card" : { "front" : "d'autres", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771778383 }
+{ "_id" : { "$oid" : "51b45143b79937e50dfff371" }, "word" : "dates", "card" : { "front" : "dates", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771779075 }
+{ "_id" : { "$oid" : "51b45146b79937e50dfff372" }, "word" : "daté", "card" : { "front" : "daté", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771782446 }
+{ "_id" : { "$oid" : "51b45147b79937e50dfff373" }, "word" : "depuis", "card" : { "front" : "depuis", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771783187 }
+{ "_id" : { "$oid" : "51b45147b79937e50dfff374" }, "word" : "dernier", "card" : { "front" : "dernier", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771783837 }
+{ "_id" : { "$oid" : "51b45148b79937e50dfff375" }, "word" : "derniers", "card" : { "front" : "derniers", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771784424 }
+{ "_id" : { "$oid" : "51b4514ab79937e50dfff376" }, "word" : "dernière", "card" : { "front" : "dernière", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771786026 }
+{ "_id" : { "$oid" : "51b4514eb79937e50dfff377" }, "word" : "descendant", "card" : { "front" : "descendant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771790052 }
+{ "_id" : { "$oid" : "51b4514eb79937e50dfff378" }, "word" : "design", "card" : { "front" : "design", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771790693 }
+{ "_id" : { "$oid" : "51b4514fb79937e50dfff379" }, "word" : "designer", "card" : { "front" : "designer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771791289 }
+{ "_id" : { "$oid" : "51b4514fb79937e50dfff37a" }, "word" : "dessin", "card" : { "front" : "dessin", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771791994 }
+{ "_id" : { "$oid" : "51b45153b79937e50dfff37b" }, "word" : "dessiné", "card" : { "front" : "dessiné", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771795861 }
+{ "_id" : { "$oid" : "51b45154b79937e50dfff37c" }, "word" : "dessinée", "card" : { "front" : "dessinée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771796580 }
+{ "_id" : { "$oid" : "51b45159b79937e50dfff37d" }, "word" : "dessous", "card" : { "front" : "dessous", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771801289 }
+{ "_id" : { "$oid" : "51b4515eb79937e50dfff37e" }, "word" : "deuxième", "card" : { "front" : "deuxième", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771806443 }
+{ "_id" : { "$oid" : "51b45160b79937e50dfff37f" }, "word" : "devait", "card" : { "front" : "devait", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771808548 }
+{ "_id" : { "$oid" : "51b45162b79937e50dfff380" }, "word" : "devenus", "card" : { "front" : "devenus", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771810845 }
+{ "_id" : { "$oid" : "51b45167b79937e50dfff381" }, "word" : "devront", "card" : { "front" : "devront", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771815819 }
+{ "_id" : { "$oid" : "51b4516ab79937e50dfff382" }, "word" : "difficultés", "card" : { "front" : "difficultés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771818487 }
+{ "_id" : { "$oid" : "51b4516cb79937e50dfff383" }, "word" : "diffusé", "card" : { "front" : "diffusé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771820354 }
+{ "_id" : { "$oid" : "51b4516cb79937e50dfff384" }, "word" : "diffusée", "card" : { "front" : "diffusée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771820826 }
+{ "_id" : { "$oid" : "51b4516eb79937e50dfff385" }, "word" : "différents", "card" : { "front" : "différents", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771822590 }
+{ "_id" : { "$oid" : "51b4516fb79937e50dfff386" }, "word" : "diplomatique", "card" : { "front" : "diplomatique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771823388 }
+{ "_id" : { "$oid" : "51b4516fb79937e50dfff387" }, "word" : "direct", "card" : { "front" : "direct", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771823957 }
+{ "_id" : { "$oid" : "51b45170b79937e50dfff388" }, "word" : "directe", "card" : { "front" : "directe", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771824478 }
+{ "_id" : { "$oid" : "51b45172b79937e50dfff389" }, "word" : "directeur", "card" : { "front" : "directeur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771826202 }
+{ "_id" : { "$oid" : "51b45172b79937e50dfff38a" }, "word" : "direction", "card" : { "front" : "direction", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771826758 }
+{ "_id" : { "$oid" : "51b45173b79937e50dfff38b" }, "word" : "directions", "card" : { "front" : "directions", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771827802 }
+{ "_id" : { "$oid" : "51b45175b79937e50dfff38c" }, "word" : "discussion", "card" : { "front" : "discussion", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771829015 }
+{ "_id" : { "$oid" : "51b45179b79937e50dfff38d" }, "word" : "disponible", "card" : { "front" : "disponible", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771833493 }
+{ "_id" : { "$oid" : "51b4517ab79937e50dfff38e" }, "word" : "disponibles", "card" : { "front" : "disponibles", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771834159 }
+{ "_id" : { "$oid" : "51b4517fb79937e50dfff38f" }, "word" : "dispose", "card" : { "front" : "dispose", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771839545 }
+{ "_id" : { "$oid" : "51b45182b79937e50dfff390" }, "word" : "disque", "card" : { "front" : "disque", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771842017 }
+{ "_id" : { "$oid" : "51b45184b79937e50dfff391" }, "word" : "distingue", "card" : { "front" : "distingue", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771844472 }
+{ "_id" : { "$oid" : "51b45188b79937e50dfff392" }, "word" : "distribution", "card" : { "front" : "distribution", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771848821 }
+{ "_id" : { "$oid" : "51b45189b79937e50dfff393" }, "word" : "dit", "card" : { "front" : "dit", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771849974 }
+{ "_id" : { "$oid" : "51b45192b79937e50dfff394" }, "word" : "diverses", "card" : { "front" : "diverses", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771858248 }
+{ "_id" : { "$oid" : "51b45193b79937e50dfff395" }, "word" : "dix", "card" : { "front" : "dix", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771859688 }
+{ "_id" : { "$oid" : "51b45194b79937e50dfff396" }, "word" : "doigt", "card" : { "front" : "doigt", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771860270 }
+{ "_id" : { "$oid" : "51b45195b79937e50dfff397" }, "word" : "doit", "card" : { "front" : "doit", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771861520 }
+{ "_id" : { "$oid" : "51b45198b79937e50dfff398" }, "word" : "domaine", "card" : { "front" : "domaine", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771864125 }
+{ "_id" : { "$oid" : "51b45199b79937e50dfff399" }, "word" : "dont", "card" : { "front" : "dont", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771865472 }
+{ "_id" : { "$oid" : "51b4519cb79937e50dfff39a" }, "word" : "doubler", "card" : { "front" : "doubler", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771868616 }
+{ "_id" : { "$oid" : "51b4519db79937e50dfff39b" }, "word" : "drapeau", "card" : { "front" : "drapeau", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771869681 }
+{ "_id" : { "$oid" : "51b4519eb79937e50dfff39c" }, "word" : "dur", "card" : { "front" : "dur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771870883 }
+{ "_id" : { "$oid" : "51b4519fb79937e50dfff39d" }, "word" : "durant", "card" : { "front" : "durant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771871653 }
+{ "_id" : { "$oid" : "51b451a1b79937e50dfff39e" }, "word" : "dures", "card" : { "front" : "dures", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771873067 }
+{ "_id" : { "$oid" : "51b451a2b79937e50dfff39f" }, "word" : "durée", "card" : { "front" : "durée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771874462 }
+{ "_id" : { "$oid" : "51b451a3b79937e50dfff3a0" }, "word" : "décembre", "card" : { "front" : "décembre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771875265 }
+{ "_id" : { "$oid" : "51b451a7b79937e50dfff3a1" }, "word" : "déclaration", "card" : { "front" : "déclaration", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771879168 }
+{ "_id" : { "$oid" : "51b451a7b79937e50dfff3a2" }, "word" : "déclare", "card" : { "front" : "déclare", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771879956 }
+{ "_id" : { "$oid" : "51b451abb79937e50dfff3a3" }, "word" : "décliné", "card" : { "front" : "décliné", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771883680 }
+{ "_id" : { "$oid" : "51b451afb79937e50dfff3a4" }, "word" : "déchets", "card" : { "front" : "déchets", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771887090 }
+{ "_id" : { "$oid" : "51b451b2b79937e50dfff3a5" }, "word" : "découvert", "card" : { "front" : "découvert", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771890716 }
+{ "_id" : { "$oid" : "51b451b5b79937e50dfff3a6" }, "word" : "décède", "card" : { "front" : "décède", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771893364 }
+{ "_id" : { "$oid" : "51b451b7b79937e50dfff3a7" }, "word" : "dédié", "card" : { "front" : "dédié", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771895094 }
+{ "_id" : { "$oid" : "51b451b8b79937e50dfff3a8" }, "word" : "dédiée", "card" : { "front" : "dédiée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771896053 }
+{ "_id" : { "$oid" : "51b451b9b79937e50dfff3a9" }, "word" : "dédiés", "card" : { "front" : "dédiés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771897689 }
+{ "_id" : { "$oid" : "51b451bab79937e50dfff3aa" }, "word" : "défini", "card" : { "front" : "défini", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771898771 }
+{ "_id" : { "$oid" : "51b451bcb79937e50dfff3ab" }, "word" : "définitivement", "card" : { "front" : "définitivement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771900637 }
+{ "_id" : { "$oid" : "51b451beb79937e50dfff3ac" }, "word" : "dégage", "card" : { "front" : "dégage", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771902675 }
+{ "_id" : { "$oid" : "51b451cab79937e50dfff3ad" }, "word" : "dépasse", "card" : { "front" : "dépasse", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370771914633 }
+{ "_id" : { "$oid" : "51b451d7b79937e50dfff3ae" }, "word" : "détaillé", "card" : { "front" : "détaillé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771927872 }
+{ "_id" : { "$oid" : "51b451d8b79937e50dfff3af" }, "word" : "détaillée", "card" : { "front" : "détaillée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771928535 }
+{ "_id" : { "$oid" : "51b451d9b79937e50dfff3b0" }, "word" : "détaillés", "card" : { "front" : "détaillés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771929008 }
+{ "_id" : { "$oid" : "51b451dbb79937e50dfff3b1" }, "word" : "développe", "card" : { "front" : "développe", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771931616 }
+{ "_id" : { "$oid" : "51b451dcb79937e50dfff3b2" }, "word" : "développement", "card" : { "front" : "développement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771932138 }
+{ "_id" : { "$oid" : "51b451dcb79937e50dfff3b3" }, "word" : "développée", "card" : { "front" : "développée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771932783 }
+{ "_id" : { "$oid" : "51b451deb79937e50dfff3b4" }, "word" : "développés", "card" : { "front" : "développés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771934647 }
+{ "_id" : { "$oid" : "51b451e8b79937e50dfff3b5" }, "word" : "efficaces", "card" : { "front" : "efficaces", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771944950 }
+{ "_id" : { "$oid" : "51b451e9b79937e50dfff3b6" }, "word" : "efforts", "card" : { "front" : "efforts", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771945519 }
+{ "_id" : { "$oid" : "51b451e9b79937e50dfff3b7" }, "word" : "elle", "card" : { "front" : "elle", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771945990 }
+{ "_id" : { "$oid" : "51b451ebb79937e50dfff3b8" }, "word" : "employait", "card" : { "front" : "employait", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771947249 }
+{ "_id" : { "$oid" : "51b451ebb79937e50dfff3b9" }, "word" : "employés", "card" : { "front" : "employés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771947916 }
+{ "_id" : { "$oid" : "51b451ecb79937e50dfff3ba" }, "word" : "encore", "card" : { "front" : "encore", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771948579 }
+{ "_id" : { "$oid" : "51b451edb79937e50dfff3bb" }, "word" : "enquête", "card" : { "front" : "enquête", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771949135 }
+{ "_id" : { "$oid" : "51b451edb79937e50dfff3bc" }, "word" : "ensuite", "card" : { "front" : "ensuite", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771949579 }
+{ "_id" : { "$oid" : "51b451f6b79937e50dfff3bd" }, "word" : "entretenu", "card" : { "front" : "entretenu", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771958558 }
+{ "_id" : { "$oid" : "51b451f7b79937e50dfff3be" }, "word" : "environ", "card" : { "front" : "environ", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771959927 }
+{ "_id" : { "$oid" : "51b45211b79937e50dfff3bf" }, "word" : "environnement", "card" : { "front" : "environnement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771985571 }
+{ "_id" : { "$oid" : "51b45211b79937e50dfff3c0" }, "word" : "environnementaux", "card" : { "front" : "environnementaux", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771985836 }
+{ "_id" : { "$oid" : "51b45212b79937e50dfff3c1" }, "word" : "environnements", "card" : { "front" : "environnements", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771986571 }
+{ "_id" : { "$oid" : "51b45215b79937e50dfff3c2" }, "word" : "etc.", "card" : { "front" : "etc.", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771989362 }
+{ "_id" : { "$oid" : "51b45219b79937e50dfff3c3" }, "word" : "entreprises", "card" : { "front" : "entreprises", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771993186 }
+{ "_id" : { "$oid" : "51b4521eb79937e50dfff3c4" }, "word" : "existe", "card" : { "front" : "existe", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370771998302 }
+{ "_id" : { "$oid" : "51b45223b79937e50dfff3c5" }, "word" : "facilite", "card" : { "front" : "facilite", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772003963 }
+{ "_id" : { "$oid" : "51b45225b79937e50dfff3c6" }, "word" : "faible", "card" : { "front" : "faible", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772005931 }
+{ "_id" : { "$oid" : "51b45228b79937e50dfff3c7" }, "word" : "faiblesses", "card" : { "front" : "faiblesses", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772008212 }
+{ "_id" : { "$oid" : "51b45245b79937e50dfff3c8" }, "word" : "façon", "card" : { "front" : "façon", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772037952 }
+{ "_id" : { "$oid" : "51b45247b79937e50dfff3c9" }, "word" : "façades", "card" : { "front" : "façades", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772039501 }
+{ "_id" : { "$oid" : "51b45249b79937e50dfff3ca" }, "word" : "fichier", "card" : { "front" : "fichier", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772041333 }
+{ "_id" : { "$oid" : "51b4524db79937e50dfff3cb" }, "word" : "file", "card" : { "front" : "file", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772045962 }
+{ "_id" : { "$oid" : "51b4524eb79937e50dfff3cc" }, "word" : "files", "card" : { "front" : "files", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772046992 }
+{ "_id" : { "$oid" : "51b45251b79937e50dfff3cd" }, "word" : "financiers", "card" : { "front" : "financiers", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772049478 }
+{ "_id" : { "$oid" : "51b45258b79937e50dfff3ce" }, "word" : "fiscal", "card" : { "front" : "fiscal", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772056359 }
+{ "_id" : { "$oid" : "51b45259b79937e50dfff3cf" }, "word" : "fiscale", "card" : { "front" : "fiscale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772057159 }
+{ "_id" : { "$oid" : "51b45262b79937e50dfff3d0" }, "word" : "fondateur", "card" : { "front" : "fondateur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772066885 }
+{ "_id" : { "$oid" : "51b45264b79937e50dfff3d1" }, "word" : "fondation", "card" : { "front" : "fondation", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772068656 }
+{ "_id" : { "$oid" : "51b4526cb79937e50dfff3d2" }, "word" : "force", "card" : { "front" : "force", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772077003 }
+{ "_id" : { "$oid" : "51b4526eb79937e50dfff3d3" }, "word" : "format", "card" : { "front" : "format", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772078745 }
+{ "_id" : { "$oid" : "51b4526fb79937e50dfff3d4" }, "word" : "forme", "card" : { "front" : "forme", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772079495 }
+{ "_id" : { "$oid" : "51b45270b79937e50dfff3d5" }, "word" : "formé", "card" : { "front" : "formé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772080136 }
+{ "_id" : { "$oid" : "51b45271b79937e50dfff3d6" }, "word" : "fournis", "card" : { "front" : "fournis", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772081864 }
+{ "_id" : { "$oid" : "51b45273b79937e50dfff3d7" }, "word" : "fournissant", "card" : { "front" : "fournissant", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772083631 }
+{ "_id" : { "$oid" : "51b45275b79937e50dfff3d8" }, "word" : "francophones", "card" : { "front" : "francophones", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772085608 }
+{ "_id" : { "$oid" : "51b45278b79937e50dfff3d9" }, "word" : "freiné", "card" : { "front" : "freiné", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772087959 }
+{ "_id" : { "$oid" : "51b4527bb79937e50dfff3da" }, "word" : "frontale", "card" : { "front" : "frontale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772091286 }
+{ "_id" : { "$oid" : "51b45280b79937e50dfff3db" }, "word" : "février", "card" : { "front" : "février", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772096129 }
+{ "_id" : { "$oid" : "51b45282b79937e50dfff3dc" }, "word" : "g", "card" : { "front" : "g", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772098217 }
+{ "_id" : { "$oid" : "51b45283b79937e50dfff3dd" }, "word" : "gamme", "card" : { "front" : "gamme", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772099876 }
+{ "_id" : { "$oid" : "51b45284b79937e50dfff3de" }, "word" : "gammes", "card" : { "front" : "gammes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772100414 }
+{ "_id" : { "$oid" : "51b4528bb79937e50dfff3df" }, "word" : "gestion", "card" : { "front" : "gestion", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772107330 }
+{ "_id" : { "$oid" : "51b4528cb79937e50dfff3e0" }, "word" : "globale", "card" : { "front" : "globale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772108960 }
+{ "_id" : { "$oid" : "51b4528eb79937e50dfff3e1" }, "word" : "grandes", "card" : { "front" : "grandes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772110244 }
+{ "_id" : { "$oid" : "51b4528fb79937e50dfff3e2" }, "word" : "grandit", "card" : { "front" : "grandit", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772111978 }
+{ "_id" : { "$oid" : "51b45290b79937e50dfff3e3" }, "word" : "grands", "card" : { "front" : "grands", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772112745 }
+{ "_id" : { "$oid" : "51b45291b79937e50dfff3e4" }, "word" : "gratuits", "card" : { "front" : "gratuits", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772113900 }
+{ "_id" : { "$oid" : "51b45292b79937e50dfff3e5" }, "word" : "groupe", "card" : { "front" : "groupe", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772114561 }
+{ "_id" : { "$oid" : "51b45293b79937e50dfff3e6" }, "word" : "groupes", "card" : { "front" : "groupes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772115080 }
+{ "_id" : { "$oid" : "51b45294b79937e50dfff3e7" }, "word" : "gyroscope", "card" : { "front" : "gyroscope", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772116549 }
+{ "_id" : { "$oid" : "51b45295b79937e50dfff3e8" }, "word" : "géant", "card" : { "front" : "géant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772117995 }
+{ "_id" : { "$oid" : "51b45297b79937e50dfff3e9" }, "word" : "généralement", "card" : { "front" : "généralement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772119071 }
+{ "_id" : { "$oid" : "51b45299b79937e50dfff3ea" }, "word" : "généralisant", "card" : { "front" : "généralisant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772121285 }
+{ "_id" : { "$oid" : "51b4529bb79937e50dfff3eb" }, "word" : "généralisées", "card" : { "front" : "généralisées", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772123029 }
+{ "_id" : { "$oid" : "51b452a5b79937e50dfff3ec" }, "word" : "générations", "card" : { "front" : "générations", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772133168 }
+{ "_id" : { "$oid" : "51b452a6b79937e50dfff3ed" }, "word" : "gérer", "card" : { "front" : "gérer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772134971 }
+{ "_id" : { "$oid" : "51b452a9b79937e50dfff3ee" }, "word" : "hausse", "card" : { "front" : "hausse", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772137690 }
+{ "_id" : { "$oid" : "51b452b1b79937e50dfff3ef" }, "word" : "hello", "card" : { "front" : "hello", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772145116 }
+{ "_id" : { "$oid" : "51b452b3b79937e50dfff3f0" }, "word" : "high-tech", "card" : { "front" : "high-tech", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772147428 }
+{ "_id" : { "$oid" : "51b452b8b79937e50dfff3f1" }, "word" : "homosexuel", "card" : { "front" : "homosexuel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772152168 }
+{ "_id" : { "$oid" : "51b452bab79937e50dfff3f2" }, "word" : "hors", "card" : { "front" : "hors", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772154100 }
+{ "_id" : { "$oid" : "51b452bcb79937e50dfff3f3" }, "word" : "humaniser", "card" : { "front" : "humaniser", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772156015 }
+{ "_id" : { "$oid" : "51b452bdb79937e50dfff3f4" }, "word" : "ici", "card" : { "front" : "ici", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772157788 }
+{ "_id" : { "$oid" : "51b452c2b79937e50dfff3f5" }, "word" : "ils", "card" : { "front" : "ils", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772162017 }
+{ "_id" : { "$oid" : "51b452c5b79937e50dfff3f6" }, "word" : "implique", "card" : { "front" : "implique", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772165255 }
+{ "_id" : { "$oid" : "51b452c6b79937e50dfff3f7" }, "word" : "importants", "card" : { "front" : "importants", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772166272 }
+{ "_id" : { "$oid" : "51b452c8b79937e50dfff3f8" }, "word" : "impôt", "card" : { "front" : "impôt", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772168755 }
+{ "_id" : { "$oid" : "51b452c9b79937e50dfff3f9" }, "word" : "impôts", "card" : { "front" : "impôts", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772169377 }
+{ "_id" : { "$oid" : "51b452ccb79937e50dfff3fa" }, "word" : "in", "card" : { "front" : "in", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772172612 }
+{ "_id" : { "$oid" : "51b452d5b79937e50dfff3fb" }, "word" : "individuel", "card" : { "front" : "individuel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772181123 }
+{ "_id" : { "$oid" : "51b452d6b79937e50dfff3fc" }, "word" : "indépendants", "card" : { "front" : "indépendants", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772182125 }
+{ "_id" : { "$oid" : "51b452d7b79937e50dfff3fd" }, "word" : "informations", "card" : { "front" : "informations", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772183800 }
+{ "_id" : { "$oid" : "51b452d8b79937e50dfff3fe" }, "word" : "informatique", "card" : { "front" : "informatique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772184467 }
+{ "_id" : { "$oid" : "51b452d9b79937e50dfff3ff" }, "word" : "informatiques", "card" : { "front" : "informatiques", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772185412 }
+{ "_id" : { "$oid" : "51b452ddb79937e50dfff400" }, "word" : "insisté", "card" : { "front" : "insisté", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772189039 }
+{ "_id" : { "$oid" : "51b452e2b79937e50dfff401" }, "word" : "interface", "card" : { "front" : "interface", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772194154 }
+{ "_id" : { "$oid" : "51b452e3b79937e50dfff402" }, "word" : "internationale", "card" : { "front" : "internationale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772195487 }
+{ "_id" : { "$oid" : "51b452e4b79937e50dfff403" }, "word" : "internationaux", "card" : { "front" : "internationaux", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772196493 }
+{ "_id" : { "$oid" : "51b452e6b79937e50dfff404" }, "word" : "interne", "card" : { "front" : "interne", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772198826 }
+{ "_id" : { "$oid" : "51b452e7b79937e50dfff405" }, "word" : "interview", "card" : { "front" : "interview", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772199428 }
+{ "_id" : { "$oid" : "51b452eab79937e50dfff406" }, "word" : "intoxiqués", "card" : { "front" : "intoxiqués", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772202280 }
+{ "_id" : { "$oid" : "51b452ebb79937e50dfff407" }, "word" : "introduction", "card" : { "front" : "introduction", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772203610 }
+{ "_id" : { "$oid" : "51b452ecb79937e50dfff408" }, "word" : "introduire", "card" : { "front" : "introduire", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772204593 }
+{ "_id" : { "$oid" : "51b452f5b79937e50dfff409" }, "word" : "invention", "card" : { "front" : "invention", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772213043 }
+{ "_id" : { "$oid" : "51b452f8b79937e50dfff40a" }, "word" : "issue", "card" : { "front" : "issue", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772216166 }
+{ "_id" : { "$oid" : "51b452fbb79937e50dfff40b" }, "word" : "jour", "card" : { "front" : "jour", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772219225 }
+{ "_id" : { "$oid" : "51b452fbb79937e50dfff40c" }, "word" : "journal", "card" : { "front" : "journal", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772219870 }
+{ "_id" : { "$oid" : "51b452fdb79937e50dfff40d" }, "word" : "juillet", "card" : { "front" : "juillet", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772221513 }
+{ "_id" : { "$oid" : "51b452feb79937e50dfff40e" }, "word" : "juin", "card" : { "front" : "juin", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772222050 }
+{ "_id" : { "$oid" : "51b452feb79937e50dfff40f" }, "word" : "jusque", "card" : { "front" : "jusque", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772222695 }
+{ "_id" : { "$oid" : "51b45300b79937e50dfff410" }, "word" : "l'un", "card" : { "front" : "l'un", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772224578 }
+{ "_id" : { "$oid" : "51b45301b79937e50dfff411" }, "word" : "laisser", "card" : { "front" : "laisser", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772225895 }
+{ "_id" : { "$oid" : "51b45302b79937e50dfff412" }, "word" : "laissé", "card" : { "front" : "laissé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772226543 }
+{ "_id" : { "$oid" : "51b45303b79937e50dfff413" }, "word" : "lance", "card" : { "front" : "lance", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772227565 }
+{ "_id" : { "$oid" : "51b45304b79937e50dfff414" }, "word" : "lancement", "card" : { "front" : "lancement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772228125 }
+{ "_id" : { "$oid" : "51b45304b79937e50dfff415" }, "word" : "lancer", "card" : { "front" : "lancer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772228816 }
+{ "_id" : { "$oid" : "51b45306b79937e50dfff416" }, "word" : "lancé", "card" : { "front" : "lancé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772230162 }
+{ "_id" : { "$oid" : "51b45308b79937e50dfff417" }, "word" : "leader", "card" : { "front" : "leader", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772232087 }
+{ "_id" : { "$oid" : "51b45308b79937e50dfff418" }, "word" : "lecture", "card" : { "front" : "lecture", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772232780 }
+{ "_id" : { "$oid" : "51b45309b79937e50dfff419" }, "word" : "lettre", "card" : { "front" : "lettre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772233685 }
+{ "_id" : { "$oid" : "51b4530ab79937e50dfff41a" }, "word" : "leurs", "card" : { "front" : "leurs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772234404 }
+{ "_id" : { "$oid" : "51b4530bb79937e50dfff41b" }, "word" : "licence", "card" : { "front" : "licence", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772235507 }
+{ "_id" : { "$oid" : "51b4530cb79937e50dfff41c" }, "word" : "limitée", "card" : { "front" : "limitée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772236185 }
+{ "_id" : { "$oid" : "51b4530db79937e50dfff41d" }, "word" : "lithium", "card" : { "front" : "lithium", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772237719 }
+{ "_id" : { "$oid" : "51b45310b79937e50dfff41e" }, "word" : "livre", "card" : { "front" : "livre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772240026 }
+{ "_id" : { "$oid" : "51b45313b79937e50dfff41f" }, "word" : "livrer", "card" : { "front" : "livrer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772243450 }
+{ "_id" : { "$oid" : "51b45314b79937e50dfff420" }, "word" : "logiciel", "card" : { "front" : "logiciel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772244372 }
+{ "_id" : { "$oid" : "51b45315b79937e50dfff421" }, "word" : "logo", "card" : { "front" : "logo", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772245062 }
+{ "_id" : { "$oid" : "51b45315b79937e50dfff422" }, "word" : "loi", "card" : { "front" : "loi", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772245640 }
+{ "_id" : { "$oid" : "51b4531bb79937e50dfff423" }, "word" : "longues", "card" : { "front" : "longues", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772251002 }
+{ "_id" : { "$oid" : "51b45321b79937e50dfff424" }, "word" : "lui-même", "card" : { "front" : "lui-même", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772257126 }
+{ "_id" : { "$oid" : "51b45321b79937e50dfff425" }, "word" : "légale", "card" : { "front" : "légale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772257875 }
+{ "_id" : { "$oid" : "51b4532fb79937e50dfff426" }, "word" : "manifestation", "card" : { "front" : "manifestation", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772271354 }
+{ "_id" : { "$oid" : "51b45330b79937e50dfff427" }, "word" : "malgré", "card" : { "front" : "malgré", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772272675 }
+{ "_id" : { "$oid" : "51b45333b79937e50dfff428" }, "word" : "majeure", "card" : { "front" : "majeure", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772275440 }
+{ "_id" : { "$oid" : "51b4533cb79937e50dfff429" }, "word" : "marque", "card" : { "front" : "marque", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772284652 }
+{ "_id" : { "$oid" : "51b4533db79937e50dfff42a" }, "word" : "mars", "card" : { "front" : "mars", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772285523 }
+{ "_id" : { "$oid" : "51b4533eb79937e50dfff42b" }, "word" : "mathématicien", "card" : { "front" : "mathématicien", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772286277 }
+{ "_id" : { "$oid" : "51b4533fb79937e50dfff42c" }, "word" : "matériaux", "card" : { "front" : "matériaux", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772287756 }
+{ "_id" : { "$oid" : "51b45340b79937e50dfff42d" }, "word" : "matériel", "card" : { "front" : "matériel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772288555 }
+{ "_id" : { "$oid" : "51b45343b79937e50dfff42e" }, "word" : "matérielle", "card" : { "front" : "matérielle", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772291975 }
+{ "_id" : { "$oid" : "51b45347b79937e50dfff42f" }, "word" : "matériels", "card" : { "front" : "matériels", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772295107 }
+{ "_id" : { "$oid" : "51b45347b79937e50dfff430" }, "word" : "maximum", "card" : { "front" : "maximum", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772295697 }
+{ "_id" : { "$oid" : "51b45349b79937e50dfff431" }, "word" : "meilleur", "card" : { "front" : "meilleur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772297043 }
+{ "_id" : { "$oid" : "51b4534ab79937e50dfff432" }, "word" : "membre", "card" : { "front" : "membre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772298321 }
+{ "_id" : { "$oid" : "51b4534eb79937e50dfff433" }, "word" : "merci", "card" : { "front" : "merci", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772302351 }
+{ "_id" : { "$oid" : "51b4534eb79937e50dfff434" }, "word" : "mesure", "card" : { "front" : "mesure", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772302380 }
+{ "_id" : { "$oid" : "51b4534fb79937e50dfff435" }, "word" : "mettant", "card" : { "front" : "mettant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772303325 }
+{ "_id" : { "$oid" : "51b45350b79937e50dfff436" }, "word" : "mettre", "card" : { "front" : "mettre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772304615 }
+{ "_id" : { "$oid" : "51b45351b79937e50dfff437" }, "word" : "micro", "card" : { "front" : "micro", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772305265 }
+{ "_id" : { "$oid" : "51b45355b79937e50dfff438" }, "word" : "milieu", "card" : { "front" : "milieu", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772309593 }
+{ "_id" : { "$oid" : "51b45357b79937e50dfff439" }, "word" : "milliers", "card" : { "front" : "milliers", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772311308 }
+{ "_id" : { "$oid" : "51b45358b79937e50dfff43a" }, "word" : "million", "card" : { "front" : "million", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772312707 }
+{ "_id" : { "$oid" : "51b4535ab79937e50dfff43b" }, "word" : "mini", "card" : { "front" : "mini", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772314136 }
+{ "_id" : { "$oid" : "51b4535ab79937e50dfff43c" }, "word" : "minimum", "card" : { "front" : "minimum", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772314682 }
+{ "_id" : { "$oid" : "51b4535cb79937e50dfff43d" }, "word" : "mise", "card" : { "front" : "mise", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772316298 }
+{ "_id" : { "$oid" : "51b4535cb79937e50dfff43e" }, "word" : "mises", "card" : { "front" : "mises", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772316939 }
+{ "_id" : { "$oid" : "51b4535db79937e50dfff43f" }, "word" : "modification", "card" : { "front" : "modification", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772317540 }
+{ "_id" : { "$oid" : "51b4535eb79937e50dfff440" }, "word" : "modifiée", "card" : { "front" : "modifiée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772318841 }
+{ "_id" : { "$oid" : "51b45360b79937e50dfff441" }, "word" : "modèle", "card" : { "front" : "modèle", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772320708 }
+{ "_id" : { "$oid" : "51b45361b79937e50dfff442" }, "word" : "modèles", "card" : { "front" : "modèles", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772321312 }
+{ "_id" : { "$oid" : "51b45362b79937e50dfff443" }, "word" : "moins", "card" : { "front" : "moins", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772322295 }
+{ "_id" : { "$oid" : "51b45363b79937e50dfff444" }, "word" : "mois", "card" : { "front" : "mois", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772323760 }
+{ "_id" : { "$oid" : "51b45367b79937e50dfff445" }, "word" : "moitié", "card" : { "front" : "moitié", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772327044 }
+{ "_id" : { "$oid" : "51b45369b79937e50dfff446" }, "word" : "mon", "card" : { "front" : "mon", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772329424 }
+{ "_id" : { "$oid" : "51b4536ab79937e50dfff447" }, "word" : "mondial", "card" : { "front" : "mondial", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772330033 }
+{ "_id" : { "$oid" : "51b4536fb79937e50dfff448" }, "word" : "moteur", "card" : { "front" : "moteur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772335065 }
+{ "_id" : { "$oid" : "51b45371b79937e50dfff449" }, "word" : "moyen", "card" : { "front" : "moyen", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772337510 }
+{ "_id" : { "$oid" : "51b45373b79937e50dfff44a" }, "word" : "moyenne", "card" : { "front" : "moyenne", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772339376 }
+{ "_id" : { "$oid" : "51b45377b79937e50dfff44b" }, "word" : "multinationales", "card" : { "front" : "multinationales", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772343026 }
+{ "_id" : { "$oid" : "51b45379b79937e50dfff44c" }, "word" : "musiciens", "card" : { "front" : "musiciens", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772345261 }
+{ "_id" : { "$oid" : "51b4537cb79937e50dfff44d" }, "word" : "médias", "card" : { "front" : "médias", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772348163 }
+{ "_id" : { "$oid" : "51b45381b79937e50dfff44e" }, "word" : "mémoire", "card" : { "front" : "mémoire", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772353888 }
+{ "_id" : { "$oid" : "51b45384b79937e50dfff44f" }, "word" : "méthodes", "card" : { "front" : "méthodes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772356858 }
+{ "_id" : { "$oid" : "51b45386b79937e50dfff450" }, "word" : "mêmes", "card" : { "front" : "mêmes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772358181 }
+{ "_id" : { "$oid" : "51b45389b79937e50dfff451" }, "word" : "navigateur", "card" : { "front" : "navigateur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772361037 }
+{ "_id" : { "$oid" : "51b4538bb79937e50dfff452" }, "word" : "neutre", "card" : { "front" : "neutre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772363742 }
+{ "_id" : { "$oid" : "51b4538cb79937e50dfff453" }, "word" : "niveau", "card" : { "front" : "niveau", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772364504 }
+{ "_id" : { "$oid" : "51b4538eb79937e50dfff454" }, "word" : "noir", "card" : { "front" : "noir", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772366301 }
+{ "_id" : { "$oid" : "51b45392b79937e50dfff455" }, "word" : "note", "card" : { "front" : "note", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772370679 }
+{ "_id" : { "$oid" : "51b45393b79937e50dfff456" }, "word" : "notes", "card" : { "front" : "notes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772371186 }
+{ "_id" : { "$oid" : "51b45393b79937e50dfff457" }, "word" : "nouveau", "card" : { "front" : "nouveau", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772371793 }
+{ "_id" : { "$oid" : "51b45397b79937e50dfff458" }, "word" : "nouvel", "card" : { "front" : "nouvel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772375246 }
+{ "_id" : { "$oid" : "51b45397b79937e50dfff459" }, "word" : "novembre", "card" : { "front" : "novembre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772375839 }
+{ "_id" : { "$oid" : "51b45399b79937e50dfff45a" }, "word" : "numérique", "card" : { "front" : "numérique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772377815 }
+{ "_id" : { "$oid" : "51b4539ab79937e50dfff45b" }, "word" : "numériques", "card" : { "front" : "numériques", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772378410 }
+{ "_id" : { "$oid" : "51b4539cb79937e50dfff45c" }, "word" : "nécessaires", "card" : { "front" : "nécessaires", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772380336 }
+{ "_id" : { "$oid" : "51b453a2b79937e50dfff45d" }, "word" : "occasionnant", "card" : { "front" : "occasionnant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772386319 }
+{ "_id" : { "$oid" : "51b453a2b79937e50dfff45e" }, "word" : "office", "card" : { "front" : "office", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772386921 }
+{ "_id" : { "$oid" : "51b453a3b79937e50dfff45f" }, "word" : "officiels", "card" : { "front" : "officiels", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772387699 }
+{ "_id" : { "$oid" : "51b453a4b79937e50dfff460" }, "word" : "ordinateur", "card" : { "front" : "ordinateur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772388279 }
+{ "_id" : { "$oid" : "51b453a8b79937e50dfff461" }, "word" : "organisation", "card" : { "front" : "organisation", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772392071 }
+{ "_id" : { "$oid" : "51b453a9b79937e50dfff462" }, "word" : "organismes", "card" : { "front" : "organismes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772393160 }
+{ "_id" : { "$oid" : "51b453aab79937e50dfff463" }, "word" : "organisées", "card" : { "front" : "organisées", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772394569 }
+{ "_id" : { "$oid" : "51b453abb79937e50dfff464" }, "word" : "orientée", "card" : { "front" : "orientée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772395626 }
+{ "_id" : { "$oid" : "51b453acb79937e50dfff465" }, "word" : "ouverte", "card" : { "front" : "ouverte", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772396290 }
+{ "_id" : { "$oid" : "51b453aeb79937e50dfff466" }, "word" : "ouvre", "card" : { "front" : "ouvre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772398530 }
+{ "_id" : { "$oid" : "51b453afb79937e50dfff467" }, "word" : "p.", "card" : { "front" : "p.", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772399489 }
+{ "_id" : { "$oid" : "51b453b5b79937e50dfff468" }, "word" : "page", "card" : { "front" : "page", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772405259 }
+{ "_id" : { "$oid" : "51b453b5b79937e50dfff469" }, "word" : "paragraphe", "card" : { "front" : "paragraphe", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772405781 }
+{ "_id" : { "$oid" : "51b453b6b79937e50dfff46a" }, "word" : "parc", "card" : { "front" : "parc", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772406496 }
+{ "_id" : { "$oid" : "51b453bfb79937e50dfff46b" }, "word" : "parfois", "card" : { "front" : "parfois", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772415674 }
+{ "_id" : { "$oid" : "51b453c0b79937e50dfff46c" }, "word" : "parlé", "card" : { "front" : "parlé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772416377 }
+{ "_id" : { "$oid" : "51b453c8b79937e50dfff46d" }, "word" : "partenaires", "card" : { "front" : "partenaires", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772424813 }
+{ "_id" : { "$oid" : "51b453d1b79937e50dfff46e" }, "word" : "particularité", "card" : { "front" : "particularité", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772433913 }
+{ "_id" : { "$oid" : "51b453d2b79937e50dfff46f" }, "word" : "partir", "card" : { "front" : "partir", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772434859 }
+{ "_id" : { "$oid" : "51b453d4b79937e50dfff470" }, "word" : "passage", "card" : { "front" : "passage", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772436474 }
+{ "_id" : { "$oid" : "51b453d5b79937e50dfff471" }, "word" : "passé", "card" : { "front" : "passé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772437175 }
+{ "_id" : { "$oid" : "51b453d7b79937e50dfff472" }, "word" : "payants", "card" : { "front" : "payants", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772439818 }
+{ "_id" : { "$oid" : "51b453dbb79937e50dfff473" }, "word" : "paye", "card" : { "front" : "paye", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772443820 }
+{ "_id" : { "$oid" : "51b453ddb79937e50dfff474" }, "word" : "payer", "card" : { "front" : "payer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772445696 }
+{ "_id" : { "$oid" : "51b453dfb79937e50dfff475" }, "word" : "pendant", "card" : { "front" : "pendant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772447468 }
+{ "_id" : { "$oid" : "51b453e0b79937e50dfff476" }, "word" : "permis", "card" : { "front" : "permis", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772448908 }
+{ "_id" : { "$oid" : "51b453e3b79937e50dfff477" }, "word" : "personnages", "card" : { "front" : "personnages", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772451430 }
+{ "_id" : { "$oid" : "51b453e4b79937e50dfff478" }, "word" : "personnalité", "card" : { "front" : "personnalité", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772452354 }
+{ "_id" : { "$oid" : "51b453e5b79937e50dfff479" }, "word" : "personnel", "card" : { "front" : "personnel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772453115 }
+{ "_id" : { "$oid" : "51b453e6b79937e50dfff47a" }, "word" : "personnelle", "card" : { "front" : "personnelle", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772454702 }
+{ "_id" : { "$oid" : "51b453efb79937e50dfff47b" }, "word" : "photo", "card" : { "front" : "photo", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772463132 }
+{ "_id" : { "$oid" : "51b453f3b79937e50dfff47c" }, "word" : "place", "card" : { "front" : "place", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772467694 }
+{ "_id" : { "$oid" : "51b453f9b79937e50dfff47d" }, "word" : "plupart", "card" : { "front" : "plupart", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772473009 }
+{ "_id" : { "$oid" : "51b453fbb79937e50dfff47e" }, "word" : "poids", "card" : { "front" : "poids", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772475411 }
+{ "_id" : { "$oid" : "51b453feb79937e50dfff47f" }, "word" : "politique", "card" : { "front" : "politique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772478592 }
+{ "_id" : { "$oid" : "51b45403b79937e50dfff480" }, "word" : "petit", "card" : { "front" : "petit", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772483140 }
+{ "_id" : { "$oid" : "51b45404b79937e50dfff481" }, "word" : "peut-être", "card" : { "front" : "peut-être", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772484676 }
+{ "_id" : { "$oid" : "51b45406b79937e50dfff482" }, "word" : "peuvent", "card" : { "front" : "peuvent", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772486828 }
+{ "_id" : { "$oid" : "51b45408b79937e50dfff483" }, "word" : "phares", "card" : { "front" : "phares", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772488178 }
+{ "_id" : { "$oid" : "51b45408b79937e50dfff484" }, "word" : "pilotes", "card" : { "front" : "pilotes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772488772 }
+{ "_id" : { "$oid" : "51b45411b79937e50dfff485" }, "word" : "pomme", "card" : { "front" : "pomme", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772497899 }
+{ "_id" : { "$oid" : "51b45418b79937e50dfff486" }, "word" : "possible", "card" : { "front" : "possible", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772504951 }
+{ "_id" : { "$oid" : "51b45419b79937e50dfff487" }, "word" : "position", "card" : { "front" : "position", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772505992 }
+{ "_id" : { "$oid" : "51b4541eb79937e50dfff488" }, "word" : "portable", "card" : { "front" : "portable", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772510894 }
+{ "_id" : { "$oid" : "51b45420b79937e50dfff489" }, "word" : "portables", "card" : { "front" : "portables", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772512182 }
+{ "_id" : { "$oid" : "51b45422b79937e50dfff48a" }, "word" : "posséder", "card" : { "front" : "posséder", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772514257 }
+{ "_id" : { "$oid" : "51b45424b79937e50dfff48b" }, "word" : "poste", "card" : { "front" : "poste", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772516871 }
+{ "_id" : { "$oid" : "51b45425b79937e50dfff48c" }, "word" : "potentiels", "card" : { "front" : "potentiels", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772517798 }
+{ "_id" : { "$oid" : "51b45428b79937e50dfff48d" }, "word" : "pourtant", "card" : { "front" : "pourtant", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772520214 }
+{ "_id" : { "$oid" : "51b4542bb79937e50dfff48e" }, "word" : "pouvait", "card" : { "front" : "pouvait", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772523997 }
+{ "_id" : { "$oid" : "51b4542db79937e50dfff48f" }, "word" : "pouvez", "card" : { "front" : "pouvez", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772525734 }
+{ "_id" : { "$oid" : "51b4542eb79937e50dfff490" }, "word" : "poème", "card" : { "front" : "poème", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772526816 }
+{ "_id" : { "$oid" : "51b4542fb79937e50dfff491" }, "word" : "pratiquent", "card" : { "front" : "pratiquent", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772527487 }
+{ "_id" : { "$oid" : "51b45430b79937e50dfff492" }, "word" : "pratiquées", "card" : { "front" : "pratiquées", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772528600 }
+{ "_id" : { "$oid" : "51b45432b79937e50dfff493" }, "word" : "premier", "card" : { "front" : "premier", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772530127 }
+{ "_id" : { "$oid" : "51b45433b79937e50dfff494" }, "word" : "premiers", "card" : { "front" : "premiers", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772531002 }
+{ "_id" : { "$oid" : "51b45434b79937e50dfff495" }, "word" : "prescriptions", "card" : { "front" : "prescriptions", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772532429 }
+{ "_id" : { "$oid" : "51b45437b79937e50dfff496" }, "word" : "presque", "card" : { "front" : "presque", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772535567 }
+{ "_id" : { "$oid" : "51b45438b79937e50dfff497" }, "word" : "presse", "card" : { "front" : "presse", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772536335 }
+{ "_id" : { "$oid" : "51b4543ab79937e50dfff498" }, "word" : "prestataire", "card" : { "front" : "prestataire", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772538264 }
+{ "_id" : { "$oid" : "51b4543db79937e50dfff499" }, "word" : "principale", "card" : { "front" : "principale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772541822 }
+{ "_id" : { "$oid" : "51b45445b79937e50dfff49a" }, "word" : "prix", "card" : { "front" : "prix", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772549664 }
+{ "_id" : { "$oid" : "51b45446b79937e50dfff49b" }, "word" : "probablement", "card" : { "front" : "probablement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772550385 }
+{ "_id" : { "$oid" : "51b4544db79937e50dfff49c" }, "word" : "processeur", "card" : { "front" : "processeur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772557278 }
+{ "_id" : { "$oid" : "51b4544db79937e50dfff49d" }, "word" : "processeurs", "card" : { "front" : "processeurs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772557992 }
+{ "_id" : { "$oid" : "51b4544fb79937e50dfff49e" }, "word" : "proche", "card" : { "front" : "proche", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772559203 }
+{ "_id" : { "$oid" : "51b4544fb79937e50dfff49f" }, "word" : "proches", "card" : { "front" : "proches", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772559682 }
+{ "_id" : { "$oid" : "51b45450b79937e50dfff4a0" }, "word" : "professionnel", "card" : { "front" : "professionnel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772560726 }
+{ "_id" : { "$oid" : "51b45452b79937e50dfff4a1" }, "word" : "profit", "card" : { "front" : "profit", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772562622 }
+{ "_id" : { "$oid" : "51b45454b79937e50dfff4a2" }, "word" : "profits", "card" : { "front" : "profits", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772564545 }
+{ "_id" : { "$oid" : "51b45455b79937e50dfff4a3" }, "word" : "programmes", "card" : { "front" : "programmes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772565800 }
+{ "_id" : { "$oid" : "51b45456b79937e50dfff4a4" }, "word" : "programmeurs", "card" : { "front" : "programmeurs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772566636 }
+{ "_id" : { "$oid" : "51b45457b79937e50dfff4a5" }, "word" : "projets", "card" : { "front" : "projets", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772567920 }
+{ "_id" : { "$oid" : "51b45459b79937e50dfff4a6" }, "word" : "promotion", "card" : { "front" : "promotion", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772569592 }
+{ "_id" : { "$oid" : "51b4545eb79937e50dfff4a7" }, "word" : "promotionnel", "card" : { "front" : "promotionnel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772574417 }
+{ "_id" : { "$oid" : "51b45461b79937e50dfff4a8" }, "word" : "propose", "card" : { "front" : "propose", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772577101 }
+{ "_id" : { "$oid" : "51b45462b79937e50dfff4a9" }, "word" : "proposé", "card" : { "front" : "proposé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772578113 }
+{ "_id" : { "$oid" : "51b45463b79937e50dfff4aa" }, "word" : "propre", "card" : { "front" : "propre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772579526 }
+{ "_id" : { "$oid" : "51b45464b79937e50dfff4ab" }, "word" : "propriétaires", "card" : { "front" : "propriétaires", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772580266 }
+{ "_id" : { "$oid" : "51b45464b79937e50dfff4ac" }, "word" : "prototype", "card" : { "front" : "prototype", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772581003 }
+{ "_id" : { "$oid" : "51b45467b79937e50dfff4ad" }, "word" : "près", "card" : { "front" : "près", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772583511 }
+{ "_id" : { "$oid" : "51b4546ab79937e50dfff4ae" }, "word" : "précise", "card" : { "front" : "précise", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772586335 }
+{ "_id" : { "$oid" : "51b4546bb79937e50dfff4af" }, "word" : "précisé", "card" : { "front" : "précisé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772587043 }
+{ "_id" : { "$oid" : "51b4546fb79937e50dfff4b0" }, "word" : "précédent", "card" : { "front" : "précédent", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772591459 }
+{ "_id" : { "$oid" : "51b45474b79937e50dfff4b1" }, "word" : "présence", "card" : { "front" : "présence", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772596023 }
+{ "_id" : { "$oid" : "51b45479b79937e50dfff4b2" }, "word" : "présentation", "card" : { "front" : "présentation", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772601479 }
+{ "_id" : { "$oid" : "51b45483b79937e50dfff4b3" }, "word" : "président", "card" : { "front" : "président", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772611827 }
+{ "_id" : { "$oid" : "51b45485b79937e50dfff4b4" }, "word" : "prévu", "card" : { "front" : "prévu", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772613513 }
+{ "_id" : { "$oid" : "51b45489b79937e50dfff4b5" }, "word" : "publicité", "card" : { "front" : "publicité", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772617729 }
+{ "_id" : { "$oid" : "51b45491b79937e50dfff4b6" }, "word" : "puissant", "card" : { "front" : "puissant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772625888 }
+{ "_id" : { "$oid" : "51b45493b79937e50dfff4b7" }, "word" : "quant", "card" : { "front" : "quant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772627484 }
+{ "_id" : { "$oid" : "51b45496b79937e50dfff4b8" }, "word" : "quasiment", "card" : { "front" : "quasiment", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772630618 }
+{ "_id" : { "$oid" : "51b4549bb79937e50dfff4b9" }, "word" : "quoi", "card" : { "front" : "quoi", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772635353 }
+{ "_id" : { "$oid" : "51b4549cb79937e50dfff4ba" }, "word" : "quitter", "card" : { "front" : "quitter", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772636123 }
+{ "_id" : { "$oid" : "51b4549db79937e50dfff4bb" }, "word" : "quelles", "card" : { "front" : "quelles", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772637006 }
+{ "_id" : { "$oid" : "51b454a1b79937e50dfff4bc" }, "word" : "quatorze", "card" : { "front" : "quatorze", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772641938 }
+{ "_id" : { "$oid" : "51b454a5b79937e50dfff4bd" }, "word" : "rapide", "card" : { "front" : "rapide", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772645545 }
+{ "_id" : { "$oid" : "51b454a6b79937e50dfff4be" }, "word" : "rapidement", "card" : { "front" : "rapidement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772646227 }
+{ "_id" : { "$oid" : "51b454abb79937e50dfff4bf" }, "word" : "rare", "card" : { "front" : "rare", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772651070 }
+{ "_id" : { "$oid" : "51b454acb79937e50dfff4c0" }, "word" : "recherche", "card" : { "front" : "recherche", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772652324 }
+{ "_id" : { "$oid" : "51b454b3b79937e50dfff4c1" }, "word" : "reconnaissance", "card" : { "front" : "reconnaissance", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772659149 }
+{ "_id" : { "$oid" : "51b454b6b79937e50dfff4c2" }, "word" : "rapprochement", "card" : { "front" : "rapprochement", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772662756 }
+{ "_id" : { "$oid" : "51b454bbb79937e50dfff4c3" }, "word" : "record", "card" : { "front" : "record", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772667583 }
+{ "_id" : { "$oid" : "51b454bdb79937e50dfff4c4" }, "word" : "recruté", "card" : { "front" : "recruté", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772669479 }
+{ "_id" : { "$oid" : "51b454c4b79937e50dfff4c5" }, "word" : "relancer", "card" : { "front" : "relancer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772676035 }
+{ "_id" : { "$oid" : "51b454c5b79937e50dfff4c6" }, "word" : "relation", "card" : { "front" : "relation", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772677011 }
+{ "_id" : { "$oid" : "51b454c6b79937e50dfff4c7" }, "word" : "relations", "card" : { "front" : "relations", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772678124 }
+{ "_id" : { "$oid" : "51b454c6b79937e50dfff4c8" }, "word" : "relative", "card" : { "front" : "relative", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772678909 }
+{ "_id" : { "$oid" : "51b454d2b79937e50dfff4c9" }, "word" : "remplace", "card" : { "front" : "remplace", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772690340 }
+{ "_id" : { "$oid" : "51b454d3b79937e50dfff4ca" }, "word" : "remplacement", "card" : { "front" : "remplacement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772691191 }
+{ "_id" : { "$oid" : "51b454d4b79937e50dfff4cb" }, "word" : "remplacé", "card" : { "front" : "remplacé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772692692 }
+{ "_id" : { "$oid" : "51b454dab79937e50dfff4cc" }, "word" : "rencontrent", "card" : { "front" : "rencontrent", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772698697 }
+{ "_id" : { "$oid" : "51b454dcb79937e50dfff4cd" }, "word" : "rencontres", "card" : { "front" : "rencontres", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772700901 }
+{ "_id" : { "$oid" : "51b454f9b79937e50dfff4ce" }, "word" : "rencontré", "card" : { "front" : "rencontré", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772729801 }
+{ "_id" : { "$oid" : "51b45513b79937e50dfff4cf" }, "word" : "réussi", "card" : { "front" : "réussi", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772755289 }
+{ "_id" : { "$oid" : "51b45517b79937e50dfff4d0" }, "word" : "réussite", "card" : { "front" : "réussite", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772759542 }
+{ "_id" : { "$oid" : "51b45519b79937e50dfff4d1" }, "word" : "réutilisation", "card" : { "front" : "réutilisation", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772761698 }
+{ "_id" : { "$oid" : "51b4551cb79937e50dfff4d2" }, "word" : "révolution", "card" : { "front" : "révolution", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772764292 }
+{ "_id" : { "$oid" : "51b45522b79937e50dfff4d3" }, "word" : "salaire", "card" : { "front" : "salaire", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772770653 }
+{ "_id" : { "$oid" : "51b45523b79937e50dfff4d4" }, "word" : "salariés", "card" : { "front" : "salariés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772771610 }
+{ "_id" : { "$oid" : "51b45525b79937e50dfff4d5" }, "word" : "salon", "card" : { "front" : "salon", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772773378 }
+{ "_id" : { "$oid" : "51b45525b79937e50dfff4d6" }, "word" : "salons", "card" : { "front" : "salons", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772773815 }
+{ "_id" : { "$oid" : "51b45527b79937e50dfff4d7" }, "word" : "second", "card" : { "front" : "second", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772775139 }
+{ "_id" : { "$oid" : "51b45528b79937e50dfff4d8" }, "word" : "seconde", "card" : { "front" : "seconde", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772776855 }
+{ "_id" : { "$oid" : "51b45529b79937e50dfff4d9" }, "word" : "section", "card" : { "front" : "section", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772777673 }
+{ "_id" : { "$oid" : "51b45530b79937e50dfff4da" }, "word" : "sein", "card" : { "front" : "sein", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772784742 }
+{ "_id" : { "$oid" : "51b45535b79937e50dfff4db" }, "word" : "semestriel", "card" : { "front" : "semestriel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772789951 }
+{ "_id" : { "$oid" : "51b45538b79937e50dfff4dc" }, "word" : "sentiment", "card" : { "front" : "sentiment", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772792621 }
+{ "_id" : { "$oid" : "51b4553db79937e50dfff4dd" }, "word" : "septembre", "card" : { "front" : "septembre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772797333 }
+{ "_id" : { "$oid" : "51b4553eb79937e50dfff4de" }, "word" : "seraient", "card" : { "front" : "seraient", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772798717 }
+{ "_id" : { "$oid" : "51b4553fb79937e50dfff4df" }, "word" : "seront", "card" : { "front" : "seront", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772799263 }
+{ "_id" : { "$oid" : "51b4553fb79937e50dfff4e0" }, "word" : "service", "card" : { "front" : "service", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772799786 }
+{ "_id" : { "$oid" : "51b45541b79937e50dfff4e1" }, "word" : "seuls", "card" : { "front" : "seuls", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772801609 }
+{ "_id" : { "$oid" : "51b45542b79937e50dfff4e2" }, "word" : "signe", "card" : { "front" : "signe", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772802713 }
+{ "_id" : { "$oid" : "51b45543b79937e50dfff4e3" }, "word" : "simple", "card" : { "front" : "simple", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772803802 }
+{ "_id" : { "$oid" : "51b45545b79937e50dfff4e4" }, "word" : "sites", "card" : { "front" : "sites", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772805499 }
+{ "_id" : { "$oid" : "51b45546b79937e50dfff4e5" }, "word" : "situé", "card" : { "front" : "situé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772806856 }
+{ "_id" : { "$oid" : "51b45547b79937e50dfff4e6" }, "word" : "située", "card" : { "front" : "située", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772807379 }
+{ "_id" : { "$oid" : "51b45549b79937e50dfff4e7" }, "word" : "siège", "card" : { "front" : "siège", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772809864 }
+{ "_id" : { "$oid" : "51b4554ab79937e50dfff4e8" }, "word" : "slogan", "card" : { "front" : "slogan", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772810362 }
+{ "_id" : { "$oid" : "51b4554ab79937e50dfff4e9" }, "word" : "slogans", "card" : { "front" : "slogans", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772810928 }
+{ "_id" : { "$oid" : "51b4554bb79937e50dfff4ea" }, "word" : "social", "card" : { "front" : "social", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772811413 }
+{ "_id" : { "$oid" : "51b4554bb79937e50dfff4eb" }, "word" : "sociétés", "card" : { "front" : "sociétés", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772811947 }
+{ "_id" : { "$oid" : "51b4554cb79937e50dfff4ec" }, "word" : "solutions", "card" : { "front" : "solutions", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772812988 }
+{ "_id" : { "$oid" : "51b4554db79937e50dfff4ed" }, "word" : "sortie", "card" : { "front" : "sortie", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772813534 }
+{ "_id" : { "$oid" : "51b4554eb79937e50dfff4ee" }, "word" : "sortit", "card" : { "front" : "sortit", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772814226 }
+{ "_id" : { "$oid" : "51b45550b79937e50dfff4ef" }, "word" : "souhaitant", "card" : { "front" : "souhaitant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772817000 }
+{ "_id" : { "$oid" : "51b45553b79937e50dfff4f0" }, "word" : "sources", "card" : { "front" : "sources", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772819751 }
+{ "_id" : { "$oid" : "51b45558b79937e50dfff4f1" }, "word" : "sous-traitant", "card" : { "front" : "sous-traitant", "back" : "", "hint" : "" }, "cardtype" : "learning", "date" : 1370772824415 }
+{ "_id" : { "$oid" : "51b4555cb79937e50dfff4f2" }, "word" : "souvent", "card" : { "front" : "souvent", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772828366 }
+{ "_id" : { "$oid" : "51b4555fb79937e50dfff4f3" }, "word" : "spécialement", "card" : { "front" : "spécialement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772831783 }
+{ "_id" : { "$oid" : "51b45562b79937e50dfff4f4" }, "word" : "spécifiques", "card" : { "front" : "spécifiques", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772834157 }
+{ "_id" : { "$oid" : "51b45562b79937e50dfff4f5" }, "word" : "standards", "card" : { "front" : "standards", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772834704 }
+{ "_id" : { "$oid" : "51b45563b79937e50dfff4f6" }, "word" : "station", "card" : { "front" : "station", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772835865 }
+{ "_id" : { "$oid" : "51b45564b79937e50dfff4f7" }, "word" : "stockage", "card" : { "front" : "stockage", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772836496 }
+{ "_id" : { "$oid" : "51b45565b79937e50dfff4f8" }, "word" : "stratégie", "card" : { "front" : "stratégie", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772837783 }
+{ "_id" : { "$oid" : "51b45566b79937e50dfff4f9" }, "word" : "succès", "card" : { "front" : "succès", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772838617 }
+{ "_id" : { "$oid" : "51b45568b79937e50dfff4fa" }, "word" : "suicidé", "card" : { "front" : "suicidé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772840070 }
+{ "_id" : { "$oid" : "51b45569b79937e50dfff4fb" }, "word" : "suivant", "card" : { "front" : "suivant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772841264 }
+{ "_id" : { "$oid" : "51b45569b79937e50dfff4fc" }, "word" : "sujet", "card" : { "front" : "sujet", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772841856 }
+{ "_id" : { "$oid" : "51b4556ab79937e50dfff4fd" }, "word" : "support", "card" : { "front" : "support", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772842990 }
+{ "_id" : { "$oid" : "51b4556db79937e50dfff4fe" }, "word" : "supporte", "card" : { "front" : "supporte", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772845777 }
+{ "_id" : { "$oid" : "51b4556fb79937e50dfff4ff" }, "word" : "supprimé", "card" : { "front" : "supprimé", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772847633 }
+{ "_id" : { "$oid" : "51b45570b79937e50dfff500" }, "word" : "surface", "card" : { "front" : "surface", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772848651 }
+{ "_id" : { "$oid" : "51b45571b79937e50dfff501" }, "word" : "surtout", "card" : { "front" : "surtout", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772849208 }
+{ "_id" : { "$oid" : "51b45573b79937e50dfff502" }, "word" : "suspecté", "card" : { "front" : "suspecté", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772851007 }
+{ "_id" : { "$oid" : "51b45573b79937e50dfff503" }, "word" : "système", "card" : { "front" : "système", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772851642 }
+{ "_id" : { "$oid" : "51b45574b79937e50dfff504" }, "word" : "sécurité", "card" : { "front" : "sécurité", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772852625 }
+{ "_id" : { "$oid" : "51b45576b79937e50dfff505" }, "word" : "tablette", "card" : { "front" : "tablette", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772854455 }
+{ "_id" : { "$oid" : "51b45577b79937e50dfff506" }, "word" : "tactile", "card" : { "front" : "tactile", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772855520 }
+{ "_id" : { "$oid" : "51b45577b79937e50dfff507" }, "word" : "tactiles", "card" : { "front" : "tactiles", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772855995 }
+{ "_id" : { "$oid" : "51b45586b79937e50dfff508" }, "word" : "techniciens", "card" : { "front" : "techniciens", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772870256 }
+{ "_id" : { "$oid" : "51b45587b79937e50dfff509" }, "word" : "technique", "card" : { "front" : "technique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772871651 }
+{ "_id" : { "$oid" : "51b45588b79937e50dfff50a" }, "word" : "technologie", "card" : { "front" : "technologie", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772872212 }
+{ "_id" : { "$oid" : "51b45588b79937e50dfff50b" }, "word" : "technologies", "card" : { "front" : "technologies", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772872970 }
+{ "_id" : { "$oid" : "51b4558bb79937e50dfff50c" }, "word" : "tel", "card" : { "front" : "tel", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772875337 }
+{ "_id" : { "$oid" : "51b4558bb79937e50dfff50d" }, "word" : "telle", "card" : { "front" : "telle", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772875951 }
+{ "_id" : { "$oid" : "51b4558cb79937e50dfff50e" }, "word" : "telles", "card" : { "front" : "telles", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772876279 }
+{ "_id" : { "$oid" : "51b4558cb79937e50dfff50f" }, "word" : "tels", "card" : { "front" : "tels", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772876922 }
+{ "_id" : { "$oid" : "51b4558eb79937e50dfff510" }, "word" : "temps", "card" : { "front" : "temps", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772878457 }
+{ "_id" : { "$oid" : "51b45596b79937e50dfff511" }, "word" : "total", "card" : { "front" : "total", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772886077 }
+{ "_id" : { "$oid" : "51b45596b79937e50dfff512" }, "word" : "totale", "card" : { "front" : "totale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772886408 }
+{ "_id" : { "$oid" : "51b45599b79937e50dfff513" }, "word" : "touché", "card" : { "front" : "touché", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772889595 }
+{ "_id" : { "$oid" : "51b4559bb79937e50dfff514" }, "word" : "toute", "card" : { "front" : "toute", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772891062 }
+{ "_id" : { "$oid" : "51b4559db79937e50dfff515" }, "word" : "toxiques", "card" : { "front" : "toxiques", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772893257 }
+{ "_id" : { "$oid" : "51b4559eb79937e50dfff516" }, "word" : "traitement", "card" : { "front" : "traitement", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772894875 }
+{ "_id" : { "$oid" : "51b4559fb79937e50dfff517" }, "word" : "trimestre", "card" : { "front" : "trimestre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772895723 }
+{ "_id" : { "$oid" : "51b455a0b79937e50dfff518" }, "word" : "trois", "card" : { "front" : "trois", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772896318 }
+{ "_id" : { "$oid" : "51b455a6b79937e50dfff519" }, "word" : "trouve", "card" : { "front" : "trouve", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772902723 }
+{ "_id" : { "$oid" : "51b455a7b79937e50dfff51a" }, "word" : "très", "card" : { "front" : "très", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772903398 }
+{ "_id" : { "$oid" : "51b455dab79937e50dfff51b" }, "word" : "vend", "card" : { "front" : "vend", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772954383 }
+{ "_id" : { "$oid" : "51b455dcb79937e50dfff51c" }, "word" : "vendu", "card" : { "front" : "vendu", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772956091 }
+{ "_id" : { "$oid" : "51b455dcb79937e50dfff51d" }, "word" : "vente", "card" : { "front" : "vente", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772956859 }
+{ "_id" : { "$oid" : "51b455deb79937e50dfff51e" }, "word" : "ventes", "card" : { "front" : "ventes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772958461 }
+{ "_id" : { "$oid" : "51b455e0b79937e50dfff51f" }, "word" : "verre", "card" : { "front" : "verre", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772960467 }
+{ "_id" : { "$oid" : "51b455e0b79937e50dfff520" }, "word" : "vers", "card" : { "front" : "vers", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772960870 }
+{ "_id" : { "$oid" : "51b455e2b79937e50dfff521" }, "word" : "version", "card" : { "front" : "version", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772962943 }
+{ "_id" : { "$oid" : "51b455e3b79937e50dfff522" }, "word" : "versions", "card" : { "front" : "versions", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772963430 }
+{ "_id" : { "$oid" : "51b455e7b79937e50dfff523" }, "word" : "vidéo", "card" : { "front" : "vidéo", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772967428 }
+{ "_id" : { "$oid" : "51b455edb79937e50dfff524" }, "word" : "vient", "card" : { "front" : "vient", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772973626 }
+{ "_id" : { "$oid" : "51b455f2b79937e50dfff525" }, "word" : "visuelle", "card" : { "front" : "visuelle", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772978283 }
+{ "_id" : { "$oid" : "51b455f4b79937e50dfff526" }, "word" : "vocale", "card" : { "front" : "vocale", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772980494 }
+{ "_id" : { "$oid" : "51b455f6b79937e50dfff527" }, "word" : "voici", "card" : { "front" : "voici", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370772982739 }
+{ "_id" : { "$oid" : "51b45622b79937e50dfff528" }, "word" : "voir", "card" : { "front" : "voir", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773026887 }
+{ "_id" : { "$oid" : "51b45629b79937e50dfff529" }, "word" : "zéro", "card" : { "front" : "zéro", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773033552 }
+{ "_id" : { "$oid" : "51b4562bb79937e50dfff52a" }, "word" : "écologique", "card" : { "front" : "écologique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773035590 }
+{ "_id" : { "$oid" : "51b4562db79937e50dfff52b" }, "word" : "web", "card" : { "front" : "web", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773037849 }
+{ "_id" : { "$oid" : "51b45633b79937e50dfff52c" }, "word" : "écran", "card" : { "front" : "écran", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773043489 }
+{ "_id" : { "$oid" : "51b45634b79937e50dfff52d" }, "word" : "écouteurs", "card" : { "front" : "écouteurs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773044576 }
+{ "_id" : { "$oid" : "51b45635b79937e50dfff52e" }, "word" : "économique", "card" : { "front" : "économique", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773045284 }
+{ "_id" : { "$oid" : "51b45637b79937e50dfff52f" }, "word" : "éditeur", "card" : { "front" : "éditeur", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773047069 }
+{ "_id" : { "$oid" : "51b45637b79937e50dfff530" }, "word" : "éditeurs", "card" : { "front" : "éditeurs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773047630 }
+{ "_id" : { "$oid" : "51b45642b79937e50dfff531" }, "word" : "étapes", "card" : { "front" : "étapes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773058376 }
+{ "_id" : { "$oid" : "51b4564fb79937e50dfff532" }, "word" : "étude", "card" : { "front" : "étude", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773071216 }
+{ "_id" : { "$oid" : "51b45651b79937e50dfff533" }, "word" : "étudié", "card" : { "front" : "étudié", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773073085 }
+{ "_id" : { "$oid" : "51b45652b79937e50dfff534" }, "word" : "éviter", "card" : { "front" : "éviter", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773074238 }
+{ "_id" : { "$oid" : "51b45653b79937e50dfff535" }, "word" : "évolution", "card" : { "front" : "évolution", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773075423 }
+{ "_id" : { "$oid" : "51b4566eb79937e50dfff536" }, "word" : "quand", "card" : { "front" : "quand", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773102560 }
+{ "_id" : { "$oid" : "51b45670b79937e50dfff537" }, "word" : "pubs", "card" : { "front" : "pubs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773104877 }
+{ "_id" : { "$oid" : "51b45673b79937e50dfff538" }, "word" : "puisque", "card" : { "front" : "puisque", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773107560 }
