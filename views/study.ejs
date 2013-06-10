@@ -89,7 +89,7 @@
 			  </thead>
 			  <tbody>
 			<% for(var i=0; i<cards.length; i++) {%>
-			   <tr><td><%= i+1 %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td></tr>
+			   <tr><td><%= cards.length-i %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td></tr>
 			<% } %>
 			</tbody>
 			</table>        

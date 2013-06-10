@@ -5,6 +5,7 @@ var express = require('express')
   , url = require('url')
   , GoogleStrategy = require('passport-google').Strategy 
   , path = require('path')
+  , jsdom = require('jsdom')
   , crypto = require('crypto');
 
 var app = require('express')()
@@ -156,7 +157,7 @@ app.get('/home', ensureAuthenticated, function(req, res) {
 app.get('/study', ensureAuthenticated, function(req, res) {
 	var collectionName = checkUser(req);
 	db.collection(collectionName, function(err, coll) {
-		coll.find({cardtype: "learning"}).toArray(function(err, cards) {
+		coll.find({cardtype: "learning"}, { sort : {'_id': -1}}).toArray(function(err, cards) {
 			res.render('study', {'cards':cards});
 		})
 	})	
@@ -165,10 +166,33 @@ app.get('/study', ensureAuthenticated, function(req, res) {
 app.get('/mydict', ensureAuthenticated, function(req, res) {
 	var collectionName = checkUser(req);
 	db.collection(collectionName, function(err, coll) {
-		coll.find({cardtype: "known"}).toArray(function(err, cards) {
+		coll.find({cardtype: "known"}, { sort : {'_id': -1} }).toArray(function(err, cards) {
 			res.render('mydict', {'cards':cards});
 		})
 	})	
+});
+
+app.get('/translate', function(req, res) {
+	var options = {host: "slovari.yandex.ru", path: "/"+req.query.word+"/fr/"}
+	console.log(options);
+	
+	http.get(options, function (http_res) {
+	    var data = "";
+	    http_res.on("data", function (chunk) {
+	        data += chunk;
+	    });
+	    http_res.on("end", function () {
+			jsdom.env({
+			    html: data,
+			    scripts: [
+			      'http://code.jquery.com/jquery-1.5.min.js'
+			    ]
+			  }, function (err, window) {
+			    var $ = window.jQuery;
+			    res.send("<div>"+$('.b-translation__tr').first().html()+"</div>" + $('.b-translation__article').first().html());
+			  });
+	    });
+	});
 });
 
 function beautify_name(name) {
@@ -184,10 +208,25 @@ function checkUser(req) {
 
 function splittext(text, req, res) {
 	var collectionName = checkUser(req);
-	text = text.replace("\n", " ");
-	text = text.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, " ");
 	
-	var words = text.split(" ");
+	var sentences = text.split(/[.|!|?]\s/gi);
+	var hasNoSencences = text.indexOf(".")==-1;
+	var words = [];
+	var words2Sentence = {};
+	
+	for (i in sentences) {
+		
+		var sentence = sentences[i];
+		var processed = sentence.replace("\n", " ");
+		processed = processed.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, " ");
+		var wordsInSentence = processed.split(" ");
+		
+		for (j in wordsInSentence) {
+			words2Sentence[wordsInSentence[j]] = hasNoSencences?"":sentence+"...";
+			words.push(wordsInSentence[j]);
+		}
+	}
+
 	console.log("Number of words after split " + words.length)
 	
 	db.collection("lexique380", function(err, lexique) {
@@ -196,6 +235,7 @@ function splittext(text, req, res) {
 			var validWordsArr = [];
 			for (i in validWords) {
 				validWordsMap[validWords[i].word] = validWords[i];
+				validWordsMap[validWords[i].word]["use"] = words2Sentence[validWords[i].word];
 				validWordsArr.push(validWords[i].word);
 			}
 		
@@ -214,8 +254,8 @@ function splittext(text, req, res) {
 	})
 }
 
-app.get('/splittext', function(req, res) {
-	var text = req.query.text;
+app.post('/splittext', function(req, res) {
+	var text = req.body.text;
 	if (text.indexOf("http")==0) {
 		var link = url.parse(text);
 		var options = {host: link.host, port: link.port, path: link.path}

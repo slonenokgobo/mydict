@@ -85,11 +85,12 @@
 			      <th>Front</th>
 			      <th>Back</th>
 			      <th>Hint</th>
+			      <th>Date</th>
 			    </tr>
 			  </thead>
 			  <tbody>
 			<% for(var i=0; i<cards.length; i++) {%>
-			   <tr><td><%= i+1 %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td></tr>
+			   <tr><td><%= cards.length-i %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td><td class='pretty-date' data-date='<%= cards[i].date %>'></td></tr>
 			<% } %>
 			</tbody>
 			</table>        
@@ -121,6 +122,18 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/mydict.js"></script>
+    <script src="js/pretty.js"></script>
 
+<script>
+$(document).ready(function() {
+  $(".pretty-date").each(function() {
+  	
+  	var date = $(this).attr("data-date");
+  	if (date) {
+  		$(this).text(prettyDate(parseInt(date))); 
+  	}  	
+  })
+});
+</script>
   </body>
 </html>
