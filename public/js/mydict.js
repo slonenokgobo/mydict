@@ -20,8 +20,9 @@ function splitText() {
 			total++;
 			if (!dictEntry.cardtype) {
 				var phrase = dictEntry.use;
-				phrase = phrase.replace(word, "<b>"+word+"</b>");
-				
+				console.log(dictEntry.original)
+				phrase = phrase.replace(dictEntry.original, "<b>"+dictEntry.original+"</b>");
+
 				var wordInfo = "<div onClick=\"this.contentEditable='true';\"><h5 class='word'>"+word+"</h5></div>";
 				wordInfo += "<div onClick=\"this.contentEditable='true';\" class='use'><small>"+phrase+"<small></div>";
 				wordInfo += "<div onClick=\"this.contentEditable='true';\" class='translation'></div>";

@@ -155,7 +155,7 @@ app.get('/home', ensureAuthenticated, function(req, res) {
 });
 
 app.get('/study', ensureAuthenticated, function(req, res) {
-	var collectionName = checkUser(req);
+	var collectionName = checkUser(req, res);
 	db.collection(collectionName, function(err, coll) {
 		coll.find({cardtype: "learning"}, { sort : {'_id': -1}}).toArray(function(err, cards) {
 			res.render('study', {'cards':cards});
@@ -164,7 +164,7 @@ app.get('/study', ensureAuthenticated, function(req, res) {
 });
 
 app.get('/mydict', ensureAuthenticated, function(req, res) {
-	var collectionName = checkUser(req);
+	var collectionName = checkUser(req, res);
 	db.collection(collectionName, function(err, coll) {
 		coll.find({cardtype: "known"}, { sort : {'_id': -1} }).toArray(function(err, cards) {
 			res.render('mydict', {'cards':cards});
@@ -173,7 +173,10 @@ app.get('/mydict', ensureAuthenticated, function(req, res) {
 });
 
 app.get('/translate', function(req, res) {
-	var options = {host: "slovari.yandex.ru", path: "/"+req.query.word+"/fr/"}
+	var options = {
+		host: "slovari.yandex.ru", path: "/"+req.query.word+"/fr/", 
+		headers: {'user-agent': 'Mozilla/5.0'},
+	}
 	console.log(options);
 	
 	http.get(options, function (http_res) {
@@ -182,6 +185,7 @@ app.get('/translate', function(req, res) {
 	        data += chunk;
 	    });
 	    http_res.on("end", function () {
+	    	console.log(data)
 			jsdom.env({
 			    html: data,
 			    scripts: [
@@ -190,7 +194,7 @@ app.get('/translate', function(req, res) {
 			  }, function (err, window) {
 			    var $ = window.jQuery;
 			    res.send("<div>"+$('.b-translation__tr').first().html()+"</div>" + $('.b-translation__article').first().html());
-			  });
+			  });			  
 	    });
 	});
 });
@@ -199,7 +203,7 @@ function beautify_name(name) {
 	return name.replace(/\W/g, '_');
 }
 
-function checkUser(req) {
+function checkUser(req, res) {
 	if (req.user && req.user.emails[0] && req.user.emails[0].value) {
 		return beautify_name(req.user.emails[0].value);
 	}
@@ -207,7 +211,7 @@ function checkUser(req) {
 }
 
 function splittext(text, req, res) {
-	var collectionName = checkUser(req);
+	var collectionName = checkUser(req, res);
 	
 	var sentences = text.split(/[.|!|?]\s/gi);
 	var hasNoSencences = text.indexOf(".")==-1;
@@ -234,9 +238,11 @@ function splittext(text, req, res) {
 			var validWordsMap = {};
 			var validWordsArr = [];
 			for (i in validWords) {
-				validWordsMap[validWords[i].word] = validWords[i];
-				validWordsMap[validWords[i].word]["use"] = words2Sentence[validWords[i].word];
-				validWordsArr.push(validWords[i].word);
+				var infinitiv = validWords[i].details[2];
+				validWordsMap[infinitiv] = validWords[i];
+				validWordsMap[infinitiv]["use"] = words2Sentence[validWords[i].word];
+				validWordsMap[infinitiv]["original"] = validWords[i].word;
+				validWordsArr.push(infinitiv);
 			}
 		
 			console.log("Number of valid words " + validWords.length);
@@ -278,7 +284,7 @@ app.post('/splittext', function(req, res) {
 
 
 app.post('/addword', function(req, res) {
-	var collectionName = checkUser(req);
+	var collectionName = checkUser(req, res);
 	var word = req.body.word;
 	var card = req.body.card;
 	var type = req.body.cardtype;
