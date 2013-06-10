@@ -1014,3 +1014,28 @@
 { "_id" : { "$oid" : "51b4566eb79937e50dfff536" }, "word" : "quand", "card" : { "front" : "quand", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773102560 }
 { "_id" : { "$oid" : "51b45670b79937e50dfff537" }, "word" : "pubs", "card" : { "front" : "pubs", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773104877 }
 { "_id" : { "$oid" : "51b45673b79937e50dfff538" }, "word" : "puisque", "card" : { "front" : "puisque", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370773107560 }
+{ "_id" : { "$oid" : "51b5c8e1d5b143b2e52db2ec" }, "word" : "appelée", "card" : { "front" : "appelée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370867937859 }
+{ "_id" : { "$oid" : "51b5c8e6d5b143b2e52db2ed" }, "word" : "avant", "card" : { "front" : "avant", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370867942707 }
+{ "_id" : { "$oid" : "51b5c94ed5b143b2e52db2ee" }, "word" : "île", "card" : { "front" : "île", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868046198 }
+{ "_id" : { "$oid" : "51b5c94fd5b143b2e52db2ef" }, "word" : "époque", "card" : { "front" : "époque", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868047643 }
+{ "_id" : { "$oid" : "51b5c951d5b143b2e52db2f0" }, "word" : "voisine", "card" : { "front" : "voisine", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868049166 }
+{ "_id" : { "$oid" : "51b5c953d5b143b2e52db2f1" }, "word" : "villes", "card" : { "front" : "villes", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868051566 }
+{ "_id" : { "$oid" : "51b5c954d5b143b2e52db2f2" }, "word" : "ville", "card" : { "front" : "ville", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868052132 }
+{ "_id" : { "$oid" : "51b5c957d5b143b2e52db2f3" }, "word" : "viendrait", "card" : { "front" : "viendrait", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868055780 }
+{ "_id" : { "$oid" : "51b5c967d5b143b2e52db2f4" }, "word" : "îles", "card" : { "front" : "îles", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868071852 }
+{ "_id" : { "$oid" : "51b5c96ed5b143b2e52db2f5" }, "word" : "km", "card" : { "front" : "km", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868078203 }
+{ "_id" : { "$oid" : "51b5c9f4d5b143b2e52db2f6" }, "word" : "nord", "card" : { "front" : "nord", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868212662 }
+{ "_id" : { "$oid" : "51b5c9fed5b143b2e52db2f7" }, "word" : "sud", "card" : { "front" : "sud", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868222669 }
+{ "_id" : { "$oid" : "51b5ca27d5b143b2e52db2f8" }, "word" : "réforme", "card" : { "front" : "réforme", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868263324 }
+{ "_id" : { "$oid" : "51b5ca28d5b143b2e52db2f9" }, "word" : "régions", "card" : { "front" : "régions", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868264571 }
+{ "_id" : { "$oid" : "51b5ca2dd5b143b2e52db2fa" }, "word" : "riz", "card" : { "front" : "riz", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868269989 }
+{ "_id" : { "$oid" : "51b5ca30d5b143b2e52db2fb" }, "word" : "quitté", "card" : { "front" : "quitté", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868272084 }
+{ "_id" : { "$oid" : "51b5ca33d5b143b2e52db2fc" }, "word" : "rien", "card" : { "front" : "rien", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868275076 }
+{ "_id" : { "$oid" : "51b5ca34d5b143b2e52db2fd" }, "word" : "provoqué", "card" : { "front" : "provoqué", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868276899 }
+{ "_id" : { "$oid" : "51b5ca4fd5b143b2e52db2fe" }, "word" : "mer", "card" : { "front" : "mer", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868303492 }
+{ "_id" : { "$oid" : "51b5cb12d5b143b2e52db2ff" }, "word" : "baignée", "card" : { "front" : "baignée", "back" : "", "hint" : "" }, "cardtype" : "known", "date" : 1370868498184 }
+{ "_id" : { "$oid" : "51b5cbc2d5b143b2e52db300" }, "word" : "climat", "card" : { "front" : "climat", "back" : "", "hint" : "Son climat est équatorial..." }, "cardtype" : "known", "date" : 1370868674777 }
+{ "_id" : { "$oid" : "51b5e67fd5b143b2e52db301" }, "word" : "adore", "card" : { "front" : "adore", "back" : "", "hint" : "\n705\n00:58:10,553 --> 00:58:15,183\nEt on adore ne pas avoir\nle salaire minimum, ni la sécurité sociale..." }, "cardtype" : "known", "date" : 1370875519817 }
+{ "_id" : { "$oid" : "51b5e682d5b143b2e52db302" }, "word" : "ai", "card" : { "front" : "ai", "back" : "", "hint" : "J'y ai beaucoup pensé..." }, "cardtype" : "known", "date" : 1370875522214 }
+{ "_id" : { "$oid" : "51b5e683d5b143b2e52db303" }, "word" : "aide", "card" : { "front" : "aide", "back" : "", "hint" : "\n697\n00:57:44,961 --> 00:57:48,021\nEn quoi vous croyez que les Noirs\nont besoin de votre aide ..." }, "cardtype" : "known", "date" : 1370875523776 }
+{ "_id" : { "$oid" : "51b5e684d5b143b2e52db304" }, "word" : "aider", "card" : { "front" : "aider", "back" : "", "hint" : "\n545\n00:44:57,094 --> 00:45:00,257\n\"J'ai quitté l'école pour aider maman\nà payer les factures..." }, "cardtype" : "known", "date" : 1370875524126 }
