@@ -24,8 +24,8 @@ function splitText() {
 				phrase = phrase.replace(dictEntry.original, "<b>"+dictEntry.original+"</b>");
 
 				var wordInfo = "<div onClick=\"this.contentEditable='true';\"><h5 class='word'>"+word+"</h5></div>";
-				wordInfo += "<div onClick=\"this.contentEditable='true';\" class='use'><small>"+phrase+"<small></div>";
 				wordInfo += "<div onClick=\"this.contentEditable='true';\" class='translation'></div>";
+				wordInfo += "<div onClick=\"this.contentEditable='true';\" class='use'><small>"+phrase+"<small></div>";
 				wordInfo += "<div class='buttons' ><button type='button' class='btn btn-success' onclick='return addWord(this, \"known\")'>Known</button>";
 				wordInfo += " <button type='button' class='btn btn-info' onclick='return addWord(this, \"learning\")'>Study</button>";
 				wordInfo += " <button type='button' class='btn' onclick='return translateWord(this)'>Translate</button></div>";

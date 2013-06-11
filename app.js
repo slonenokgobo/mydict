@@ -213,21 +213,23 @@ function checkUser(req, res) {
 function splittext(text, req, res) {
 	var collectionName = checkUser(req, res);
 	
-	var sentences = text.split(/[.|!|?]\s/gi);
+	var lines = text.split("\n");
 	var hasNoSencences = text.indexOf(".")==-1;
 	var words = [];
 	var words2Sentence = {};
 	
-	for (i in sentences) {
-		
-		var sentence = sentences[i];
-		var processed = sentence.replace("\n", " ");
-		processed = processed.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, " ");
-		var wordsInSentence = processed.split(" ");
-		
-		for (j in wordsInSentence) {
-			words2Sentence[wordsInSentence[j]] = hasNoSencences?"":sentence+"...";
-			words.push(wordsInSentence[j]);
+	for (l in lines) {
+		var sentences = lines[l].split(/[.|!|?]\s/gi);
+		for (s in sentences) {
+			var sentence = sentences[s];
+			var processed = sentence.replace("\n", " ");
+			processed = processed.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, " ");
+			var wordsInSentence = processed.split(" ");
+			
+			for (w in wordsInSentence) {
+				words2Sentence[wordsInSentence[w]] = hasNoSencences?"":sentence+"...";
+				words.push(wordsInSentence[w]);
+			}
 		}
 	}
 
