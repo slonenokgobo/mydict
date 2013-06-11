@@ -42,6 +42,10 @@ function splitText() {
 		$("#words").children().first().after("<p>Total "+total+", unknown "+unknown+percentage+", known "+known+", learning "+learning+"</p>");
 	});
 	
+	tranapi.translate("oevre", "ru", function (trans) {
+		console.log(trans);
+	})
+	
 	return false;
 }
 

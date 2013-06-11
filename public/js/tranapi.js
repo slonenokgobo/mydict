@@ -1,5 +1,5 @@
 var tranapi = {
-	getTranslate : function(sourceText, translated_language, callbackFunc){		
+	translate : function(sourceText, translated_language, callbackFunc){		
 		//usage deprecated google api request:
 		//var request_string = 'https://www.googleapis.com/language/translate/v2?key=AIzaSyBal3n8McSavjhYeZ39GUiGg7FLjsepY9s&target=' + translated_language + '&q=' + sourceText;
 		
@@ -31,16 +31,6 @@ var tranapi = {
 		    }		    
 		});			
 	}
-	/*$.get(request_string,
-	// $.post('https://ajax.googleapis.com/ajax/services/language/translate?v=1.0&q=' + sourceText + "&langpair=" + languagePair,
-		        function(data){	    	
-		            if (data.data.translations) {	            
-		            	 retData = data.data.translations[0].translatedText;	            	
-		            } else {
-		            	retData = data.data.error.message;	            	
-		            }
-		            callbackFunc(retData);
-		        }, "json");	*/	
 	
 };
 //undocumented google dict api:
