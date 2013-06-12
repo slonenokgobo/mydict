@@ -91,6 +91,7 @@ function editCard(btn) {
 	var word = par.find(".word").text();
 	var use = par.find(".use").text();
 	
+	var cardWrapper = $("<div></div>");
 	var card = $("<div class='card' style='background-color: #f7f7f9;'></div>");
 	var cardFront = $("<div class='card-front'></div>");
 	var cardBack = $("<div class='card-back'></div>");
@@ -104,12 +105,16 @@ function editCard(btn) {
 	cardHint.append("<span>Hint: </span><span class='text' onClick=\"this.contentEditable='true';\">" + use+"</span>");
 	
 	buttons.append(cancelButton);
+	buttons.append(" ");
 	buttons.append("<button type='button' class='btn btn-success' onclick='return createCard(this)'>Create</button>");
+	buttons.append(" ");
 	buttons.append(yandexButton);
 	
-	card.append(cardFront).append(cardBack).append(cardHint).append(buttons);
+	card.append(cardFront).append(cardBack).append(cardHint);
+	cardWrapper.append(card).append(buttons);
+	
 	var saveHtml = par.html();
-	par.html(card);
+	par.html(cardWrapper);
 	
 	yandexButton.click(function() {
 	
@@ -118,10 +123,13 @@ function editCard(btn) {
            type: 'GET',
            success: function(res) {
              //var content = $(res.responseText).html();
-             var resHtml = $(res.responseText)
-             var yandexTranslation = $("<div style='padding-top:10px'></div>");
+             var resHtml = $(res.responseText);
+             
+             par.find(".yandex-translation").remove();
+             var yandexTranslation = $("<div class='yandex-translation' style='padding-top:10px'></div>");
              yandexTranslation.append(resHtml.find(".b-title").html());
              yandexTranslation.append(resHtml.find(".b-translate"));
+             
              yandexTranslation.find("p").click(function() {
              	if (cardHint.hasClass("initial")) {
              		cardHint.removeClass("initial");
@@ -130,14 +138,11 @@ function editCard(btn) {
              		var oldText = cardHint.find(".text").text();
              		cardHint.find(".text").text(oldText + ", " + $(this).text());
              	}
-             	
              })
-             buttons.before(yandexTranslation);
+             cardWrapper.append(yandexTranslation);
            }
          });        	
 	})
-	
-	
 	
 	cancelButton.click(function() {
 		par.html(saveHtml);
