@@ -5,7 +5,9 @@ var tranapi = {
 		
 		//usage microsoft transalte api:
 		//http://api.microsofttranslator.com/V2/Ajax.svc/Translate?oncomplete=mycallback&appId=ECDF09E7A81FD776CE912017D3C1AD3017D4D297&to=ru&text=%D0%9C%D0%BE%D0%B9%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20One%20by%20One
-		var request_string = 'http://api.microsofttranslator.com/V2/Ajax.svc/Translate?appId=ECDF09E7A81FD776CE912017D3C1AD3017D4D297&to=' + translated_language + '&text=' + sourceText;
+		//var request_string = 'http://api.microsofttranslator.com/V2/Ajax.svc/Translate?appId=ECDF09E7A81FD776CE912017D3C1AD3017D4D297&to=' + translated_language + '&text=' + sourceText;
+		var api = 'trnsl.1.1.20130612T074508Z.d31b91064d39ef42.06cb993eeaf031b05b465b62435428359d95328f';
+		var request_string = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key='+api+'&format=html&lang='+translated_language+'&text='+sourceText;
 		//http://api.microsofttranslator.com/V2/Ajax.svc/Translate?oncomplete=mycallback&appId=ECDF09E7A81FD776CE912017D3C1AD3017D4D297&to=ru&text=Мой текст One by One
 		//alert("req" + request_string);
 		//console.log("tranapi: request string: " + request_string);	

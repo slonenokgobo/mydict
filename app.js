@@ -172,32 +172,6 @@ app.get('/mydict', ensureAuthenticated, function(req, res) {
 	})	
 });
 
-app.get('/translate', function(req, res) {
-	var options = {
-		host: "slovari.yandex.ru", path: "/"+req.query.word+"/fr/", 
-		headers: {'user-agent': 'Mozilla/5.0'},
-	}
-	console.log(options);
-	
-	http.get(options, function (http_res) {
-	    var data = "";
-	    http_res.on("data", function (chunk) {
-	        data += chunk;
-	    });
-	    http_res.on("end", function () {
-	    	console.log(data)
-			jsdom.env({
-			    html: data,
-			    scripts: [
-			      'http://code.jquery.com/jquery-1.5.min.js'
-			    ]
-			  }, function (err, window) {
-			    var $ = window.jQuery;
-			    res.send("<div>"+$('.b-translation__tr').first().html()+"</div>" + $('.b-translation__article').first().html());
-			  });			  
-	    });
-	});
-});
 
 function beautify_name(name) {
 	return name.replace(/\W/g, '_');
@@ -285,11 +259,10 @@ app.post('/splittext', function(req, res) {
 });
 
 
-app.post('/addword', function(req, res) {
+function createCard(req, res, type) {
 	var collectionName = checkUser(req, res);
 	var word = req.body.word;
 	var card = req.body.card;
-	var type = req.body.cardtype;
 	
 	if (!req.body.word || req.body.word.length==0) {
 		return false;
@@ -303,4 +276,12 @@ app.post('/addword', function(req, res) {
 			res.send("Successfully added " + word);
 		});
 	})
+}
+
+app.post('/addword', function(req, res) {
+	createCard(req, res, "known");
+});
+
+app.post('/createcard', function(req, res) {
+	createCard(req, res, "learning");
 });

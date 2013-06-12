@@ -23,12 +23,10 @@ function splitText() {
 				console.log(dictEntry.original)
 				phrase = phrase.replace(dictEntry.original, "<b>"+dictEntry.original+"</b>");
 
-				var wordInfo = "<div onClick=\"this.contentEditable='true';\"><h5 class='word'>"+word+"</h5></div>";
-				wordInfo += "<div onClick=\"this.contentEditable='true';\" class='translation'></div>";
-				wordInfo += "<div onClick=\"this.contentEditable='true';\" class='use'><small>"+phrase+"<small></div>";
-				wordInfo += "<div class='buttons' ><button type='button' class='btn btn-success' onclick='return addWord(this, \"known\")'>Known</button>";
-				wordInfo += " <button type='button' class='btn btn-info' onclick='return addWord(this, \"learning\")'>Study</button>";
-				wordInfo += " <button type='button' class='btn' onclick='return translateWord(this)'>Translate</button></div>";
+				var wordInfo = "<div><h5 class='word'>"+word+"</h5></div>";
+				wordInfo += "<div><span class='use'><small>"+phrase+"<small></span></div>";
+				wordInfo += "<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>";
+				wordInfo += " <button type='button' class='create-card-button btn btn-info' onclick='return editCard(this)'>Create&nbsp;card</button></div>";
 				words.append("<div class='word-info'>"+wordInfo+"</div>");
 				unknown++;
 			} else if (dictEntry.cardtype=="known") {
@@ -42,23 +40,39 @@ function splitText() {
 		$("#words").children().first().after("<p>Total "+total+", unknown "+unknown+percentage+", known "+known+", learning "+learning+"</p>");
 	});
 	
-	tranapi.translate("oevre", "ru", function (trans) {
-		console.log(trans);
-	})
 	
 	return false;
 }
 
-
-function addWord(btn, cardType) {
+function knownWord(btn, cardType) {
 	var par = $(btn).parents(".word-info");
 	var text = par.find(".word").text();
-	var hint = par.find(".use").text();
-	console.log("Adding " + text);
+	console.log("Adding a known word " + text);
 
 	$.ajax({
 	  url: "/addword",
-	  data: { word: text, card: {front:text, back:"", 'hint':hint}, 'cardtype' : cardType },
+	  data: { word: text },
+	  type: "POST",
+	}).done(function( data ) {
+		console.log(data);
+	});
+	par.remove();
+	return false;
+}
+
+
+function createCard(btn, cardType) {
+	var par = $(btn).parents(".word-info");
+	var text = par.find(".card-front").find(".text").text();
+	var back = par.find(".card-back").find(".text").text();
+	var hint = par.find(".card-hint").find(".text").text();
+
+	console.log("Creating a card");
+	console.log({front:text, 'back':back, 'hint':hint});
+
+	$.ajax({
+	  url: "/createcard",
+	  data: { word: text, card: {front:text, 'back':back, 'hint':hint} },
 	  type: "POST",
 	}).done(function( data ) {
 		console.log(data);
@@ -68,17 +82,70 @@ function addWord(btn, cardType) {
 	return false;
 }
 
-function translateWord(btn) {
-	var par = $(btn).parents(".word-info");
-	var text = par.find(".word").text();
-	console.log("Translating " + text);
+function callback(test) {
+	console.log(test)
+}
 
-	$.ajax({
-	  url: "/translate",
-	  data: { word: text }
-	}).done(function( data ) {
-		par.find(".translation").html(data);
-	});
+function editCard(btn) {
+	var par = $(btn).parents(".word-info");
+	var word = par.find(".word").text();
+	var use = par.find(".use").text();
 	
-	return false;
+	var card = $("<div class='card' style='background-color: #f7f7f9;'></div>");
+	var cardFront = $("<div class='card-front'></div>");
+	var cardBack = $("<div class='card-back'></div>");
+	var cardHint = $("<div class='card-hint initial'></div>");
+	var cancelButton = $("<button type='button' class='btn btn-danger'>Cancel</button>");	
+	var yandexButton = $("<button type='button' class='btn'>Yandex</button>");	
+	var buttons = $("<div class='buttons'></div>");
+	
+	cardFront.append("<span>Front: </span><span class='text' onClick=\"this.contentEditable='true';\">" + word+"</span>");
+	cardBack.append("<span>Back: </span><span class='text' onClick=\"this.contentEditable='true';\"></span>");
+	cardHint.append("<span>Hint: </span><span class='text' onClick=\"this.contentEditable='true';\">" + use+"</span>");
+	
+	buttons.append(cancelButton);
+	buttons.append("<button type='button' class='btn btn-success' onclick='return createCard(this)'>Create</button>");
+	buttons.append(yandexButton);
+	
+	card.append(cardFront).append(cardBack).append(cardHint).append(buttons);
+	var saveHtml = par.html();
+	par.html(card);
+	
+	yandexButton.click(function() {
+	
+		$.ajax({
+           url: "http://m.slovari.yandex.ru/translate.xml?lang=fr&text="+word,
+           type: 'GET',
+           success: function(res) {
+             //var content = $(res.responseText).html();
+             var resHtml = $(res.responseText)
+             var yandexTranslation = $("<div style='padding-top:10px'></div>");
+             yandexTranslation.append(resHtml.find(".b-title").html());
+             yandexTranslation.append(resHtml.find(".b-translate"));
+             yandexTranslation.find("p").click(function() {
+             	if (cardHint.hasClass("initial")) {
+             		cardHint.removeClass("initial");
+             		cardHint.find(".text").text($(this).text());
+             	} else {
+             		var oldText = cardHint.find(".text").text();
+             		cardHint.find(".text").text(oldText + ", " + $(this).text());
+             	}
+             	
+             })
+             buttons.before(yandexTranslation);
+           }
+         });        	
+	})
+	
+	
+	
+	cancelButton.click(function() {
+		par.html(saveHtml);
+		return false;
+	})
+	
+	tranapi.translate(word, "fr-ru", function (trans) {
+		console.log(trans);
+		cardBack.find(".text").text(trans.translate.text[0]);
+	})	
 }
