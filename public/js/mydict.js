@@ -154,3 +154,17 @@ function editCard(btn) {
 		cardBack.find(".text").text(trans.translate.text[0]);
 	})	
 }
+
+function startLearning(btn) {
+	var row = $('<div class="row-fluid learning-window"></div>');
+	var span = $('<div class="span12 full-screen-learning"></div>');
+	var table = $("<table style='width:100%;height:100%'></table>");
+	
+	var card = $("<tr><td style='height:100%;text-align:center;vertical-align:middle'>card</td></tr>");
+	var bar = '<tr><td><button class="btn btn-danger offset1">Forgot</button> <button class="btn btn-warning offset3">Hard</button> <button class="btn btn-success offset3">Easy</button></td></tr>';
+	span.height($(window).height());
+	row.append( span.append(table.append(card).append(bar)) );
+	
+	$(btn).parent().parent().parent().after(row);
+	$('html,body').animate({ scrollTop: row.offset().top });
+}
