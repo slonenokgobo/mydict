@@ -186,6 +186,16 @@ function getNextCard() {
 }
 
 function startLearning(btn) {
+
+	if ($(btn).hasClass("btn-danger")) {
+		$(".learning-window").remove();
+		cardCounter=0;
+		$(btn).removeClass("btn-danger").addClass("btn-success").text("Start Learning");
+		return false;
+	}
+	
+	$(btn).removeClass("btn-success").addClass("btn-danger").text("Stop Learning");
+
 	var row = $('<div class="row-fluid learning-window"></div>');
 	var span = $('<div class="span12 full-screen-learning"></div>');
 	var table = $("<table style='width:100%;height:100%'></table>");
@@ -213,14 +223,6 @@ function startLearning(btn) {
 		table.find("tr:first").remove();
 		table.prepend(card);
 	});
-	
-	$(btn).removeClass("btn-success").addClass("btn-danger").text("Stop Learning").unbind('click').click(function() {
-		row.remove();
-		cardCounter=0;
-		$(btn).removeClass("btn-danger").addClass("btn-success").text("Start Learning").unbind('click').click(function() {
-			startLearning(this);
-		})
-	})
 }
 
 function moveCardToDict(btn, cardId, offset) {
