@@ -285,3 +285,35 @@ app.post('/addword', function(req, res) {
 app.post('/createcard', function(req, res) {
 	createCard(req, res, "learning");
 });
+
+app.post('/cardhistory', function(req, res) {
+	var collectionName = checkUser(req, res);
+	var id = req.body.id;
+	var status = req.body.status;
+	
+	db.collection(collectionName, function(err, coll) {
+		var key = {'_id':new BSON.ObjectID(id)}
+		var data = {$push: { history: {'status':status, date:new Date().getTime()}}};
+		coll.update(key, data, {safe:true}, function(err, result) {
+			console.log(result)
+			console.log(err)
+			res.send(result);
+		});
+	})
+});
+
+app.post('/card', function(req, res) {
+	var collectionName = checkUser(req, res);
+	var id = req.body.id;
+	var cardType = req.body.cardType;
+	
+	db.collection(collectionName, function(err, coll) {
+		var key = {'_id':new BSON.ObjectID(id)}
+		var data = {'cardtype':cardType, date:new Date().getTime()};
+		coll.update(key, data, {safe:true}, function(err, result) {
+			console.log(result)
+			console.log(err)
+			res.send(result);
+		});
+	})
+});

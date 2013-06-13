@@ -155,16 +155,86 @@ function editCard(btn) {
 	})	
 }
 
+var cardCounter = 0;
+function getNextCard() {
+	if (!cards || !cards[cardCounter]) return;
+	
+	while (cards[cardCounter]['removed']) {
+		cardCounter++;
+	}
+	
+	var entry = cards[cardCounter++];
+	var card = entry.card;
+	console.log(card);
+	var cardHtml = $("<tr style='width:100%'><td id='"+entry._id+"' style='height:100%;text-align:center;vertical-align:middle card' class='back'>"+card.back+"</td></tr>");
+	cardHtml.click(function() {
+		var back = cardHtml.find(".back");
+		if (back.length) {
+			back.text(card.hint);
+			back.removeClass("back").addClass("hint");
+			return false;
+		}		
+		var hint = cardHtml.find(".hint");
+		if (hint.length) {
+			hint.text(card.front);
+			hint.removeClass("hint").addClass("front");
+			return false;
+		}		
+	});
+	
+	return cardHtml;
+}
+
 function startLearning(btn) {
 	var row = $('<div class="row-fluid learning-window"></div>');
 	var span = $('<div class="span12 full-screen-learning"></div>');
 	var table = $("<table style='width:100%;height:100%'></table>");
 	
-	var card = $("<tr><td style='height:100%;text-align:center;vertical-align:middle'>card</td></tr>");
-	var bar = '<tr><td><button class="btn btn-danger offset1">Forgot</button> <button class="btn btn-warning offset3">Hard</button> <button class="btn btn-success offset3">Easy</button></td></tr>';
+	var card = getNextCard();
+	var bar = '<tr><td><button class="btn btn-danger offset1 next-card">Forgot</button> <button class="btn btn-warning offset3 next-card">Hard</button> <button class="btn btn-success offset3 next-card">Easy</button></td></tr>';
 	span.height($(window).height());
 	row.append( span.append(table.append(card).append(bar)) );
-	
+
 	$(btn).parent().parent().parent().after(row);
 	$('html,body').animate({ scrollTop: row.offset().top });
+	
+	$(".next-card").click(function() {
+		var cardStatus = $(this).text();
+		var cardId = card.find("td").attr('id');
+		$.ajax({
+		  url: "/cardhistory",
+		  data: { id:cardId, status: cardStatus },
+		  type: "POST",
+		}).done(function( data ) {
+			console.log(data);
+		});
+		
+		card = getNextCard();
+		table.find("tr:first").remove();
+		table.prepend(card);
+	});
+	
+	$(btn).removeClass("btn-success").addClass("btn-danger").text("Stop Learning").click(function() {
+		row.remove();
+		$(btn).removeClass("btn-danger").addClass("btn-success").text("Start Learning").click(function() {
+			startLearning(btn);
+		})
+	})
+}
+
+function moveCardToDict(btn, cardId, offset) {
+	var row = $(btn).parents("tr");
+	console.log(cardId)
+	$.ajax({
+	  url: "/card",
+	  data: { id:cardId, cardType:"known" },
+	  type: "POST",
+	}).done(function( data ) {
+		console.log(data);
+	});
+	row.remove();
+	if (cards && cards[offset]) {
+		cards[offset]['removed'] = true;
+	}
+	return false;
 }

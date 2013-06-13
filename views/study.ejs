@@ -59,6 +59,10 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="ico/favicon.png">
+                                   
+	<script>
+		var cards = <%- JSON.stringify(cards) %>;
+	</script>                                   
   </head>
 
   <body>
@@ -95,11 +99,12 @@
 			      <th>Front</th>
 			      <th>Back</th>
 			      <th>Hint</th>
+			      <th></th>
 			    </tr>
 			  </thead>
 			  <tbody>
 			<% for(var i=0; i<cards.length; i++) {%>
-			   <tr><td><%= cards.length-i %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td></tr>
+			   <tr><td><%= cards.length-i %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td><td><div class='buttons' ><button type='button' class='btn btn-success' onclick='return moveCardToDict(this, "<%= cards[i]._id %>", <%= i %>)'>Known</button></td></tr>
 			<% } %>
 			</tbody>
 			</table>        
