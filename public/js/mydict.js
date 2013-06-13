@@ -191,11 +191,11 @@ function startLearning(btn) {
 	var table = $("<table style='width:100%;height:100%'></table>");
 	
 	var card = getNextCard();
-	var bar = '<tr><td><button class="btn btn-danger offset1 next-card">Forgot</button> <button class="btn btn-warning offset3 next-card">Hard</button> <button class="btn btn-success offset3 next-card">Easy</button></td></tr>';
+	var bar = '<tr><td style="text-align:center"><button class="btn btn-danger next-card">Forgot</button> <button class="btn btn-warning next-card">Hard</button> <button class="btn btn-success next-card">Easy</button></td></tr>';
 	span.height($(window).height());
 	row.append( span.append(table.append(card).append(bar)) );
 
-	$(btn).parent().parent().parent().after(row);
+	$(btn).parents(".row-fluid").after(row);
 	$('html,body').animate({ scrollTop: row.offset().top });
 	
 	$(".next-card").click(function() {
@@ -214,10 +214,11 @@ function startLearning(btn) {
 		table.prepend(card);
 	});
 	
-	$(btn).removeClass("btn-success").addClass("btn-danger").text("Stop Learning").click(function() {
+	$(btn).removeClass("btn-success").addClass("btn-danger").text("Stop Learning").unbind('click').click(function() {
 		row.remove();
-		$(btn).removeClass("btn-danger").addClass("btn-success").text("Start Learning").click(function() {
-			startLearning(btn);
+		cardCounter=0;
+		$(btn).removeClass("btn-danger").addClass("btn-success").text("Start Learning").unbind('click').click(function() {
+			startLearning(this);
 		})
 	})
 }
