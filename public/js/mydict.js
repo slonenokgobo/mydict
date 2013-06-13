@@ -191,7 +191,7 @@ function startLearning(btn) {
 	var table = $("<table style='width:100%;height:100%'></table>");
 	
 	var card = getNextCard();
-	var bar = '<tr><td style="text-align:center"><button class="btn btn-danger next-card">Forgot</button> <button class="btn btn-warning next-card">Hard</button> <button class="btn btn-success next-card">Easy</button></td></tr>';
+	var bar = '<tr><td style="text-align:center"><button class="btn btn-danger btn-large next-card">Forgot</button><span style="padding:10px"></span><button class="btn btn-warning btn-large next-card">Hard</button><span style="padding:10px"></span><button class="btn btn-success btn-large next-card">Easy</button></td></tr>';
 	span.height($(window).height());
 	row.append( span.append(table.append(card).append(bar)) );
 
