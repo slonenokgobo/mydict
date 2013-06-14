@@ -201,8 +201,9 @@ function splittext(text, req, res) {
 			var wordsInSentence = processed.split(" ");
 			
 			for (w in wordsInSentence) {
-				words2Sentence[wordsInSentence[w]] = hasNoSencences?"":sentence+"...";
-				words.push(wordsInSentence[w]);
+				var word = wordsInSentence[w].toLowerCase();
+				words2Sentence[word] = hasNoSencences?"":sentence+"...";
+				words.push(word);
 			}
 		}
 	}

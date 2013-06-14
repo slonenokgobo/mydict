@@ -47,11 +47,12 @@ function splitText() {
 function knownWord(btn, cardType) {
 	var par = $(btn).parents(".word-info");
 	var text = par.find(".word").text();
+	var use = par.find(".use").text();
 	console.log("Adding a known word " + text);
 
 	$.ajax({
 	  url: "/addword",
-	  data: { word: text },
+	  data: { word: text, card: {front:"", back:"", hint:use }},
 	  type: "POST",
 	}).done(function( data ) {
 		console.log(data);
