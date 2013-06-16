@@ -167,8 +167,24 @@ function getNextCard() {
 	var entry = cards[cardCounter++];
 	var card = entry.card;
 	console.log(card);
-	var cardHtml = $("<tr style='width:100%'><td id='"+entry._id+"' style='height:100%;text-align:center;vertical-align:middle card' class='card-text'>"+card.back+"</td></tr>");
+	var cardHtml = $("<tr style='width:100%'><td id='"+entry._id+"' style='position:relative;height:100%;text-align:center;vertical-align:middle card'><span class='card-text' style='z-index:10'>"+card.back+"<span></td></tr>");
 	
+	var histDiv = $("<div class='history' style='position:absolute;top:0;left:0;z-index:-1'></div>");
+	cardHtml.find("td").append(histDiv);
+	
+	if (entry.history && entry.history[0]) {
+		var firstDate = entry.history[0].date;
+		for (i in entry.history) {
+			var hist = entry.history[i];
+			var daysSince = parseInt((hist.date-firstDate)/(1000*60*60*24));
+			console.log(daysSince);
+			histDiv.append("<div class='circleBase "+hist.status.toLowerCase()+"'></div>");
+			for (j=0;j<daysSince;j++) {
+				histDiv.append("<div class='circleBase empty'></div>");
+			}
+		}
+	}
+		
 	var states = ["back", "hint", "front"];
 	var stateCounter=1;
 	cardHtml.click(function() {
