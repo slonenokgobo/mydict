@@ -167,20 +167,14 @@ function getNextCard() {
 	var entry = cards[cardCounter++];
 	var card = entry.card;
 	console.log(card);
-	var cardHtml = $("<tr style='width:100%'><td id='"+entry._id+"' style='height:100%;text-align:center;vertical-align:middle card' class='back'>"+card.back+"</td></tr>");
+	var cardHtml = $("<tr style='width:100%'><td id='"+entry._id+"' style='height:100%;text-align:center;vertical-align:middle card' class='card-text'>"+card.back+"</td></tr>");
+	
+	var states = ["back", "hint", "front"];
+	var stateCounter=1;
 	cardHtml.click(function() {
-		var back = cardHtml.find(".back");
-		if (back.length) {
-			back.text(card.hint);
-			back.removeClass("back").addClass("hint");
-			return false;
-		}		
-		var hint = cardHtml.find(".hint");
-		if (hint.length) {
-			hint.text(card.front);
-			hint.removeClass("hint").addClass("front");
-			return false;
-		}		
+		var nextState = states[stateCounter%3];
+		stateCounter++;
+		cardHtml.find(".card-text").text(card[nextState]);
 	});
 	
 	return cardHtml;
