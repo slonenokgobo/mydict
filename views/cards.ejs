@@ -129,7 +129,12 @@
 			  </thead>
 			  <tbody>
 			<% for(var i=0; i<cards.length; i++) {%>
-			   <tr><td><%= cards.length-i %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td><td><div class='buttons' ><button type='button' class='btn btn-success' onclick='return moveCardToDict(this, "<%= cards[i]._id %>", <%= i %>)'>Known</button></td></tr>
+			   <tr class="word-info">
+			   <td><%= cards.length-i %></td>
+			   <td class="card-front"><div class="editable-field text" onClick="this.contentEditable='true';"><%= cards[i].card.front %></div></td>
+			   <td class="card-back"><div class="editable-field text" onClick="this.contentEditable='true';"><%= cards[i].card.back %></div></td>
+			   <td class="card-hint"><div class="editable-field text" onClick="this.contentEditable='true';"><%= cards[i].card.hint %></div></td>
+			   <td><div class='buttons' ><button type='button' class='btn btn-success' onclick='return moveCardToDict(this, "<%= cards[i]._id %>", <%= i %>)'>Known</button></td></tr>
 			<% } %>
 			</tbody>
 			</table>        
@@ -163,4 +168,13 @@
     <script src="js/mydict.js"></script>
 
   </body>
+  
+<script>
+$(document).ready(function() {
+	$(".editable-field").blur(function() {
+		createOrUpdateCard(this, false);
+	})
+});
+</script>
+  
 </html>

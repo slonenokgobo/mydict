@@ -62,7 +62,7 @@ function knownWord(btn, cardType) {
 }
 
 
-function createCard(btn, cardType) {
+function createOrUpdateCard(btn, hideAfter) {
 	var par = $(btn).parents(".word-info");
 	var text = par.find(".card-front").find(".text").text();
 	var back = par.find(".card-back").find(".text").text();
@@ -72,13 +72,16 @@ function createCard(btn, cardType) {
 	console.log({front:text, 'back':back, 'hint':hint});
 
 	$.ajax({
-	  url: "/createcard",
+	  url: "/card",
 	  data: { word: text, card: {front:text, 'back':back, 'hint':hint} },
 	  type: "POST",
 	}).done(function( data ) {
 		console.log(data);
 	});
-	par.remove();
+	
+	if (hideAfter){
+		par.remove();
+	}
 	
 	return false;
 }
@@ -107,7 +110,7 @@ function editCard(btn) {
 	
 	buttons.append(cancelButton);
 	buttons.append(" ");
-	buttons.append("<button type='button' class='btn btn-success' onclick='return createCard(this)'>Create</button>");
+	buttons.append("<button type='button' class='btn btn-success' onclick='return createOrUpdateCard(this, true)'>Create</button>");
 	buttons.append(" ");
 	buttons.append(yandexButton);
 	

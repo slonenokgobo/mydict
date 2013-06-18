@@ -299,7 +299,7 @@ app.post('/addword', function(req, res) {
 	createCard(req, res, "known");
 });
 
-app.post('/createcard', function(req, res) {
+app.post('/card', function(req, res) {
 	createCard(req, res, "learning");
 });
 
