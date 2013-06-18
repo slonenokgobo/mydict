@@ -147,7 +147,7 @@ db = new Db(dmName, server);
 db.open(function(err, db) {
     if(!err) {
         console.log("Connected to '"+dmName+"' database");
-    }
+    }    
 });
 
 app.get('/home', ensureAuthenticated, function(req, res) {
@@ -156,14 +156,30 @@ app.get('/home', ensureAuthenticated, function(req, res) {
 
 app.get('/study', ensureAuthenticated, function(req, res) {
 	var collectionName = checkUser(req, res);
+	var today = new Date().getTime();
+	
+	db.collection(collectionName, function(err, coll) {
+		coll.update({cardtype:"learning", nextDate:{$exists:false}}, {$set: {nextDate:1}}, {safe:true, multi:true}, function(err, updated) {
+			console.log("After update");
+			console.log(updated);
+			console.log(err);
+			coll.find({cardtype: "learning", nextDate : {$lt: today}}, { sort : {'_id': -1}}).toArray(function(err, cards) {
+				res.render('study', {'cards':cards});
+			})
+		});
+	})	
+});
+
+app.get('/cards', ensureAuthenticated, function(req, res) {
+	var collectionName = checkUser(req, res);
 	db.collection(collectionName, function(err, coll) {
 		coll.find({cardtype: "learning"}, { sort : {'_id': -1}}).toArray(function(err, cards) {
-			res.render('study', {'cards':cards});
+			res.render('cards', {'cards':cards});
 		})
 	})	
 });
 
-app.get('/mydict', ensureAuthenticated, function(req, res) {
+app.get('/dict', ensureAuthenticated, function(req, res) {
 	var collectionName = checkUser(req, res);
 	db.collection(collectionName, function(err, coll) {
 		coll.find({cardtype: "known"}, { sort : {'_id': -1} }).toArray(function(err, cards) {
@@ -287,19 +303,77 @@ app.post('/createcard', function(req, res) {
 	createCard(req, res, "learning");
 });
 
+// SM-2:
+// EF (easiness factor) is a rating for how difficult the card is.
+// Grade: (0-2) Set reps and interval to 0, keep current EF (repeat card today)
+//        (3)   Set interval to 0, lower the EF, reps + 1 (repeat card today)
+//        (4-5) Reps + 1, interval is calculated using EF, increasing in time.
+function calcIntervalEF(card, grade) {
+  if (!card.reps) card.reps = 0;
+  if (!card.interval) card.interval = 0;
+  if (!card.nextDate) card.nextDate = new Date().getTime();
+  if (!card.EF) card.EF = 2.5;
+
+  var oldEF = card.EF, newEF = 0;
+
+  
+  if (grade < 3) {
+    card.reps = 0;
+    card.interval = 0;
+  } else {
+
+    newEF = oldEF + (0.1 - (5-grade)*(0.08+(5-grade)*0.02));
+    if (newEF < 1.3) { // 1.3 is the minimum EF
+      card.EF = 1.3;
+    } else {
+      card.EF = newEF;
+    }
+
+    card.reps = card.reps + 1;
+
+    switch (card.reps) {
+      case 1:
+        card.interval = 1;
+        break;
+      case 2:
+        card.interval = 6;
+        break;
+      default:
+        card.interval = Math.round((card.reps - 1) * card.EF);
+        break;
+    }
+  }
+
+  if (grade === 3) {
+    card.interval = 0;
+  }
+
+  var nextDate = new Date();
+  nextDate.setDate(nextDate.getDate() + card.interval);
+  card.nextDate = nextDate.getTime();
+}
+
 app.post('/cardhistory', function(req, res) {
 	var collectionName = checkUser(req, res);
 	var id = req.body.id;
 	var status = req.body.status;
+	var grade = 3; // forgot
+	if (status.toLowerCase()=="hard") {grade = 4}
+	else if (status.toLowerCase()=="easy") {grade = 5}
 	
 	db.collection(collectionName, function(err, coll) {
 		var key = {'_id':new BSON.ObjectID(id)}
-		var data = {$push: { history: {'status':status, date:new Date().getTime()}}};
-		coll.update(key, data, {safe:true}, function(err, result) {
-			console.log(result)
-			console.log(err)
-			res.send(result);
-		});
+		coll.findOne(key, function(err, card) {
+
+			if (card) {	calcIntervalEF(card, grade); }
+			if (!card.history) card.history = [];
+			card.history.push({'status':status, date:new Date().getTime()});
+			
+			coll.findAndModify(key, [], card, {new:true}, function(err, result) {
+				console.log(result)
+				res.send("Successfully modified card " + card.word);
+			});
+		})
 	})
 });
 

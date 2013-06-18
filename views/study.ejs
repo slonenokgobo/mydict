@@ -107,42 +107,16 @@
         <ul class="nav nav-pills pull-right">
           <li><a href="/home">Create</a></li>
           <li class="active"><a href="/study">Study</a></li>
-          <li><a href="/mydict">MyDict</a></li>
+          <li><a href="/cards">Cards</a></li>
+          <li><a href="/dict">Dict</a></li>
         </ul>
         <h3 class="muted">My Dictionary</h3>
       </div>
 
       <hr>
       
-	<div class="row-fluid" style="text-align:center">
-	   	  	<button type='button' class='btn btn-success' onclick='return startLearning(this)'>Start Learning</button>
-	</div>
-
-      <hr>
-
-      <div class="row-fluid marketing">
-        <div id="cards" class="span12">
-			<table class="table">
-			  <thead>
-			    <tr>
-			      <th>#</th>
-			      <th>Front</th>
-			      <th>Back</th>
-			      <th>Hint</th>
-			      <th></th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			<% for(var i=0; i<cards.length; i++) {%>
-			   <tr><td><%= cards.length-i %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td><td><div class='buttons' ><button type='button' class='btn btn-success' onclick='return moveCardToDict(this, "<%= cards[i]._id %>", <%= i %>)'>Known</button></td></tr>
-			<% } %>
-			</tbody>
-			</table>        
-        </div>
-      </div>
-
-      <hr>
-
+      <div id="before-cards"></div>
+      
       <div class="footer">
         <p>&copy; Company 2013</p>
       </div>
@@ -166,6 +140,12 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/mydict.js"></script>
+
+<script>
+$(document).ready(function() {
+	startLearning();
+});
+</script>
 
   </body>
 </html>

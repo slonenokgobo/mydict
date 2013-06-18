@@ -45,6 +45,40 @@
       .marketing p + h4 {
         margin-top: 28px;
       }
+      
+.circleBase {
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    float:left;
+}
+
+.hard {
+    width: 10px;
+    height: 10px;
+    background: #FFFF99;
+    border: 1px solid #E0E0E0;
+}
+
+.forgot {
+    width: 10px;
+    height: 10px;
+    background: #FF9999;
+    border: 1px solid #E0E0E0;
+}
+.easy {
+    width: 10px;
+    height: 10px;
+    background: #99FF99;
+    border: 1px solid #E0E0E0;
+}
+
+.empty {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 1px solid #E0E0E0;
+}
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -59,6 +93,10 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="ico/favicon.png">
+                                   
+	<script>
+		var cards = <%- JSON.stringify(cards) %>;
+	</script>                                   
   </head>
 
   <body>
@@ -67,29 +105,34 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Create</a></li>
+          <li><a href="/home">Create</a></li>
           <li><a href="/study">Study</a></li>
-          <li><a href="/cards">Cards</a></li>
+          <li class="active"><a href="/cards">Cards</a></li>
           <li><a href="/dict">Dict</a></li>
         </ul>
         <h3 class="muted">My Dictionary</h3>
       </div>
 
       <hr>
-
-      <div class="row-fluid">
-      	<div class="span12">
-      		<textarea id="input-text" style="width:100%" rows="10">
-Plafonner les frais des agences immobilières, encadrer les tarifs des syndics ou réglementer l'activité des marchands de listes : le ministère du Logement vient de dévoiler les premières mesures du futur projet de loi Duflot, dit Duflot II, destiné à lutter contre des « pratiques abusives » dans le secteur immobilier. « Tarifs injustifiés et excessifs, non-respect des obligations, opacité, coûts de transaction trop élevés sont autant d'éléments qui entravent l'accès au logement et pèsent in fine sur le budget des ménages », constate le ministère. Aussi, la ministre de l’Egalité des Territoires et du Logement Cécile Duflot a entrepris de « moderniser en profondeur l'ensemble de ce secteur », pour « restaurer la confiance des consommateurs » et améliorer « le niveau des compétences et les conditions d'exercice des professions » immobilières.
-      		</textarea>
-      	</div>
-		<button type="button" class="btn btn-primary" onclick="return splitText()">Show New Words</button>
-      </div>
-
-      <hr>
-
+      
       <div class="row-fluid marketing">
-        <div id="words" class="span12">
+        <div id="cards" class="span12">
+			<table class="table">
+			  <thead>
+			    <tr>
+			      <th>#</th>
+			      <th>Front</th>
+			      <th>Back</th>
+			      <th>Hint</th>
+			      <th></th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			<% for(var i=0; i<cards.length; i++) {%>
+			   <tr><td><%= cards.length-i %></td><td><%= cards[i].card.front %></td><td><%= cards[i].card.back %></td><td><%= cards[i].card.hint %></td><td><div class='buttons' ><button type='button' class='btn btn-success' onclick='return moveCardToDict(this, "<%= cards[i]._id %>", <%= i %>)'>Known</button></td></tr>
+			<% } %>
+			</tbody>
+			</table>        
         </div>
       </div>
 
@@ -105,7 +148,6 @@ Plafonner les frais des agences immobilières, encadrer les tarifs des syndics o
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
-    <script src="js/jquery.xdomainajax.js"></script>
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
@@ -118,7 +160,6 @@ Plafonner les frais des agences immobilières, encadrer les tarifs des syndics o
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
-    <script src="js/tranapi.js"></script>
     <script src="js/mydict.js"></script>
 
   </body>
