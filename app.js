@@ -231,7 +231,7 @@ function splittext(text, req, res) {
 			var validWordsMap = {};
 			var validWordsArr = [];
 			for (i in validWords) {
-				var infinitiv = validWords[i].details[2];
+				var infinitiv = validWords[i]["3_lemme"];
 				validWordsMap[infinitiv] = validWords[i];
 				validWordsMap[infinitiv]["use"] = words2Sentence[validWords[i].word];
 				validWordsMap[infinitiv]["original"] = validWords[i].word;

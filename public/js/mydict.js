@@ -21,7 +21,7 @@ function splitText() {
 			if (!dictEntry.cardtype) {
 				var phrase = dictEntry.use;
 				console.log(dictEntry.original)
-				phrase = phrase.replace(new RegExp("\\b" + dictEntry.original + "\\b", "g"), "<b>"+dictEntry.original+"</b>");
+				phrase = phrase.replace(new RegExp("(\\W|^)(" + dictEntry.original + ")(\\W|$)", "gi"), "$1<b>$2</b>$3");
 
 				var wordInfo = "<div><h5 class='word'>"+word+"</h5></div>";
 				wordInfo += "<div><span class='use'><small>"+phrase+"<small></span></div>";

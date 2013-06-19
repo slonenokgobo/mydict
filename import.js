@@ -23,7 +23,7 @@ db = new Db(dmName, server);
 
 
 // loading the dictionary
-var dict = {};
+var dict = [];
 
 var dictName = 'Lexique380-utf8.txt';
 //var dictName = 'Lexique380-utf8-small.txt';
@@ -36,9 +36,22 @@ var reader = csv.createCsvFileReader(dictName, {
 
 var t1 = new Date().getTime() / 1000;
 
+var atHeader = true;
+var header = [];
+
 var writer = new csv.CsvWriter(process.stdout);
 reader.addListener('data', function(data) {
-    dict[data[0]] = data;
+    if (atHeader) {
+        atHeader = false;
+        header = data;
+    } else {
+        var entry = {};
+        for (var i = 0; i < header.length; i++) {
+            entry[header[i]] = data[i];
+        }
+        entry.word = data[0];
+        dict.push(entry);
+    }
 });
 
 reader.addListener('end', function() {
@@ -52,11 +65,12 @@ reader.addListener('end', function() {
 			db.collection("lexique380", function(err, coll) {
 				coll.ensureIndex( { "word": 1 } );
 				
-				for (w in dict) {
-					console.log("inserting " + w);
-					var document = {word:w, details:dict[w]};
-					coll.insert(document, {safe: true}, function(err, records){
-					    console.log("inserted " + document.word);
+				for (var i = 0; i<dict.length; i++) {
+					var entry = dict[i];
+					var word = entry.word;
+					console.log("inserting " + word);
+					coll.insert(entry, {safe: true}, function(err, records){
+					    console.log("inserted " + word);
 					});		
 				}
 			})
