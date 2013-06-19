@@ -44,6 +44,25 @@ function splitText() {
 	return false;
 }
 
+function translateWord() {
+	var word = $("#input-word").val();
+	
+	var wordInfo = "<div><h5 class='word'>"+word+"</h5></div>";
+	wordInfo += "<div><span class='use'><small><small></span></div>";
+	wordInfo += "<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>";
+	wordInfo += " <button type='button' class='create-card-button btn btn-info create-card' onclick='return editCard(this)'>Create&nbsp;card</button></div>";
+	var words = $("<div class='span12' style='margin-bottom:10px'></div>");
+	words.append("<div class='word-info'>"+wordInfo+"</div>");
+	
+	$("#words").empty();
+	$("#words").append("<h4>Card</h4>");
+	$("#words").append(words);
+	
+	$("#words").find(".create-card").click();
+	
+	return false;
+}
+
 function knownWord(btn, cardType) {
 	var par = $(btn).parents(".word-info");
 	var text = par.find(".word").text();
