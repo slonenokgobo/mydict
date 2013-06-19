@@ -47,7 +47,9 @@ reader.addListener('data', function(data) {
     } else {
         var entry = {};
         for (var i = 0; i < header.length; i++) {
-            entry[header[i]] = data[i];
+        	var d = parseFloat(data[i])
+        	if (!d) {d = data[i]}
+            entry[header[i]] = d;
         }
         entry.word = data[0];
         dict.push(entry);

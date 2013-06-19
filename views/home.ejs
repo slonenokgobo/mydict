@@ -100,6 +100,15 @@
 		      		</div>
 			    </div>
 			    <div class="tab-pane" id="tab3">
+				<% for(var i=0; i<topWords.length; i++) {%>
+					<div class='word-info'>
+						<div><h5 class='word'><%= topWords[i]["3_lemme"] %> (score: <%= topWords[i]["7_freqlemfilms2"] %>)</h5></div>
+						<div><span class='use'><small><small></span></div>
+						<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>
+						 <button type='button' class='create-card-button btn btn-info' onclick='return editCard(this)'>Create&nbsp;card</button></div>
+					</div>
+				<% } %>
+			    
 			    </div>
 			  </div>
 			</div>

@@ -151,7 +151,23 @@ db.open(function(err, db) {
 });
 
 app.get('/home', ensureAuthenticated, function(req, res) {
-	res.render('home');
+	var collectionName = checkUser(req, res);
+
+	var mydict = [];
+	db.collection(collectionName, function(err, coll) {
+		coll.find({}, {word:true}).toArray(function(err, knownWords) {
+			for (i in knownWords) {
+				mydict.push(knownWords[i].word);
+			}
+
+			db.collection("lexique380", function(err, lexique) {
+				lexique.ensureIndex( { "7_freqlemfilms2": 1 } )
+				lexique.find({ '3_lemme': { $nin: mydict }}, {'3_lemme':true, '7_freqlemfilms2':true}, {"sort": ['7_freqlemfilms2','asc']}).limit(5).toArray(function(err, topWords) {
+					res.render('home', {'topWords':topWords});
+				})
+			})
+		})
+	})
 });
 
 app.get('/study', ensureAuthenticated, function(req, res) {
