@@ -48,7 +48,7 @@ reader.addListener('data', function(data) {
         var entry = {};
         for (var i = 0; i < header.length; i++) {
         	var d = parseFloat(data[i])
-        	if (!d) {d = data[i]}
+        	if (!d && d!=0) {d = data[i]}
             entry[header[i]] = d;
         }
         entry.word = data[0];
