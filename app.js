@@ -162,7 +162,7 @@ app.get('/home', ensureAuthenticated, function(req, res) {
 
 			db.collection("lexique380", function(err, lexique) {
 				lexique.ensureIndex( { "7_freqlemfilms2": 1 } )
-				lexique.aggregate([{$group:{"_id": "$3_lemme", "7_freqlemfilms2" : {$max:"$7_freqlemfilms2"}}}, {$match : { _id : {$nin:mydict} }}, {$project:{"3_lemme":1, "7_freqlemfilms2":1}}, {$sort:{"7_freqlemfilms2":-1}}, {$limit:10}], function(err, topWords) {
+				lexique.aggregate([{$group:{"_id": "$3_lemme", "7_freqlemfilms2" : {$max:"$7_freqlemfilms2"}}}, {$match : { _id : {$nin:mydict} }}, {$project:{"3_lemme":1, "7_freqlemfilms2":1}}, {$sort:{"7_freqlemfilms2":-1}}, {$limit:1000}], function(err, topWords) {
 					res.render('home', {'topWords':topWords});
 				})
 			})
