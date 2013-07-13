@@ -53,6 +53,16 @@
     float:left;
 }
 
+.Hard td {
+    background: #F5F6CE;
+}
+.Forgot td {
+    background: #F5A9A9;
+}
+.Easy td {
+    background: #CEF6CE;
+}
+
 .hard {
     width: 10px;
     height: 10px;
@@ -129,7 +139,7 @@
 			  </thead>
 			  <tbody>
 			<% for(var i=0; i<cards.length; i++) {%>
-			   <tr class="word-info">
+			   <tr class="word-info <% if (cards[i].history && cards[i].history.length>0) {%> <%=cards[i].history[cards[i].history.length-1].status%> <%}%>">
 			   <td><%= cards.length-i %></td>
 			   <td class="card-front"><div class="editable-field text" onClick="this.contentEditable='true';"><%= cards[i].card.front %></div></td>
 			   <td class="card-back"><div class="editable-field text" onClick="this.contentEditable='true';"><%= cards[i].card.back %></div></td>

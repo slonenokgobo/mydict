@@ -1,4 +1,3 @@
-
 function splitText() {
 
 	$.ajax({
@@ -211,8 +210,29 @@ function getNextCard() {
 	var stateCounter=1;
 	cardHtml.click(function() {
 		var nextState = states[stateCounter%3];
+		var hintContent = card[nextState];
+		if (stateCounter%3 == 1 /*hint*/) {
+			// replacing the front word with stars
+			var front = card["front"];
+			console.log(hintContent.indexOf(front))
+			while ((ind=hintContent.indexOf(front))!=-1) {
+				console.log(hintContent)
+				var hc = hintContent.substring(0, ind) + "<span class='hidden-word'>";
+				for (i=0;i<front.length;i++) {
+					hc += "*";
+				}
+				hc += "</span>" + hintContent.substring(ind+front.length);
+				hintContent = hc;
+				console.log(hintContent)
+			}
+			
+		}
 		stateCounter++;
-		cardHtml.find(".card-text").text(card[nextState]);
+		cardHtml.find(".card-text").html(hintContent);
+		$(".hidden-word").click(function() {
+			$(this).text(front);
+			return false;
+		})
 	});
 	
 	return cardHtml;
@@ -237,7 +257,7 @@ function startLearning(btn) {
 		return;
 	}
 	
-	var bar = '<tr><td style="text-align:center"><button class="btn btn-danger btn-large next-card">Forgot</button><span style="padding:10px"></span><button class="btn btn-warning btn-large next-card">Hard</button><span style="padding:10px"></span><button class="btn btn-success btn-large next-card">Easy</button></td></tr>';
+	var bar = '<tr><td style="text-align:center;padding-bottom:10px"><button class="btn btn-danger btn-large next-card">Forgot</button><span style="padding:10px"></span><button class="btn btn-warning btn-large next-card">Hard</button><span style="padding:10px"></span><button class="btn btn-success btn-large next-card">Easy</button></td></tr>';
 	span.height($(window).height());
 	row.append( span.append(table.append(card).append(bar)) );
 
