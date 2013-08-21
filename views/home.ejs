@@ -84,7 +84,8 @@
 			  <ul class="nav nav-tabs">
 			    <li class="active"><a href="#tab1" data-toggle="tab">Text</a></li>
 			    <li><a href="#tab2" data-toggle="tab">Word</a></li>
-			    <li><a href="#tab3" data-toggle="tab">Popular</a></li>
+			    <li><a href="#tab3" data-toggle="tab">Popular(films)</a></li>
+			    <li><a href="#tab4" data-toggle="tab">Popular(books)</a></li>
 			  </ul>
 			  <div class="tab-content">
 			    <div class="tab-pane active" id="tab1">
@@ -100,16 +101,26 @@
 		      		</div>
 			    </div>
 			    <div class="tab-pane" id="tab3">
-				<% for(var i=0; i<topWords.length; i++) {%>
+				<% for(var i=0; i<topFilmWords.length; i++) {%>
 					<div class='word-info'>
-						<div><h5 class='word'><%= topWords[i]["_id"] %></h5> <span>(score: <%= topWords[i]["7_freqlemfilms2"] %>)</span></div>
+						<div><h5 class='word'><%= topFilmWords[i]["_id"] %></h5> <span>(score: <%= topFilmWords[i]["7_freqlemfilms2"] %>)</span></div>
 						<div><span class='use'><small></small></span></div>
 						<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>
 						 <button type='button' class='create-card-button btn btn-info' onclick='return editCard(this)'>Create&nbsp;card</button>
 						 </div>
 					</div>
 				<% } %>
-			    
+			    </div>
+			    <div class="tab-pane" id="tab4">
+				<% for(var i=0; i<topBookWords.length; i++) {%>
+					<div class='word-info'>
+						<div><h5 class='word'><%= topBookWords[i]["_id"] %></h5> <span>(score: <%= topBookWords[i]["8_freqlemlivres"] %>)</span></div>
+						<div><span class='use'><small></small></span></div>
+						<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>
+						 <button type='button' class='create-card-button btn btn-info' onclick='return editCard(this)'>Create&nbsp;card</button>
+						 </div>
+					</div>
+				<% } %>
 			    </div>
 			  </div>
 			</div>

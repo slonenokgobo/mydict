@@ -188,7 +188,9 @@ function getNextCard() {
 	var entry = cards[cardCounter++];
 	var card = entry.card;
 	console.log(card);
-	var cardHtml = $("<tr style='width:100%'><td id='"+entry._id+"' style='position:relative;height:100%;text-align:center;vertical-align:middle card'><span class='card-text' style='z-index:10'>"+card.back+"<span></td></tr>");
+	var cardBackContent = card.back;
+	cardBackContent = cardBackContent.replace(/,/g, '<br/>')
+	var cardHtml = $("<tr style='width:100%'><td id='"+entry._id+"' style='position:relative;height:100%;text-align:center;vertical-align:middle card'><span class='card-text' style='z-index:10'>"+cardBackContent+"<span></td></tr>");
 	
 	var histDiv = $("<div class='history' style='position:absolute;top:0;left:0;z-index:-1'></div>");
 	cardHtml.find("td").append(histDiv);
@@ -210,25 +212,27 @@ function getNextCard() {
 	var stateCounter=1;
 	cardHtml.click(function() {
 		var nextState = states[stateCounter%3];
-		var hintContent = card[nextState];
+		var nextSideContent = card[nextState];
+		
+		nextSideContent = nextSideContent.replace(/,/g, '<br/>')
 		if (stateCounter%3 == 1 /*hint*/) {
 			// replacing the front word with stars
 			var front = card["front"];
-			console.log(hintContent.indexOf(front))
-			while ((ind=hintContent.indexOf(front))!=-1) {
-				console.log(hintContent)
-				var hc = hintContent.substring(0, ind) + "<span class='hidden-word'>";
+			console.log(nextSideContent.indexOf(front))
+			while ((ind=nextSideContent.indexOf(front))!=-1) {
+				console.log(nextSideContent)
+				var hc = nextSideContent.substring(0, ind) + "<span class='hidden-word'>";
 				for (i=0;i<front.length;i++) {
 					hc += "*";
 				}
-				hc += "</span>" + hintContent.substring(ind+front.length);
-				hintContent = hc;
-				console.log(hintContent)
+				hc += "</span>" + nextSideContent.substring(ind+front.length);
+				nextSideContent = hc;
+				console.log(nextSideContent)
 			}
 			
 		}
 		stateCounter++;
-		cardHtml.find(".card-text").html(hintContent);
+		cardHtml.find(".card-text").html(nextSideContent);
 		$(".hidden-word").click(function() {
 			$(this).text(front);
 			return false;
@@ -257,9 +261,10 @@ function startLearning(btn) {
 		return;
 	}
 	
+	var progress = '<tr><td style="text-align:center;padding-bottom:10px"><span class="progress" style="font-weight:bold">'+cardCounter+'/'+cards.length+'</span></td></tr>';
 	var bar = '<tr><td style="text-align:center;padding-bottom:10px"><button class="btn btn-danger btn-large next-card">Forgot</button><span style="padding:10px"></span><button class="btn btn-warning btn-large next-card">Hard</button><span style="padding:10px"></span><button class="btn btn-success btn-large next-card">Easy</button></td></tr>';
 	span.height($(window).height());
-	row.append( span.append(table.append(card).append(bar)) );
+	row.append( span.append(table.append(card).append(progress).append(bar)) );
 
 	$("#before-cards").before(row);
 	$('html,body').animate({ scrollTop: row.offset().top });
@@ -276,8 +281,15 @@ function startLearning(btn) {
 		});
 		
 		card = getNextCard();
-		table.find("tr:first").remove();
-		table.prepend(card);
+		if (card) {
+			table.find("tr:first").remove();
+			table.prepend(card);
+			table.find(".progress").text(cardCounter+'/'+cards.length);
+		} else {
+			span.height($(window).height());
+			table.empty().append("<tr><td align='center'>Done</td></tr>");
+			return;
+		}
 	});
 }
 
@@ -285,7 +297,7 @@ function moveCardToDict(btn, cardId, offset) {
 	var row = $(btn).parents("tr");
 	console.log(cardId)
 	$.ajax({
-	  url: "/card",
+	  url: "/card/type",
 	  data: { id:cardId, cardType:"known" },
 	  type: "POST",
 	}).done(function( data ) {

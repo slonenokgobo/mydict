@@ -11,7 +11,7 @@ var express = require('express')
 var app = require('express')()
   , server = require('http').createServer(app);
 
-var HOST = "localhost";
+var HOST = "siteheater.com";
 var PORT = 8080;
 
 /**
@@ -162,8 +162,11 @@ app.get('/home', ensureAuthenticated, function(req, res) {
 
 			db.collection("lexique380", function(err, lexique) {
 				lexique.ensureIndex( { "7_freqlemfilms2": 1 } )
-				lexique.aggregate([{$group:{"_id": "$3_lemme", "7_freqlemfilms2" : {$max:"$7_freqlemfilms2"}}}, {$match : { _id : {$nin:mydict} }}, {$project:{"3_lemme":1, "7_freqlemfilms2":1}}, {$sort:{"7_freqlemfilms2":-1}}, {$limit:1000}], function(err, topWords) {
-					res.render('home', {'topWords':topWords});
+				lexique.ensureIndex( { "8_freqlemlivres": 1 } )
+				lexique.aggregate([{$group:{"_id": "$3_lemme", "7_freqlemfilms2" : {$max:"$7_freqlemfilms2"}}}, {$match : { _id : {$nin:mydict} }}, {$project:{"3_lemme":1, "7_freqlemfilms2":1}}, {$sort:{"7_freqlemfilms2":-1}}, {$limit:500}], function(err, topFilmWords) {
+					lexique.aggregate([{$group:{"_id": "$3_lemme", "8_freqlemlivres" : {$max:"$8_freqlemlivres"}}}, {$match : { _id : {$nin:mydict} }}, {$project:{"3_lemme":1, "8_freqlemlivres":1}}, {$sort:{"8_freqlemlivres":-1}}, {$limit:500}], function(err, topBookWords) {
+						res.render('home', {'topFilmWords':topFilmWords, 'topBookWords':topBookWords});
+					})
 				})
 			})
 		})
@@ -393,7 +396,7 @@ app.post('/cardhistory', function(req, res) {
 	})
 });
 
-app.post('/card', function(req, res) {
+app.post('/card/type', function(req, res) {
 	var collectionName = checkUser(req, res);
 	var id = req.body.id;
 	var cardType = req.body.cardType;
@@ -401,7 +404,7 @@ app.post('/card', function(req, res) {
 	db.collection(collectionName, function(err, coll) {
 		var key = {'_id':new BSON.ObjectID(id)}
 		var data = {'cardtype':cardType, date:new Date().getTime()};
-		coll.update(key, data, {safe:true}, function(err, result) {
+		coll.update(key, {$set:data}, {safe:true}, function(err, result) {
 			console.log(result)
 			console.log(err)
 			res.send(result);

@@ -126,6 +126,13 @@
       <hr>
       
       <div class="row-fluid marketing">
+        <div class="span12">
+        <ul class="nav nav-tabs">
+        <li class="active"> <a href="#" class="filter">All</a> </li>
+        <li> <a href="#" class="filter" data-filter="Forgot">Forgotten</a> </li>
+        <li> <a href="#" class="filter" data-filter="Hard">Hard</a> </li>
+        <li> <a href="#" class="filter" data-filter="Easy">Known</a> </li>
+        </div>
         <div id="cards" class="span12">
 			<table class="table">
 			  <thead>
@@ -183,6 +190,17 @@
 $(document).ready(function() {
 	$(".editable-field").blur(function() {
 		createOrUpdateCard(this, false);
+	})
+	$(".filter").click(function() {
+		$(this).parents("ul").find(".active").removeClass("active");
+		$(this).parent().addClass("active")
+		var filter = $(this).attr("data-filter")
+		if (!filter) {
+			$(".word-info").show();
+		} else {
+			$(".word-info").hide();
+			$("."+filter).show();
+		}
 	})
 });
 </script>
