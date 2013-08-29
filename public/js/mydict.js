@@ -22,7 +22,7 @@ function splitText() {
 				console.log(dictEntry.original)
 				phrase = phrase.replace(new RegExp("(\\W|^)(" + dictEntry.original + ")(\\W|$)", "gi"), "$1<b>$2</b>$3");
 
-				var wordInfo = "<div><h5 class='word'>"+word+"</h5></div>";
+				var wordInfo = "<div><h5 class='word'>"+word+"</h5> film score "+dictEntry['7_freqlemfilms2']+", book score "+dictEntry['8_freqlemlivres']+"</div>";
 				wordInfo += "<div><span class='use'><small>"+phrase+"<small></span></div>";
 				wordInfo += "<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>";
 				wordInfo += " <button type='button' class='create-card-button btn btn-info' onclick='return editCard(this)'>Create&nbsp;card</button></div>";
@@ -57,7 +57,7 @@ function translateWord() {
 	$("#words").append("<h4>Card</h4>");
 	$("#words").append(words);
 	
-	$("#words").find(".create-card").click();
+	$("#words").find(".create-card").attr("inverse", true).click();
 	
 	return false;
 }
@@ -109,6 +109,8 @@ function callback(test) {
 }
 
 function editCard(btn) {
+	var inverse = $(btn).attr("inverse");
+	
 	var par = $(btn).parents(".word-info");
 	var word = par.find(".word").text();
 	var use = par.find(".use").text();
@@ -122,8 +124,8 @@ function editCard(btn) {
 	var yandexButton = $("<button type='button' class='btn'>Yandex</button>");	
 	var buttons = $("<div class='buttons'></div>");
 	
-	cardFront.append("<span>Front: </span><span class='text' onClick=\"this.contentEditable='true';\">" + word+"</span>");
-	cardBack.append("<span>Back: </span><span class='text' onClick=\"this.contentEditable='true';\"></span>");
+	cardFront.append("<span>Front: </span><span class='text' onClick=\"this.contentEditable='true';\">" + (inverse?"":word)+"</span>");
+	cardBack.append("<span>Back: </span><span class='text' onClick=\"this.contentEditable='true';\">"+(inverse?word:"")+"</span>");
 	cardHint.append("<span>Hint: </span><span class='text' onClick=\"this.contentEditable='true';\">" + use+"</span>");
 	
 	buttons.append(cancelButton);
@@ -170,10 +172,17 @@ function editCard(btn) {
 		par.html(saveHtml);
 		return false;
 	})
-	
-	tranapi.translate(word, "fr-ru", function (trans) {
+	var translateTo = "fr-ru";
+	if (inverse) {
+		translateTo = "ru-fr";
+	}
+	tranapi.translate(word, translateTo, function (trans) {
 		console.log(trans);
-		cardBack.find(".text").text(trans.translate.text[0]);
+		if (inverse) {
+			cardFront.find(".text").text(trans.translate.text[0]);
+		} else {
+			cardBack.find(".text").text(trans.translate.text[0]);
+		}
 	})	
 }
 
