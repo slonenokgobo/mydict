@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
+    <title>MyDict</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -89,38 +89,70 @@
 			  </ul>
 			  <div class="tab-content">
 			    <div class="tab-pane active" id="tab1">
-		      		<textarea id="input-text" style="width:95%" rows="10"></textarea>
+		      		<textarea id="input-text" class="form-control" style="width:95%;margin-bottom:10px" rows="10"></textarea>
 		      		<div>
 	      				<button type="button" class="btn btn-primary" onclick="return splitText()">Show New Words</button>
 		      		</div>
 			    </div>
 			    <div class="tab-pane" id="tab2">
-		      		<input id="input-word" style="width:95%" type="text">
+		      		<input id="input-word" class="form-control" style="width:95%;margin-bottom:10px" type="text">
 		      		<div>
 	      				<button type="button" class="btn btn-primary" onclick="return translateWord()">Translate</button>
 		      		</div>
 			    </div>
 			    <div class="tab-pane" id="tab3">
+				<table class="table table-striped">
+				<thead>
+                <tr>
+                  <th>#</th>
+                  <th>Word</th>
+                  <th>Film Score</th>
+                  <th>Book Score</th>
+                  <th></th>
+                </tr>
+              	</thead>
+              	<tbody>
 				<% for(var i=0; i<topFilmWords.length; i++) {%>
-					<div class='word-info'>
-						<div><h5 class='word'><%= topFilmWords[i]["_id"] %></h5> <span>(score: <%= topFilmWords[i]["7_freqlemfilms2"] %>)</span></div>
-						<div><span class='use'><small></small></span></div>
-						<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>
-						 <button type='button' class='create-card-button btn btn-info' onclick='return editCard(this)'>Create&nbsp;card</button>
-						 </div>
-					</div>
+					<tr class='word-info'>
+						<td><%= (i+1) %></td>
+						<td><h5 class='word' style='margin:0'><%= topFilmWords[i]["_id"] %></h5></td>
+						<td><%= topFilmWords[i]["7_freqlemfilms2"] %></td>
+						<td><%= topFilmWords[i]["8_freqlemlivres"] %></td>
+						<td class='buttons' style='white-space: nowrap;'>
+						<button type='button' class='btn btn-success btn-xs' onclick='return knownWord(this)'>Known</button>
+						<button type='button' class='create-card-button btn btn-info btn-xs' onclick='return editCard(this)'>Create&nbsp;card</button>
+						</td>
+					</tr>
 				<% } %>
+				<tbody>
+				</table>
 			    </div>
 			    <div class="tab-pane" id="tab4">
+				<table class="table table-striped">
+				<thead>
+                <tr>
+                  <th>#</th>
+                  <th>Word</th>
+                  <th>Film Score</th>
+                  <th>Book Score</th>
+                  <th></th>
+                </tr>
+              	</thead>
+              	<tbody>
 				<% for(var i=0; i<topBookWords.length; i++) {%>
-					<div class='word-info'>
-						<div><h5 class='word'><%= topBookWords[i]["_id"] %></h5> <span>(score: <%= topBookWords[i]["8_freqlemlivres"] %>)</span></div>
-						<div><span class='use'><small></small></span></div>
-						<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>
-						 <button type='button' class='create-card-button btn btn-info' onclick='return editCard(this)'>Create&nbsp;card</button>
-						 </div>
-					</div>
+					<tr class='word-info'>
+						<td><%= (i+1) %></td>
+						<td><h5 class='word' style='margin:0'><%= topBookWords[i]["_id"] %></h5></td>
+						<td><%= topBookWords[i]["7_freqlemfilms2"] %></td>
+						<td><%= topBookWords[i]["8_freqlemlivres"] %></td>
+						<td class='buttons' style='white-space: nowrap;'>
+						<button type='button' class='btn btn-success btn-xs' onclick='return knownWord(this)'>Known</button>
+						<button type='button' class='create-card-button btn btn-info btn-xs' onclick='return editCard(this)'>Create&nbsp;card</button>
+						</td>
+					</tr>
 				<% } %>
+				<tbody>
+				</table>
 			    </div>
 			  </div>
 			</div>
@@ -161,6 +193,11 @@
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/tranapi.js"></script>
     <script src="js/mydict.js"></script>
+<script>
+$( document ).ready(function() {
+    getProgress();
+});
+</script>
 
   </body>
 </html>

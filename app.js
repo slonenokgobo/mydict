@@ -11,8 +11,14 @@ var express = require('express')
 var app = require('express')()
   , server = require('http').createServer(app);
 
-var HOST = "siteheater.com";
-var PORT = 8080;
+var nconf = require('nconf');
+nconf.argv().env();
+nconf.file({ file: 'config.json' });
+
+nconf.defaults({
+     "host": "locahost",
+     "port": 80
+});
 
 /**
    * Patch the console methods in order to provide timestamp information
@@ -31,7 +37,7 @@ var PORT = 8080;
   o.__ts__ = true;
 })(console);
 
-server.listen(PORT);
+server.listen(nconf.get("port"));
 
 app.configure(function(){
   app.set('views', __dirname + '/views');
@@ -71,8 +77,8 @@ passport.deserializeUser(function(obj, done) {
 //   credentials (in this case, an OpenID identifier and profile), and invoke a
 //   callback with a user object.
 passport.use(new GoogleStrategy({
-    returnURL: 'http://'+HOST+':'+PORT+'/auth/google/return',
-    realm: 'http://'+HOST+':'+PORT+'/'
+    returnURL: 'http://'+nconf.get('host')+':'+nconf.get("port")+'/auth/google/return',
+    realm: 'http://'+nconf.get('host')+':'+nconf.get('port')+'/'
   },
   function(identifier, profile, done) {
     // asynchronous verification, for effect...
@@ -163,8 +169,8 @@ app.get('/home', ensureAuthenticated, function(req, res) {
 			db.collection("lexique380", function(err, lexique) {
 				lexique.ensureIndex( { "7_freqlemfilms2": 1 } )
 				lexique.ensureIndex( { "8_freqlemlivres": 1 } )
-				lexique.aggregate([{$group:{"_id": "$3_lemme", "7_freqlemfilms2" : {$max:"$7_freqlemfilms2"}}}, {$match : { _id : {$nin:mydict} }}, {$project:{"3_lemme":1, "7_freqlemfilms2":1}}, {$sort:{"7_freqlemfilms2":-1}}, {$limit:500}], function(err, topFilmWords) {
-					lexique.aggregate([{$group:{"_id": "$3_lemme", "8_freqlemlivres" : {$max:"$8_freqlemlivres"}}}, {$match : { _id : {$nin:mydict} }}, {$project:{"3_lemme":1, "8_freqlemlivres":1}}, {$sort:{"8_freqlemlivres":-1}}, {$limit:500}], function(err, topBookWords) {
+				lexique.aggregate([{$group:{"_id": "$3_lemme", "7_freqlemfilms2" : {$max:"$7_freqlemfilms2"}, "8_freqlemlivres" : {$max:"$8_freqlemlivres"}}}, {$match : { _id : {$nin:mydict} }}, {$project:{"3_lemme":1, "7_freqlemfilms2":1, "8_freqlemlivres":1}}, {$sort:{"7_freqlemfilms2":-1}}, {$limit:500}], function(err, topFilmWords) {
+					lexique.aggregate([{$group:{"_id": "$3_lemme", "8_freqlemlivres" : {$max:"$8_freqlemlivres"}, "7_freqlemfilms2" : {$max:"$7_freqlemfilms2"}}}, {$match : { _id : {$nin:mydict} }}, {$project:{"3_lemme":1, "8_freqlemlivres":1, "7_freqlemfilms2":1}}, {$sort:{"8_freqlemlivres":-1}}, {$limit:500}], function(err, topBookWords) {
 						res.render('home', {'topFilmWords':topFilmWords, 'topBookWords':topBookWords});
 					})
 				})
@@ -409,5 +415,49 @@ app.post('/card/type', function(req, res) {
 			console.log(err)
 			res.send(result);
 		});
+	})
+});
+
+app.get('/progress', function(req, res) {
+	var collectionName = checkUser(req, res);
+	
+	db.collection(collectionName, function(err, coll) {
+		coll.find({}, {word:true, cardtype:true}).toArray(function(err, knownWords) {
+			var mydict = [];
+			var wordsMap = {};
+			for (i in knownWords) {
+				mydict.push(knownWords[i].word);
+				wordsMap[knownWords[i].word] = knownWords[i].cardtype; 
+			}
+
+			db.collection("lexique380", function(err, lexique) {
+				lexique.ensureIndex( { "7_freqlemfilms2": 1 } )
+				lexique.ensureIndex( { "8_freqlemlivres": 1 } )
+				lexique.find({'3_lemme':{$in:mydict}}, {'3_lemme':true,'7_freqlemfilms2':true, '8_freqlemlivres':true}).toArray(function(err, dic_recs) {
+					//console.log("res", dic_recs)
+					var cache = {};
+					var result = { 
+							count: mydict.length,
+							learning:{count:0, films:0, books:0},
+							known:{count:0, films:0, books:0}}
+					
+					for (i in dic_recs) {
+						var lemm = dic_recs[i]['3_lemme'];
+						if (!cache[lemm]) {
+							cache[lemm] = 1;
+							result[wordsMap[lemm]].books += dic_recs[i]['8_freqlemlivres']
+							result[wordsMap[lemm]].films += dic_recs[i]['7_freqlemfilms2']
+							result[wordsMap[lemm]].count += 1;
+						}
+					}
+					
+					delete mydict;
+					delete wordsMap;
+					delete cache;
+					
+					res.send(result)
+				})				
+			})
+		})
 	})
 });

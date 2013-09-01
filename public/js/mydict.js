@@ -10,7 +10,10 @@ function splitText() {
 		$("#words").empty();
 		$("#words").append("<h4>Words</h4>");
 		
-		var words = $("<div class='span12' style='margin-bottom:10px'></div>");
+		var words = $('<table class="table table-striped"></table>');
+		words.append('<thead><tr><th>#</th><th>Word</th><th>Film Score</th><th>Book Score</th><th></th></tr></thead>')
+		var wordsContainer = $('<tbody></tbody>');
+		words.append(wordsContainer)
 		$("#words").append(words);
 		
 		var total=0,known=0,learning=0,unknown=0;
@@ -22,11 +25,14 @@ function splitText() {
 				console.log(dictEntry.original)
 				phrase = phrase.replace(new RegExp("(\\W|^)(" + dictEntry.original + ")(\\W|$)", "gi"), "$1<b>$2</b>$3");
 
-				var wordInfo = "<div><h5 class='word'>"+word+"</h5> film score "+dictEntry['7_freqlemfilms2']+", book score "+dictEntry['8_freqlemlivres']+"</div>";
-				wordInfo += "<div><span class='use'><small>"+phrase+"<small></span></div>";
-				wordInfo += "<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>";
-				wordInfo += " <button type='button' class='create-card-button btn btn-info' onclick='return editCard(this)'>Create&nbsp;card</button></div>";
-				words.append("<div class='word-info'>"+wordInfo+"</div>");
+				var wordInfo = "<td>"+total+"</td>"
+				wordInfo += "<td><h5 class='word' style='margin:0'>"+word+"</h5></td>";
+				wordInfo += "<td>"+dictEntry['7_freqlemfilms2']+"</td><td>"+dictEntry['8_freqlemlivres']+"</td>";
+				//wordInfo += "<div><span class='use'><small>"+phrase+"<small></span></div>";
+				wordInfo += "<td class='buttons' style='white-space: nowrap;'>"
+				wordInfo += "<button type='button' class='btn btn-success btn-xs' onclick='return knownWord(this)'>Known</button>";
+				wordInfo += " <button type='button' class='create-card-button btn btn-info btn-xs' onclick='return editCard(this)'>Create&nbsp;card</button></div>";
+				wordsContainer.append("<tr class='word-info'>"+wordInfo+"</tr>");
 				unknown++;
 			} else if (dictEntry.cardtype=="known") {
 				known++;
@@ -46,18 +52,24 @@ function splitText() {
 function translateWord() {
 	var word = $("#input-word").val();
 	
-	var wordInfo = "<div><h5 class='word'>"+word+"</h5></div>";
-	wordInfo += "<div><span class='use'><small><small></span></div>";
-	wordInfo += "<div class='buttons' ><button type='button' class='btn btn-success' onclick='return knownWord(this)'>Known</button>";
-	wordInfo += " <button type='button' class='create-card-button btn btn-info create-card' onclick='return editCard(this)'>Create&nbsp;card</button></div>";
-	var words = $("<div class='span12' style='margin-bottom:10px'></div>");
-	words.append("<div class='word-info'>"+wordInfo+"</div>");
+	var words = $('<table class="table table-striped"></table>');
+	words.append('<thead><tr><th>#</th><th>Word</th><th>Film Score</th><th>Book Score</th><th></th></tr></thead>')
+	var wordsContainer = $('<tbody></tbody>');
+	words.append(wordsContainer)
+
+	var wordInfo = "<td>1</td>"
+	wordInfo += "<td><h5 class='word' style='margin:0'>"+word+"</h5></td>";
+	wordInfo += "<td>unknown</td><td>unknown</td>";
+	wordInfo += "<td class='buttons' style='white-space: nowrap;'>"
+	wordInfo += "<button type='button' class='btn btn-success btn-xs' onclick='return knownWord(this)'>Known</button>";
+	wordInfo += " <button type='button' class='create-card-button btn btn-info btn-xs' onclick='return editCard(this)'>Create&nbsp;card</button></div>";
+	wordsContainer.append("<tr class='word-info'>"+wordInfo+"</tr>");
 	
 	$("#words").empty();
 	$("#words").append("<h4>Card</h4>");
 	$("#words").append(words);
 	
-	$("#words").find(".create-card").attr("inverse", true).click();
+	$("#words").find(".create-card-button").attr("inverse", true).click();
 	
 	return false;
 }
@@ -74,14 +86,16 @@ function knownWord(btn, cardType) {
 	  type: "POST",
 	}).done(function( data ) {
 		console.log(data);
+		getProgress();
 	});
 	par.remove();
+	$('.creating-card').remove();
 	return false;
 }
 
 
 function createOrUpdateCard(btn, hideAfter) {
-	var par = $(btn).parents(".word-info");
+	var par = $(btn).parents(".card-container");
 	var text = par.find(".card-front").find(".text").text();
 	var back = par.find(".card-back").find(".text").text();
 	var hint = par.find(".card-hint").find(".text").text();
@@ -95,10 +109,13 @@ function createOrUpdateCard(btn, hideAfter) {
 	  type: "POST",
 	}).done(function( data ) {
 		console.log(data);
+		getProgress();
 	});
 	
 	if (hideAfter){
-		par.remove();
+		var cardRow = $(btn).parents(".creating-card");
+		cardRow.prev().remove();
+		cardRow.remove();
 	}
 	
 	return false;
@@ -114,15 +131,17 @@ function editCard(btn) {
 	var par = $(btn).parents(".word-info");
 	var word = par.find(".word").text();
 	var use = par.find(".use").text();
-	
-	var cardWrapper = $("<div></div>");
-	var card = $("<div class='card' style='background-color: #f7f7f9;'></div>");
+  
+	var cardWrapper = $("<td colspan='3' class='card-container'></td>");
+	var card = $("<div class='card panel panel-info' style='background-color: #f7f7f9;margin-top:10px;margin-bottom:5px'></div>");
+	var cardHeader = $('<div class="panel-heading"><h3 class="panel-title">Card</h3></div>');
+	var cardBody = $('<div class="panel-body"></div>');
 	var cardFront = $("<div class='card-front'></div>");
 	var cardBack = $("<div class='card-back'></div>");
 	var cardHint = $("<div class='card-hint initial'></div>");
-	var cancelButton = $("<button type='button' class='btn btn-danger'>Cancel</button>");	
-	var yandexButton = $("<button type='button' class='btn'>Yandex</button>");	
-	var buttons = $("<div class='buttons'></div>");
+	var cancelButton = $("<button type='button' class='btn btn-danger btn-xs'>Cancel</button>");	
+	var yandexButton = $("<button type='button' class='btn btn-xs'>Yandex</button>");	
+	var buttons = $("<div class='buttons' style='text-align:center'></div>");
 	
 	cardFront.append("<span>Front: </span><span class='text' onClick=\"this.contentEditable='true';\">" + (inverse?"":word)+"</span>");
 	cardBack.append("<span>Back: </span><span class='text' onClick=\"this.contentEditable='true';\">"+(inverse?word:"")+"</span>");
@@ -130,15 +149,16 @@ function editCard(btn) {
 	
 	buttons.append(cancelButton);
 	buttons.append(" ");
-	buttons.append("<button type='button' class='btn btn-success' onclick='return createOrUpdateCard(this, true)'>Create</button>");
+	buttons.append("<button type='button' class='btn btn-success btn-xs' onclick='return createOrUpdateCard(this, true)'>Create</button>");
 	buttons.append(" ");
 	buttons.append(yandexButton);
 	
-	card.append(cardFront).append(cardBack).append(cardHint);
+	cardBody.append(cardFront).append(cardBack).append(cardHint);
+	card.append(cardHeader).append(cardBody);
 	cardWrapper.append(card).append(buttons);
 	
-	var saveHtml = par.html();
-	par.html(cardWrapper);
+	var rowWithCard = $("<tr class='creating-card'></tr>").append("<td></td>").append(cardWrapper).append("<td></td>");
+	par.after(rowWithCard);
 	
 	yandexButton.click(function() {
 	
@@ -169,7 +189,7 @@ function editCard(btn) {
 	})
 	
 	cancelButton.click(function() {
-		par.html(saveHtml);
+		rowWithCard.remove();
 		return false;
 	})
 	var translateTo = "fr-ru";
@@ -243,7 +263,7 @@ function getNextCard() {
 		stateCounter++;
 		cardHtml.find(".card-text").html(nextSideContent);
 		$(".hidden-word").click(function() {
-			$(this).text(front);
+			$(".hidden-word").text(front);
 			return false;
 		})
 	});
@@ -317,4 +337,64 @@ function moveCardToDict(btn, cardId, offset) {
 		cards[offset]['removed'] = true;
 	}
 	return false;
+}
+
+
+function getProgress() {
+	$.ajax({
+		  url: "/progress",
+		  type: "GET",
+		}).done(function( data ) {
+			console.log("Progress", data);
+			if (!data) return;
+			
+			var count_total = 46943;
+			var score_total = 1000000;
+			
+			var pr_count_known = parseInt(data.known.count*100/count_total);
+			var pr_count_learning = parseInt(data.learning.count*100/count_total);
+			var pr_count_unknown = 100-pr_count_known-pr_count_learning;
+			var unknown_count = count_total - data.known.count - data.learning.count;
+			
+			var pr_sf_known = parseInt(data.known.films*100/score_total);
+			var pr_sf_learning = parseInt(data.learning.films*100/score_total);
+			var pr_sf_unknown = 100-pr_sf_learning-pr_sf_known;
+			var unknown_sf_score = score_total - data.learning.films - data.known.films;
+			
+			var pr_sb_known = parseInt(data.known.books*100/score_total);
+			var pr_sb_learning = parseInt(data.learning.books*100/score_total);
+			var pr_sb_unknown = 100-pr_sb_learning-pr_sb_known;
+			var unknown_sb_score = score_total - data.learning.books - data.known.books;
+			
+			var data_known_count = pr_count_known + "% (" + parseInt(data.known.count) + ")";
+			var data_learning_count = pr_count_learning + "% (" + parseInt(data.learning.count) + ")";
+			var data_unknown_count = pr_count_unknown + "% (" + parseInt(unknown_count) + ")";
+			
+			var data_known_films = pr_sf_known + "% (" + parseInt(data.known.films) + ")";
+			var data_learning_films = pr_sf_learning + "% (" + parseInt(data.learning.films) + ")";
+			var data_unknown_films = pr_sf_unknown + "% (" + parseInt(unknown_sf_score) + ")";
+
+			var data_known_books = pr_sb_known + "% (" + parseInt(data.known.books) + ")";
+			var data_learning_books = pr_sb_learning + "% (" + parseInt(data.learning.books) + ")";
+			var data_unknown_books = pr_sb_unknown + "% (" + parseInt(unknown_sb_score) + ")";
+
+			var progressDiv = $("<div id='progress'></div");
+			progressDiv.append("Count");
+			progressDiv.append(
+					'<div class="progress" style="margin-bottom:5px"> <div class="progress-bar progress-bar-success" style="width: '+pr_count_known+'%;" title="'+data_known_count+'">'+data_known_count+
+					'</div> <div class="progress-bar progress-bar-warning" style="width: '+pr_count_learning+'%;" title="'+data_learning_count+'">'+data_learning_count+
+					'</div>  <div class="progress-bar progress-bar-danger" style="width: '+pr_count_unknown+'%;" title="'+data_unknown_count+'">'+data_unknown_count+'</div></div>');
+			progressDiv.append("Films Score");
+			progressDiv.append(
+					'<div class="progress" style="margin-bottom:5px"> <div class="progress-bar progress-bar-success" style="width: '+pr_sf_known+'%;" title="'+data_known_films+'">'+data_known_films+
+					'</div> <div class="progress-bar progress-bar-warning" style="width: '+pr_sf_learning+'%;" title="'+data_learning_films+'">'+data_learning_films+
+					'</div>  <div class="progress-bar progress-bar-danger" style="width: '+pr_sf_unknown+'%;" title="'+data_unknown_films+'">'+data_unknown_films+'</div></div>');
+			progressDiv.append("Books Score");
+			progressDiv.append(
+					'<div class="progress" style="margin-bottom:5px"> <div class="progress-bar progress-bar-success" style="width: '+pr_sb_known+'%;" title="'+data_known_books+'">'+data_known_books+
+					'</div> <div class="progress-bar progress-bar-warning" style="width: '+pr_sb_learning+'%;" title="'+data_learning_books+'">'+data_learning_books+
+					'</div>  <div class="progress-bar progress-bar-danger" style="width: '+pr_sb_unknown+'%;" title="'+data_unknown_books+'">'+data_unknown_books+'</div></div>');
+			$("#progress").remove();
+			$(".masthead").after(progressDiv);
+		});	
 }

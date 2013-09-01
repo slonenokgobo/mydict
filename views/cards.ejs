@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
+    <title>MyDict</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -138,9 +138,9 @@
 			  <thead>
 			    <tr>
 			      <th>#</th>
-			      <th>Front</th>
-			      <th>Back</th>
-			      <th>Hint</th>
+			      <th class='front-th'>Front</th>
+			      <th class='back-th'>Back</th>
+			      <th class='hint-th'>Hint</th>
 			      <th></th>
 			    </tr>
 			  </thead>
@@ -151,7 +151,7 @@
 			   <td class="card-front"><div class="editable-field text" onClick="this.contentEditable='true';"><%= cards[i].card.front %></div></td>
 			   <td class="card-back"><div class="editable-field text" onClick="this.contentEditable='true';"><%= cards[i].card.back %></div></td>
 			   <td class="card-hint"><div class="editable-field text" onClick="this.contentEditable='true';"><%= cards[i].card.hint %></div></td>
-			   <td><div class='buttons' ><button type='button' class='btn btn-success' onclick='return moveCardToDict(this, "<%= cards[i]._id %>", <%= i %>)'>Known</button></td></tr>
+			   <td><div class='buttons' ><button type='button' class='btn btn-success btn-xs' onclick='return moveCardToDict(this, "<%= cards[i]._id %>", <%= i %>)'>Known</button></td></tr>
 			<% } %>
 			</tbody>
 			</table>        
@@ -203,6 +203,15 @@ $(document).ready(function() {
 		}
 	})
 });
+$(".back-th").click(function() {
+	$(".card-back").find(".text").toggle();
+})
+$(".front-th").click(function() {
+	$(".card-front").find(".text").toggle();
+})
+$(".hint-th").click(function() {
+	$(".card-hint").find(".text").toggle();
+})
 </script>
   
 </html>
